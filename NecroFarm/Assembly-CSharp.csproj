@@ -60,8 +60,9 @@
     <Compile Include="Assets\Scripts\Mouse3D.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects.cs" />
     <Compile Include="Assets\Scripts\PlacedObject.cs" />
-    <Compile Include="Assets\Scripts\GridXZ.cs" />
     <Compile Include="Assets\Scripts\playerEconomy.cs" />
+    <Compile Include="Assets\Scripts\GridXZ.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
