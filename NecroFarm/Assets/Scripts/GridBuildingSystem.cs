@@ -12,11 +12,16 @@ public class GridBuildingSystem : MonoBehaviour {
     private ScriptableObjects scriptableObject;
     private ScriptableObjects.Dir dir = ScriptableObjects.Dir.Down;
     private bool plantingState = false;
+    [SerializeField]
+    private GameObject gameManager;
     private void Awake()
     {
         Instance = this;
+        //Total grid size
         int gridWidth = 1500;
         int gridHeight = 1500;
+
+        //Individual cell size
         float cellSize = 2f;
         grid = new GridXZ<GridObject>(gridWidth, gridHeight, cellSize, Vector3.zero, (GridXZ<GridObject> g, int x, int z) => new GridObject(g,x,z));
 
@@ -73,38 +78,49 @@ public class GridBuildingSystem : MonoBehaviour {
             //Place Object on gird
             if (Input.GetMouseButtonDown(0) && scriptableObject != null)
             {
-                Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
-                grid.GetXZ(mousePosition, out int x, out int z);
-                Vector2Int placedObjectOrigin = new Vector2Int(x, z);
-                placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);
-
-                List<Vector2Int> gridPositionList = scriptableObject.GetGridPositionList(new Vector2Int(x, z), dir);
-                bool canBuild = true;
-
-                foreach (Vector2Int gridPosition in gridPositionList)
+                //Check if player can afford
+                if (gameManager.GetComponent<playerEconomy>().canAfford(scriptableObject.buyPrice))
                 {
-                    if (!grid.GetGridObject(gridPosition.x, gridPosition.y).CanBuild())
-                    {
-                        canBuild = false;
-                        break;
-                    }
-                }
+                    Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
+                    grid.GetXZ(mousePosition, out int x, out int z);
+                    Vector2Int placedObjectOrigin = new Vector2Int(x, z);
+                    placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);
 
-                if (canBuild)
-                {
-                    Vector2Int rotationOffest = scriptableObject.GetRotationOffset(dir);
-                    Vector3 scriptableWorldPosition = grid.GetWorldPosition(x, z) + new Vector3(rotationOffest.x, 0, rotationOffest.y) * grid.GetCellSize();
-                    PlacedObject placedObject = PlacedObject.Create(scriptableWorldPosition, new Vector2Int(x, z), dir, scriptableObject);
+                    List<Vector2Int> gridPositionList = scriptableObject.GetGridPositionList(new Vector2Int(x, z), dir);
+                    bool canBuild = true;
+
                     foreach (Vector2Int gridPosition in gridPositionList)
                     {
-                        grid.GetGridObject(gridPosition.x, gridPosition.y).SetPlacedObject(placedObject);
+                        if (!grid.GetGridObject(gridPosition.x, gridPosition.y).CanBuild())
+                        {
+                            canBuild = false;
+                            break;
+                        }
                     }
-                }
+
+                    //Check location to see if on grid is occupied
+                    if (canBuild)
+                    {
+                        Vector2Int rotationOffest = scriptableObject.GetRotationOffset(dir);
+                        Vector3 scriptableWorldPosition = grid.GetWorldPosition(x, z) + new Vector3(rotationOffest.x, 0, rotationOffest.y) * grid.GetCellSize();
+                        PlacedObject placedObject = PlacedObject.Create(scriptableWorldPosition, new Vector2Int(x, z), dir, scriptableObject);
+                        //Handle mutli-tiled claims from objects
+                        foreach (Vector2Int gridPosition in gridPositionList)
+                        {
+                            grid.GetGridObject(gridPosition.x, gridPosition.y).SetPlacedObject(placedObject);
+                        }
+
+                        gameManager.GetComponent<playerEconomy>().subtractFunds(scriptableObject.buyPrice);
+                    }//Gird tile is occupied
+                    else
+                    {
+                        UtilsClass.CreateWorldTextPopup("Cannot build here!", Mouse3D.GetMouseWorldPosition());
+                    }
+                }//Not enough funds to purchase
                 else
                 {
-                    UtilsClass.CreateWorldTextPopup("Cannot build here!", Mouse3D.GetMouseWorldPosition());
+                    UtilsClass.CreateWorldTextPopup("Cannot afford this!", Mouse3D.GetMouseWorldPosition());
                 }
-
 
             }
             //Clear Object from grid
@@ -115,7 +131,7 @@ public class GridBuildingSystem : MonoBehaviour {
                 if (placedObject != null)
                 {
                     placedObject.DestroySelf();
-
+                    //Also clear any other grid claims the object may have
                     List<Vector2Int> gridPositionList = placedObject.GetGridPositionList();
                     foreach (Vector2Int gridPosition in gridPositionList)
                     {
@@ -134,7 +150,8 @@ public class GridBuildingSystem : MonoBehaviour {
             }
 
 
-            //Hotkeys
+            //Hotkeys (Can be removed but option in addition to buttons)
+            //NOTE ONLY WORKS IN PLANTING STATE
             if (Input.GetKeyDown(KeyCode.Alpha1)) { scriptableObject = scriptableObjectList[0]; }
             if (Input.GetKeyDown(KeyCode.Alpha2)) { scriptableObject = scriptableObjectList[1]; }
             if (Input.GetKeyDown(KeyCode.Alpha3)) { scriptableObject = scriptableObjectList[2]; }

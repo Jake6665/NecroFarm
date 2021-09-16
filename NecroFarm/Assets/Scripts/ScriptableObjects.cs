@@ -30,6 +30,8 @@ public class ScriptableObjects : ScriptableObject
     public Transform visual;
     public int width;
     public int height;
+    public int buyPrice;
+    public int sellPrice;
 
 
     public int GetRotationAngle(Dir dir)
