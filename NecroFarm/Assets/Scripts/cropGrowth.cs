@@ -10,19 +10,20 @@ public class cropGrowth : MonoBehaviour
     DateTime plantTime;
     DateTime midGrowth;
     DateTime fullGrown;
+    private bool finshedGrowing = false;
 
     private void Start()
     {
         plantTime = DateTime.Now;
-        midGrowth = plantTime.AddSeconds(5);
-        fullGrown = plantTime.AddSeconds(10);
+        midGrowth = plantTime.AddSeconds(growthTime / 2);
+        fullGrown = plantTime.AddSeconds(growthTime);
 
         transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-        Debug.Log(plantTime);
-        Debug.Log(midGrowth);
-        Debug.Log(fullGrown);
+    }
 
-
+    public bool isGrown()
+    {
+        return finshedGrowing;
     }
 
     private void Update()
@@ -30,11 +31,10 @@ public class cropGrowth : MonoBehaviour
         plantTime = DateTime.Now;
         if (plantTime > fullGrown)
         {
-            Debug.Log("full grown");
+            finshedGrowing = true;
             transform.localScale = new Vector3(1f, 1f, 1f);
         }else if (plantTime > midGrowth)
         {
-            Debug.Log("mid grown");
             transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
 

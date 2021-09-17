@@ -17,5 +17,5 @@ MonoBehaviour:
   visual: {fileID: 6554903290923379446, guid: 17be888056ba68f4895d21f4a0f8d31c, type: 3}
   width: 1
   height: 1
-  buyPrice: 20
-  sellPrice: 60
+  buyPrice: 50
+  sellPrice: 80

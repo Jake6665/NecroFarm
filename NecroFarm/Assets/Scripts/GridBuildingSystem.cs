@@ -123,21 +123,30 @@ public class GridBuildingSystem : MonoBehaviour {
                 }
 
             }
-            //Clear Object from grid
+
+         
+            //Sell grown crops
             if (Input.GetMouseButtonDown(1))
             {
+                //Clear Object from grid
                 GridObject gridObject = grid.GetGridObject(Mouse3D.GetMouseWorldPosition());
                 PlacedObject placedObject = gridObject.GetPlacedObject();
                 if (placedObject != null)
                 {
-                    placedObject.DestroySelf();
-                    //Also clear any other grid claims the object may have
-                    List<Vector2Int> gridPositionList = placedObject.GetGridPositionList();
-                    foreach (Vector2Int gridPosition in gridPositionList)
+                    //Check if plant is grown
+                    if (placedObject.transform.GetComponent<cropGrowth>().isGrown())
                     {
-                        grid.GetGridObject(gridPosition.x, gridPosition.y).ClearObject();
+                        //Add funds based on sell price
+                        gameManager.GetComponent<playerEconomy>().addFunds(placedObject.GetScriptableRefrence().sellPrice);
+                        //Clear Object from grid
+                        placedObject.DestroySelf();
+                        //Also clear any other grid claims the object may have
+                        List<Vector2Int> gridPositionList = placedObject.GetGridPositionList();
+                        foreach (Vector2Int gridPosition in gridPositionList)
+                        {
+                            grid.GetGridObject(gridPosition.x, gridPosition.y).ClearObject();
+                        }
                     }
-
                 }
             }
 

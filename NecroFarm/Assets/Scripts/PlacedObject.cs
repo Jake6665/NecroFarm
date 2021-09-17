@@ -30,4 +30,9 @@ public class PlacedObject : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public ScriptableObjects GetScriptableRefrence()
+    {
+        return scriptableObject;
+    }
+
 }
