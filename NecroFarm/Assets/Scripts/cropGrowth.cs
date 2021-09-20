@@ -11,6 +11,7 @@ public class cropGrowth : MonoBehaviour
     DateTime midGrowth;
     DateTime fullGrown;
     private bool finshedGrowing = false;
+    private List<GameObject> ObjectsInRange = new List<GameObject>();
 
     private void Start()
     {
@@ -18,7 +19,7 @@ public class cropGrowth : MonoBehaviour
         midGrowth = plantTime.AddSeconds(growthTime / 2);
         fullGrown = plantTime.AddSeconds(growthTime);
 
-        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        transform.localScale = new Vector3(1f, 0.1f, 1f);
     }
 
     public bool isGrown()
@@ -35,8 +36,18 @@ public class cropGrowth : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }else if (plantTime > midGrowth)
         {
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(1f, 0.5f, 1f);
         }
-
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.name);
+        if (other.tag == "Well")
+        {
+            midGrowth = midGrowth.AddSeconds((-1 * ((growthTime / 2) / 2)));
+            fullGrown = fullGrown.AddSeconds(-1 * (growthTime / 2));
+        }
+    }
+
 }

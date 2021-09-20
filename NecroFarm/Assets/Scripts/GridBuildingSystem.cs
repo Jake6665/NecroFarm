@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using UnityEngine.EventSystems;
 
 public class GridBuildingSystem : MonoBehaviour {
     public static GridBuildingSystem Instance { get; private set; }
@@ -78,9 +79,15 @@ public class GridBuildingSystem : MonoBehaviour {
             //Place Object on gird
             if (Input.GetMouseButtonDown(0) && scriptableObject != null)
             {
+                //Check if player Clicked On UI
+                if (EventSystem.current.IsPointerOverGameObject())
+                {
+                    return;
+                }
                 //Check if player can afford
                 if (gameManager.GetComponent<playerEconomy>().canAfford(scriptableObject.buyPrice))
                 {
+
                     Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
                     grid.GetXZ(mousePosition, out int x, out int z);
                     Vector2Int placedObjectOrigin = new Vector2Int(x, z);

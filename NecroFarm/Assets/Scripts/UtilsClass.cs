@@ -108,7 +108,16 @@ namespace CodeMonkey.Utils {
         public static void CreateWorldTextPopup(string text, Vector3 localPosition) {
             CreateWorldTextPopup(null, text, localPosition, 8, Color.white, localPosition + new Vector3(-1, 10), 1f);
         }
-        
+
+        public static void CreateWorldTextAdd(string text, Vector3 localPosition)
+        {
+            CreateWorldTextPopup(null, text, localPosition, 8, Color.green, localPosition + new Vector3(-1, 10), 1f);
+        }
+        public static void CreateWorldTextDeduct(string text, Vector3 localPosition)
+        {
+            CreateWorldTextPopup(null, text, localPosition, 8, Color.red, localPosition + new Vector3(-1, 10), 1f);
+        }
+
         // Create a Text Popup in the World
         public static void CreateWorldTextPopup(Transform parent, string text, Vector3 localPosition, int fontSize, Color color, Vector3 finalPopupPosition, float popupTime) {
             TextMesh textMesh = CreateWorldText(parent, text, localPosition, fontSize, color, TextAnchor.LowerLeft, TextAlignment.Left, sortingOrderDefault);

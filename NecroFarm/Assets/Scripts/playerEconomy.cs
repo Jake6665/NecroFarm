@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CodeMonkey.Utils;
 using TMPro;
 
 public class playerEconomy : MonoBehaviour
@@ -18,12 +19,14 @@ public class playerEconomy : MonoBehaviour
     public void addFunds(int cash)
     {
         playerMoney += cash;
+        UtilsClass.CreateWorldTextAdd(" +$" + cash, Mouse3D.GetMouseWorldPosition());
         updateFundsText();
     }
 
     public void subtractFunds(int cash)
     {
         playerMoney -= cash;
+        UtilsClass.CreateWorldTextDeduct(" -$"+cash, Mouse3D.GetMouseWorldPosition());
         updateFundsText();
     }
 
