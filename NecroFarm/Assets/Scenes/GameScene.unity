@@ -1067,7 +1067,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1168517957}
         m_TargetAssemblyTypeName: GridBuildingSystem, Assembly-CSharp
-        m_MethodName: ChangeGhost
+        m_MethodName: ChangeGhostObject
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1384,7 +1384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037584461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 1.4, y: 1, z: 1.4}
   m_Children: []
   m_Father: {fileID: 536719129}
@@ -1501,6 +1501,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 485003191cb89b840b4258f076a7a953, type: 2}
   - {fileID: 11400000, guid: 5280ddfd3d7954a409f8082a7e947bbb, type: 2}
   gameManager: {fileID: 633698038}
+  ghostObjectList:
+  - {fileID: 393003442152575029, guid: e2a77312ea87fbf49a1c5aca0b1cee25, type: 3}
+  - {fileID: 6065103958490845328, guid: 841035cc5a9d7f34e9f72e7fc7d00a4c, type: 3}
+  - {fileID: 7436700942959352793, guid: 1e90db300c4acef4dabd86f382df5a5c, type: 3}
 --- !u!1 &1188363306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1871,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1168517957}
         m_TargetAssemblyTypeName: GridBuildingSystem, Assembly-CSharp
-        m_MethodName: ChangeGhost
+        m_MethodName: ChangeGhostObject
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2370,7 +2374,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1168517957}
         m_TargetAssemblyTypeName: GridBuildingSystem, Assembly-CSharp
-        m_MethodName: ChangeGhost
+        m_MethodName: ChangeGhostObject
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

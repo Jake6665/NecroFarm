@@ -15,6 +15,12 @@ public class GridBuildingSystem : MonoBehaviour {
     private bool plantingState = false;
     [SerializeField]
     private GameObject gameManager;
+    [SerializeField]
+    private List<GameObject> ghostObjectList;
+    private GameObject ghostObject;
+    private GameObject heldGhost;
+    private Vector3 ghostPOS;
+    private float ghostCellSize;
     private void Awake()
     {
         Instance = this;
@@ -24,6 +30,7 @@ public class GridBuildingSystem : MonoBehaviour {
 
         //Individual cell size
         float cellSize = 2f;
+        ghostCellSize = cellSize;
         grid = new GridXZ<GridObject>(gridWidth, gridHeight, cellSize, Vector3.zero, (GridXZ<GridObject> g, int x, int z) => new GridObject(g,x,z));
 
         scriptableObject = null;
@@ -76,6 +83,15 @@ public class GridBuildingSystem : MonoBehaviour {
     {
         if (plantingState)
         {
+            if (heldGhost.scene.IsValid() && heldGhost != null)
+            {          
+
+                ghostPOS.x = Mathf.Floor(Mouse3D.GetMouseWorldPosition().x / ghostCellSize) * ghostCellSize + ghostCellSize/2;
+                ghostPOS.y = Mathf.Floor(Mouse3D.GetMouseWorldPosition().y / ghostCellSize) * ghostCellSize;
+                ghostPOS.z = Mathf.Floor(Mouse3D.GetMouseWorldPosition().z / ghostCellSize) * ghostCellSize + ghostCellSize /2;
+
+                heldGhost.transform.position = ghostPOS;
+            }
             //Place Object on gird
             if (Input.GetMouseButtonDown(0) && scriptableObject != null)
             {
@@ -173,6 +189,13 @@ public class GridBuildingSystem : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Alpha3)) { scriptableObject = scriptableObjectList[2]; }
 
         }
+        else
+        {
+            if (heldGhost.scene.IsValid())
+            {
+                Destroy(heldGhost);
+            }
+        }
 
     }
 
@@ -223,6 +246,13 @@ public class GridBuildingSystem : MonoBehaviour {
             plantingState = true;
         }
 
+    }
+
+    public void ChangeGhostObject(int i )
+    {
+        Destroy(heldGhost);
+        ghostObject = ghostObjectList[i];
+        heldGhost = Instantiate(ghostObject, Mouse3D.GetMouseWorldPosition(), Quaternion.identity);
     }
 
 }
