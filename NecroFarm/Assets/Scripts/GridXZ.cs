@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using CodeMonkey;
 
 public class GridXZ<GridObject> {
 
@@ -33,7 +34,7 @@ public class GridXZ<GridObject> {
         }
 
         //Toggle to visualize the grid and see what objects claim what spaces on the grid.
-        bool showDebug = false;
+        bool showDebug = true;
         if (showDebug) {
             TextMesh[,] debugTextArray = new TextMesh[width, height];
 
