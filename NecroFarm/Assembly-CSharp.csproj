@@ -51,7 +51,11 @@
      <Compile Include="Assets\Scripts\Testing.cs" />
      <Compile Include="Assets\Scripts\UtilsClass.cs" />
      <Compile Include="Assets\Scripts\GridBuildingSystem.cs" />
+<<<<<<< Updated upstream
      <Compile Include="Assets\Scripts\PathfindingScript.cs" />
+=======
+     <Compile Include="Assets\Scripts\Pathfinding.cs" />
+>>>>>>> Stashed changes
      <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
      <Compile Include="Assets\Scripts\Mouse3D.cs" />
      <Compile Include="Assets\Scripts\PathNode.cs" />

@@ -9,8 +9,13 @@ using UnityEngine.EventSystems;
 public class PathNode
 {
     private GridXZ<PathNode> grid;
+<<<<<<< Updated upstream
     private int y;
     private int x;
+=======
+    public int x;
+    public int z;
+>>>>>>> Stashed changes
 
     public int gCost;
     public int hCost;
@@ -18,11 +23,19 @@ public class PathNode
 
     public PathNode cameFromNode;
 
+<<<<<<< Updated upstream
     public PathNode(GridXZ<PathNode>, grid, int x, int y)
     {
         this.grid = grid;
         this.x = x;
         this.y = y;
+=======
+    public PathNode(GridXZ<PathNode> grid, int x, int z)
+    {
+        this.grid = grid;
+        this.x = x;
+        this.z = z;
+>>>>>>> Stashed changes
     }
 
     public void CalculateFCost()
@@ -32,6 +45,10 @@ public class PathNode
 
     public override string ToString()
     {
+<<<<<<< Updated upstream
         return x + "," + y;
+=======
+        return x + "," + z;
+>>>>>>> Stashed changes
     }
 }
