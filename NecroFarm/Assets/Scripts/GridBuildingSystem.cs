@@ -19,6 +19,7 @@ public class GridBuildingSystem : MonoBehaviour {
     private List<GameObject> ghostObjectList;
     private GameObject ghostObject;
     private GameObject heldGhost;
+    private String ghostName = null;
     private Vector3 ghostPOS;
     private float ghostCellSize;
     private void Awake()
@@ -31,8 +32,7 @@ public class GridBuildingSystem : MonoBehaviour {
         //Individual cell size
         float cellSize = 2f;
         ghostCellSize = cellSize;
-        grid = new GridXZ<GridObject>(gridWidth, gridHeight, cellSize, Vector3.zero, (GridXZ<GridObject> g, int x, int z) => new GridObject(g,x,z));
-
+        grid = new GridXZ<GridObject>(gridWidth, gridHeight, cellSize, Vector3.zero, (GridXZ<GridObject> g, int x, int z) => new GridObject(g,x,z));  
         scriptableObject = null;
     }
 
@@ -83,14 +83,14 @@ public class GridBuildingSystem : MonoBehaviour {
     {
         if (plantingState)
         {
-            if (heldGhost.scene.IsValid() && heldGhost != null)
-            {          
-
-                ghostPOS.x = Mathf.Floor(Mouse3D.GetMouseWorldPosition().x / ghostCellSize) * ghostCellSize + ghostCellSize/2;
-                ghostPOS.y = Mathf.Floor(Mouse3D.GetMouseWorldPosition().y / ghostCellSize) * ghostCellSize;
-                ghostPOS.z = Mathf.Floor(Mouse3D.GetMouseWorldPosition().z / ghostCellSize) * ghostCellSize + ghostCellSize /2;
-
-                heldGhost.transform.position = ghostPOS;
+            if (GameObject.Find(ghostName))
+            {
+                Vector3 ghostPOS = Mouse3D.GetMouseWorldPosition();
+                grid.GetXZ(ghostPOS, out int x, out int z);
+                Vector3 ghostdPosition = grid.GetWorldPosition(x, z);
+                ghostdPosition.x += ghostCellSize / 2;
+                ghostdPosition.z += ghostCellSize / 2;
+                heldGhost.transform.position = ghostdPosition;
             }
             //Place Object on gird
             if (Input.GetMouseButtonDown(0) && scriptableObject != null)
@@ -191,7 +191,7 @@ public class GridBuildingSystem : MonoBehaviour {
         }
         else
         {
-            if (heldGhost.scene.IsValid())
+            if (GameObject.Find(ghostName))
             {
                 Destroy(heldGhost);
             }
@@ -253,6 +253,7 @@ public class GridBuildingSystem : MonoBehaviour {
         Destroy(heldGhost);
         ghostObject = ghostObjectList[i];
         heldGhost = Instantiate(ghostObject, Mouse3D.GetMouseWorldPosition(), Quaternion.identity);
+        ghostName = heldGhost.name;
     }
 
 }
