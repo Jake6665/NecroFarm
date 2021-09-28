@@ -53,8 +53,8 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\RTS_Camera\Scripts\Editor\LayoutHelpers.cs" />
     <Compile Include="Assets\RTS_Camera\Scripts\Editor\RTS_CameraEditor.cs" />
+    <Compile Include="Assets\RTS_Camera\Scripts\Editor\LayoutHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

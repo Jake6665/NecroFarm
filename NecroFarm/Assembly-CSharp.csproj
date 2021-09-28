@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\cropGrowth.cs" />
+    <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
     <Compile Include="Assets\Scripts\UtilsClass.cs" />
     <Compile Include="Assets\Scripts\GridBuildingSystem.cs" />
     <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
@@ -65,7 +66,6 @@
     <Compile Include="Assets\Scripts\PlacedObject.cs" />
     <Compile Include="Assets\Scripts\playerEconomy.cs" />
     <Compile Include="Assets\Scripts\GridXZ.cs" />
-    <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
