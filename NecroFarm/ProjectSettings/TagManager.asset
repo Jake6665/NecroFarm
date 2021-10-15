@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Farmer
   - Well
+  - Zombie
+  - Spawn
+  - Ground
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -17,15 +21,15 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Spawn Button
   - 
   - 
   - Ghost
-  - Ground
+  - Ground Layer
   - 
   - 
-  - 
-  - 
+  - Character Unit
+  - Character Collision Blocker
   - 
   - 
   - 
