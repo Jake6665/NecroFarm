@@ -12,11 +12,15 @@ public class Switch_Character : MonoBehaviour
     public List<string> deselectedCharacters = new List<string>();
     public string selectedCharacter = "";
 
+    public Behaviour selected;
+
     void Start()
     {
         //myCharacter = "Capsule";
         selectedCharacter = "Capsule";
         deselectedCharacters[0] = "Not Empty";
+        selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+        selected.enabled = true;
     }
 
     void Update()
@@ -47,9 +51,20 @@ public class Switch_Character : MonoBehaviour
                         deselectedCharacters.RemoveAt(i);
                     }
                     GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
+                    selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
+                    selected.enabled = false;
                 }
             }
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
+            selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+            selected.enabled = true;
+        }
+
+        if (Input.GetMouseButtonDown (2))
+        {
+            GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
+            selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+            selected.enabled = false;
         }
     }
 }

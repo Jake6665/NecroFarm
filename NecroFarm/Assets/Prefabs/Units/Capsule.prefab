@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4369217992722172457}
   - component: {fileID: 4369217992722172456}
   - component: {fileID: 4369217992722172459}
+  - component: {fileID: 8549442579480234634}
   m_Layer: 17
   m_Name: Capsule
   m_TagString: Zombie
@@ -153,6 +154,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterCollider: {fileID: 4369217992722172462}
   characterBlockerCollider: {fileID: 4369217993142251114}
+--- !u!122 &8549442579480234634
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4369217992722172458}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 1.1
 --- !u!1 &4369217993142251109
 GameObject:
   m_ObjectHideFlags: 0

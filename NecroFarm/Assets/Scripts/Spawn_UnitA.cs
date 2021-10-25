@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class Spawn_UnitA : MonoBehaviour
 {
-    //public LayerMask whatCanBeClickedOn;
-
     public GameObject unitToSpawn;
 
-    //public int clickCount = 0;
+    public string pointName = "Cube_Button";
+
+    public Vector3 spawnPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnPosition = GameObject.Find(pointName).transform.position;
     }
 
-    void Update()
+    public void Update()
     {
         if (Input.GetMouseButtonDown (0))
         {
@@ -29,10 +29,9 @@ public class Spawn_UnitA : MonoBehaviour
             if (myRaycast && hitInfo.transform.gameObject.tag == "Spawn")
             {
                 Debug.Log("Spawning...");
-                Instantiate(unitToSpawn, transform.position, unitToSpawn.transform.rotation);
+                Instantiate(unitToSpawn, spawnPosition, unitToSpawn.transform.rotation);
                 unitToSpawn.name = ("Capsule" + Time.deltaTime);
             } 
         }
-        //clickCount++;
     }
 }

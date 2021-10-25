@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
      <Compile Include="Assets\Scripts\Spawn_UnitA.cs" />
      <Compile Include="Assets\Scripts\Mouse3D.cs" />
+     <Compile Include="Assets\Scripts\SpawnUnit.cs" />
      <Compile Include="Assets\cameraMovement.cs" />
      <Compile Include="Assets\farmerGrowth.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
