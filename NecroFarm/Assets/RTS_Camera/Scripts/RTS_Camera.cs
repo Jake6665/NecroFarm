@@ -32,8 +32,11 @@ namespace RTS_Cam
         #region Movement
 
         public float keyboardMovementSpeed = 5f; //speed with keyboard movement
+        public float startingSpeed = 16f;
         public float screenEdgeMovementSpeed = 3f; //spee with screen edge movement
         public float followingSpeed = 5f; //speed when following a target
+        public float settingsMoveFloat;
+        public float settingsZoomFloat;
         public float rotationSped = 3f;
         public float panningSpeed = 10f;
         public float mouseRotationSpeed = 10f;
@@ -49,6 +52,7 @@ namespace RTS_Cam
         public float minHeight = 15f; //minimnal height
         public float heightDampening = 5f; 
         public float keyboardZoomingSensitivity = 2f;
+        public float startingZoom = 100f;
         public float scrollWheelZoomingSensitivity = 25f;
 
         private float zoomPos = 0; //value in range (0, 1) used as t in Matf.Lerp
@@ -339,6 +343,38 @@ namespace RTS_Cam
             return 0f;
         }
 
+        public void ToggleScreenEdgeMovement()
+        {
+            if (useScreenEdgeInput)
+            {
+                useScreenEdgeInput = false;
+            }
+            else
+            {
+                useScreenEdgeInput = true;
+            }
+        }
+
+        public void SetCameraSpeed(float spd)
+        {
+            keyboardMovementSpeed = startingSpeed + 8 * spd;
+            screenEdgeMovementSpeed = startingSpeed + (8 * spd);
+            settingsMoveFloat = spd;
+    }
+        public void SetZoomSpeed(float spd)
+        {
+            scrollWheelZoomingSensitivity = startingZoom + (50 * spd);
+            settingsZoomFloat = spd;
+
+
+        }
+
+        public void ResetSettings()
+        {
+            keyboardMovementSpeed = startingSpeed;
+            screenEdgeMovementSpeed = startingSpeed;
+            scrollWheelZoomingSensitivity = startingZoom;
+        }
         #endregion
     }
 }
