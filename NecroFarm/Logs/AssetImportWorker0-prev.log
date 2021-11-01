@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 65468 MB
+OS: 'Windows 10 Home; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 8075 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,128 +11,114 @@ C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
+C:/Users/User/Documents/CSC 491/NecroFarm/NecroFarm
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55714
-Successfully changed project path to: C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
-C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
+56238
+Successfully changed project path to: C:/Users/User/Documents/CSC 491/NecroFarm/NecroFarm
+C:/Users/User/Documents/CSC 491/NecroFarm/NecroFarm
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 80.87 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm/Assets
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/CSC 491/NecroFarm/NecroFarm/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e82)
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
     Vendor:   
-    VRAM:     8010 MB
-    Driver:   27.21.14.5671
+    VRAM:     4037 MB
+    Driver:   27.20.100.8682
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003931 seconds.
+Registered in 0.002572 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
 Mono: successfully reloaded assembly
-- Completed reload, in  2.054 seconds
+- Completed reload, in  1.649 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2055ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (1649ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (932ms)
-			LoadAssemblies (89ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (590ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (219ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (448ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (225ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (236ms)
-				ProcessInitializeOnLoadMethodAttributes (105ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012485 seconds.
+Registered in 0.005169 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-log4net:ERROR Error while loading XML configuration
-System.Xml.XmlException: An error occurred while parsing EntityName. Line 3, position 33.
-  at System.Xml.XmlTextReaderImpl.Throw (System.Exception e) [0x00027] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.Throw (System.String res, System.Int32 lineNo, System.Int32 linePos) [0x00019] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.HandleEntityReference (System.Boolean isInAttributeValue, System.Xml.XmlTextReaderImpl+EntityExpandType expandType, System.Int32& charRefEndPos) [0x000c6] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow (System.Int32 curPos, System.Char quoteChar, System.Xml.XmlTextReaderImpl+NodeData attr) [0x002a5] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.ParseAttributes () [0x0039a] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.ParseElement () [0x001df] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.ParseElementContent () [0x0016f] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlTextReaderImpl.Read () [0x00085] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlLoader.LoadNode (System.Boolean skipOverWhitespace) [0x0025b] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlLoader.LoadDocSequence (System.Xml.XmlDocument parentDoc) [0x0001b] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlLoader.Load (System.Xml.XmlDocument doc, System.Xml.XmlReader reader, System.Boolean preserveWhitespace) [0x000b4] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at System.Xml.XmlDocument.Load (System.Xml.XmlReader reader) [0x0002e] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
-  at log4net.Config.XmlConfigurator.InternalConfigure (log4net.Repository.ILoggerRepository repository, System.IO.Stream configStream) [0x00063] in <e1a77b5dfa0c4a1f8ba616c017f5e0b8>:0 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.880 seconds
+- Completed reload, in  1.486 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1881ms)
-		BeginReloadAssembly (252ms)
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1533ms)
-			LoadAssemblies (120ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1209ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (411ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (733ms)
+			SetupTypeCache (364ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (551ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (127ms)
-				ProcessInitializeOnLoadAttributes (582ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (420ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1429 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1430 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 69.5 MB.
-System memory in use after: 69.4 MB.
+System memory in use after: 69.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1863.
-Total: 3.505700 ms (FindLiveObjects: 0.141400 ms CreateObjectMapping: 0.065200 ms MarkObjects: 3.160900 ms  DeleteObjects: 0.137000 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1864.
+Total: 4.430900 ms (FindLiveObjects: 0.419900 ms CreateObjectMapping: 0.140000 ms MarkObjects: 3.722500 ms  DeleteObjects: 0.145900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -146,305 +132,937 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Characters/Necromancer/NecromancerClothing.mat
-  artifactKey: Guid(bc8b51ec010e93d47882755c1bd52929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerClothing.mat using Guid(bc8b51ec010e93d47882755c1bd52929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a315ec255779875685cb3b8268c4c3a') in 0.193366 seconds 
-  Import took 0.196236 seconds .
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e373b5bf02748864990d422202dd8822') in 0.189533 seconds 
+  Import took 0.193575 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Characters/Necromancer/NecromancerSkin.mat
-  artifactKey: Guid(edf5d23123db132469d4d087df467730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerSkin.mat using Guid(edf5d23123db132469d4d087df467730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dab7fc4e814db507f0fd3bf8e004355') in 0.030636 seconds 
-  Import took 0.033310 seconds .
+  Time since last request: 0.000673 seconds.
+  path: Assets/Enviornment Models/House.fbx
+  artifactKey: Guid(139438ddb1744324591a9ccb3fa47c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/House.fbx using Guid(139438ddb1744324591a9ccb3fa47c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40601d290898dc04fba255c2af51d8e0') in 0.158802 seconds 
+  Import took 0.163140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Enviornment Models/Barn.fbx
+  artifactKey: Guid(a1d2124165ec4c94ea8d81148e94d88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/Barn.fbx using Guid(a1d2124165ec4c94ea8d81148e94d88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee89c31f2bec154879a9edb6576745bc') in 0.080696 seconds 
+  Import took 0.086300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e373b5bf02748864990d422202dd8822') in 0.019457 seconds 
+  Import took 0.024084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Enviornment Models
+  artifactKey: Guid(7dd85f5c961eac94fade995a6a8a72da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models using Guid(7dd85f5c961eac94fade995a6a8a72da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535285c9aed70a6122b490b0432707c9') in 0.009264 seconds 
+  Import took 0.013322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/CropModels/Carrot.prefab
+  artifactKey: Guid(e5a5707984ef1f74e877ea26e5e3a10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Carrot.prefab using Guid(e5a5707984ef1f74e877ea26e5e3a10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8ca2c638bdb53bd7f02298bad30664') in 0.048064 seconds 
+  Import took 0.053136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/CropModels/Corn.prefab
+  artifactKey: Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Corn.prefab using Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95bf49b1b06a4f789e6792dde1c8923') in 0.076750 seconds 
+  Import took 0.082296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/CropModels
+  artifactKey: Guid(d4bdc27b82df6d047b954ebc7c3b7478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels using Guid(d4bdc27b82df6d047b954ebc7c3b7478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6cab37ae27a1d10c9295e1ba11fe172') in 0.011051 seconds 
+  Import took 0.015857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/CropModels/Wheat.prefab
+  artifactKey: Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Wheat.prefab using Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01222ecb453f801cbd82550684f038a') in 0.117931 seconds 
+  Import took 0.129513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.401718 seconds.
+  path: Assets/CropModels/FenceTextures
+  artifactKey: Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures using Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3400d2aff6efcfc38165f2b1b50626') in 0.013006 seconds 
+  Import took 0.016754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.523056 seconds.
+  path: Assets/CropModels/Fence1.fbx
+  artifactKey: Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence1.fbx using Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd91603928131d180bb2786b6703e471') in 0.083470 seconds 
+  Import took 0.089312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/CropModels/Fence2.fbx
+  artifactKey: Guid(b55e8cd620afc3b499be5d57f8dc674e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence2.fbx using Guid(b55e8cd620afc3b499be5d57f8dc674e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c904c21fbbe8ff3fd024423ad36a18c9') in 0.027553 seconds 
+  Import took 0.030300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/CropModels/Fence3.fbx
+  artifactKey: Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence3.fbx using Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2d77960a236eae98c49d8c46818c41') in 0.028694 seconds 
+  Import took 0.031988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.267632 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7376e16fdc341aee3c1286a7e6311b2') in 0.032801 seconds 
+  Import took 0.038506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.209126 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9270e7823c5ebeca4a79dffef6350149') in 0.032109 seconds 
+  Import took 0.043723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.563264 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d1c7d898acdbe629c01b43f040a451') in 0.032686 seconds 
+  Import took 0.036564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.784825 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31475cd7dfd0de4fa291d0588d4a15f') in 0.016738 seconds 
+  Import took 0.022218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.617827 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf0acbedb73dd729958cbeccfe8d3dc') in 0.029094 seconds 
+  Import took 0.036857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.945035 seconds.
+  path: Assets/CropModels/FenceTextures
+  artifactKey: Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures using Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35dba12b23f9954a4ff8e1ba6ce54eaa') in 0.003429 seconds 
+  Import took 0.006527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001895 seconds.
+  path: Assets/CropModels/FenceTextures
+  artifactKey: Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures using Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35dba12b23f9954a4ff8e1ba6ce54eaa') in 0.004833 seconds 
+  Import took 0.007965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064829 seconds.
+  path: Assets/CropModels/FenceTextures/Fence1_Stage1_MaskMap.png
+  artifactKey: Guid(4b94159f5eb7f434589b1853eef5464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence1_Stage1_MaskMap.png using Guid(4b94159f5eb7f434589b1853eef5464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e39895533f7ac38544a522ddbc729d') in 0.057427 seconds 
+  Import took 0.061009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/CropModels/FenceTextures/Fence2_Stage2_MaskMap.png
+  artifactKey: Guid(e65ba1121f2af2a4e99a8477c2ebea1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence2_Stage2_MaskMap.png using Guid(e65ba1121f2af2a4e99a8477c2ebea1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304312e94a04e0ef370ac598873e6457') in 0.041552 seconds 
+  Import took 0.045483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/CropModels/FenceTextures/Fence1_Stage1_Normal.png
+  artifactKey: Guid(60fd18087d4a5dd428f3e6e3c87384b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence1_Stage1_Normal.png using Guid(60fd18087d4a5dd428f3e6e3c87384b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6176017f8623694c46d9f7a0d5800ebe') in 0.027284 seconds 
+  Import took 0.032739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/CropModels/FenceTextures/Fence2_Stage2_Normal.png
+  artifactKey: Guid(91df5c32fa30f944e889a652eae11e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence2_Stage2_Normal.png using Guid(91df5c32fa30f944e889a652eae11e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275d4a175684260fec8fb5aebb2cb579') in 0.035726 seconds 
+  Import took 0.040884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000656 seconds.
+  path: Assets/CropModels/FenceTextures/Fence3_Stage3_Normal.png
+  artifactKey: Guid(ce2d1d27a7f8fc2418b0d39249a396ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence3_Stage3_Normal.png using Guid(ce2d1d27a7f8fc2418b0d39249a396ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c64837f01d56d6d6fcb9c47aa24b3a') in 0.035758 seconds 
+  Import took 0.043335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/CropModels/FenceTextures/Fence3_Stage3_MaskMap.png
+  artifactKey: Guid(c47810a6b561f8c4487df09c1a2474b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence3_Stage3_MaskMap.png using Guid(c47810a6b561f8c4487df09c1a2474b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e006171f2b8953aa96a722695c82f0da') in 0.040838 seconds 
+  Import took 0.049134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png
+  artifactKey: Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png using Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60f3a684d8047868416dc2246cbf2c2') in 0.032364 seconds 
+  Import took 0.036431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.584239 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_STage1.mat
+  artifactKey: Guid(26826d3a051ae1641ad8d1c36aa18941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_STage1.mat using Guid(26826d3a051ae1641ad8d1c36aa18941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20b496af4304e1dcde9dbbb813b63f9') in 0.040959 seconds 
+  Import took 0.046547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.906963 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Stage1.mat
+  artifactKey: Guid(26826d3a051ae1641ad8d1c36aa18941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Stage1.mat using Guid(26826d3a051ae1641ad8d1c36aa18941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0447a996dc567ce8e42c21b9182b8c78') in 0.034276 seconds 
+  Import took 0.038317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.947105 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Stage2.mat
+  artifactKey: Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Stage2.mat using Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f9beffcbc18d611c64f3976d9d949d') in 0.038680 seconds 
+  Import took 0.045457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.686491 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Stage3.mat
+  artifactKey: Guid(99eecf8a2ab3fc44cb34bb6fca685b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Stage3.mat using Guid(99eecf8a2ab3fc44cb34bb6fca685b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0e46db62f8b69571b232c649f3224c') in 0.028585 seconds 
+  Import took 0.032136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.479292 seconds.
+  path: Assets/CropModels/FenceTextures/Fence1_Stage1_Normal.png
+  artifactKey: Guid(60fd18087d4a5dd428f3e6e3c87384b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence1_Stage1_Normal.png using Guid(60fd18087d4a5dd428f3e6e3c87384b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f039503321f92bd1cb9bd1c4cd01d35') in 0.409828 seconds 
+  Import took 0.413891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.854010 seconds.
+  path: Assets/CropModels/FenceTextures/Fence2_Stage2_Normal.png
+  artifactKey: Guid(91df5c32fa30f944e889a652eae11e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence2_Stage2_Normal.png using Guid(91df5c32fa30f944e889a652eae11e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3462e66fe206d79557cbc993e31c4f14') in 0.036788 seconds 
+  Import took 0.041213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.257314 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png
+  artifactKey: Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png using Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b05d6222072e4a68dd1caacb5819b5c') in 0.031135 seconds 
+  Import took 0.036034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.679877 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage1.mat
+  artifactKey: Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage1.mat using Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd5952d4e7dfe25dcba98533736f6532') in 0.033742 seconds 
+  Import took 0.038715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.370322 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage3.mat
+  artifactKey: Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage3.mat using Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf38517f9677c134fe13c7be5645959') in 0.030372 seconds 
+  Import took 0.036905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.280321 seconds.
+  path: Assets/CropModels/FenceTextures/Fence3_Stage3_Normal.png
+  artifactKey: Guid(ce2d1d27a7f8fc2418b0d39249a396ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence3_Stage3_Normal.png using Guid(ce2d1d27a7f8fc2418b0d39249a396ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4038d95b5beffd318afff01177cf502') in 0.044324 seconds 
+  Import took 0.050927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.548437 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnStone.mat
+  artifactKey: Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnStone.mat using Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf8a2d0b2381d3e5e86c0ef0a8ad813') in 0.071689 seconds 
+  Import took 0.075600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/CropModels/CornTextures/CornStage1.mat
+  artifactKey: Guid(12c0e747deec6314fb0c9ea242213654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CornTextures/CornStage1.mat using Guid(12c0e747deec6314fb0c9ea242213654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35a39f4be975f2b606ea3529a1f0398') in 0.029519 seconds 
+  Import took 0.036516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnStone.mat
+  artifactKey: Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnStone.mat using Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf8a2d0b2381d3e5e86c0ef0a8ad813') in 0.044388 seconds 
+  Import took 0.050838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/CropModels/CarrotTextuers/CarrotStage2.mat
+  artifactKey: Guid(e60129262dd5d78489127124eb58cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CarrotTextuers/CarrotStage2.mat using Guid(e60129262dd5d78489127124eb58cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb14ffc1a73522f8f5eb8affbcfeebd') in 0.041218 seconds 
+  Import took 0.047940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnWood.mat
+  artifactKey: Guid(fc5e180b028b3cb4c8d107b3ccdf0ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnWood.mat using Guid(fc5e180b028b3cb4c8d107b3ccdf0ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaed3a85de3bd4478e8ca3527145047') in 0.053385 seconds 
+  Import took 0.057697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/CropModels/CarrotTextuers/CarrotStage1.mat
+  artifactKey: Guid(6eec4cd9d22aaa44397d9f907970adae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CarrotTextuers/CarrotStage1.mat using Guid(6eec4cd9d22aaa44397d9f907970adae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48204d4c6da14c1755523eedea2df2a1') in 0.037582 seconds 
+  Import took 0.045823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/CropModels/CarrotTextuers/CarrotStage3.mat
+  artifactKey: Guid(866ad3972fcbbd44ba39d08badab2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CarrotTextuers/CarrotStage3.mat using Guid(866ad3972fcbbd44ba39d08badab2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971ec26839854afceeebec5f869a238b') in 0.032089 seconds 
+  Import took 0.039844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/CropModels/CornTextures/CornField.mat
+  artifactKey: Guid(f3e3c6a8fa58f2b47904f1b895e1613a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CornTextures/CornField.mat using Guid(f3e3c6a8fa58f2b47904f1b895e1613a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17718a56f7137cf43eaf6936b8fd2938') in 0.045707 seconds 
+  Import took 0.050294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/CropModels/CarrotTextuers/CarrotField.mat
+  artifactKey: Guid(084b1917890c22e44ba0dae6303cc5b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CarrotTextuers/CarrotField.mat using Guid(084b1917890c22e44ba0dae6303cc5b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb19a12624d4b7780b7566b72f03438') in 0.044800 seconds 
+  Import took 0.049678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013294 seconds.
+  path: Assets/CropModels/CornTextures/CornField.mat
+  artifactKey: Guid(f3e3c6a8fa58f2b47904f1b895e1613a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/CornTextures/CornField.mat using Guid(f3e3c6a8fa58f2b47904f1b895e1613a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17718a56f7137cf43eaf6936b8fd2938') in 0.054958 seconds 
+  Import took 0.059383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.657476 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487256cef53398722f8a66a7f4358ece') in 0.032568 seconds 
+  Import took 0.039267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/CropModels/Fence1.fbx
+  artifactKey: Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence1.fbx using Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c1087b1d33fc6f069ca5a892d5206e') in 0.034991 seconds 
+  Import took 0.041059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003912 seconds.
+  path: Assets/CropModels/Fence1.fbx
+  artifactKey: Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence1.fbx using Guid(5689abb460c315c458cb1267f44f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c1087b1d33fc6f069ca5a892d5206e') in 0.021719 seconds 
+  Import took 0.031189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.075584 seconds.
+  path: Assets/CropModels/WheatTextures
+  artifactKey: Guid(5287f57d5a7cde74e9a6198a28225f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures using Guid(5287f57d5a7cde74e9a6198a28225f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cea367a0e5d32bdf4ba38c03e15f45') in 0.012339 seconds 
+  Import took 0.015506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063971 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Field_BaseMap.png
+  artifactKey: Guid(53e4b425c12dc524fbe46bd0d8bc81ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Field_BaseMap.png using Guid(53e4b425c12dc524fbe46bd0d8bc81ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844971147d419fc6366db58d43f799e6') in 0.019908 seconds 
+  Import took 0.023169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_MaskMap.png
+  artifactKey: Guid(8d81abeb9126ebf488b68749636e5d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_MaskMap.png using Guid(8d81abeb9126ebf488b68749636e5d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92def5bf458e67ce9fd0aeef927fa6b8') in 0.040718 seconds 
+  Import took 0.046053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_Normal.png
+  artifactKey: Guid(862b425ec668b5f4b85fb7802dcf4845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_Normal.png using Guid(862b425ec668b5f4b85fb7802dcf4845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36536121f54071b532f0a4143dadc6e9') in 0.047029 seconds 
+  Import took 0.052891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Field_Normal.png
+  artifactKey: Guid(4f27144dc39d2d242a7ef3486d20e38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Field_Normal.png using Guid(4f27144dc39d2d242a7ef3486d20e38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee4c1eb054b3a20085ce6b08bb1344a') in 0.029990 seconds 
+  Import took 0.037340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000745 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_MaskMap.png
+  artifactKey: Guid(a4432e6d8ceeba844a43b3ab61db678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_MaskMap.png using Guid(a4432e6d8ceeba844a43b3ab61db678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521782c6be0e42cd986b1107c3bd1813') in 0.032708 seconds 
+  Import took 0.040011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_BaseMap.png
+  artifactKey: Guid(18cc584205ad77745a4d7110c7ef6f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_BaseMap.png using Guid(18cc584205ad77745a4d7110c7ef6f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810e9198165ce207a5e1b26462668f2b') in 0.033974 seconds 
+  Import took 0.041299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001276 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Field_MaskMap.png
+  artifactKey: Guid(5cda56bcc1d434340a5c5e079a309d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Field_MaskMap.png using Guid(5cda56bcc1d434340a5c5e079a309d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3414a697d721edb9b01925f3bf5f0a9') in 0.035706 seconds 
+  Import took 0.040531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_Normal.png
+  artifactKey: Guid(4a77061d1f265a845a78e0d37e9af161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_Normal.png using Guid(4a77061d1f265a845a78e0d37e9af161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d5ad0212091debf98ce13724e8c761') in 0.044269 seconds 
+  Import took 0.050082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/CropModels/WheatTextures/WheatStage1.mat
+  artifactKey: Guid(bc48467ff40b3534785bc0985c90cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/WheatStage1.mat using Guid(bc48467ff40b3534785bc0985c90cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ddd8dc27db571d675a6300f00bb74c') in 0.059207 seconds 
+  Import took 0.063608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_BaseMap.png
+  artifactKey: Guid(f7a4ad52d7fa761469f7173b53d546e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage3_BaseMap.png using Guid(f7a4ad52d7fa761469f7173b53d546e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5851b3e77a2684756b2582314a0c94ad') in 0.026172 seconds 
+  Import took 0.030820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_Normal.png
+  artifactKey: Guid(42e6efc6720a2d441ac0b0f2fe81d6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage1_Normal.png using Guid(42e6efc6720a2d441ac0b0f2fe81d6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b8675d406b046680eb43e85214148a') in 0.029960 seconds 
+  Import took 0.041510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/CropModels/WheatTextures/WheatFiedl.mat
+  artifactKey: Guid(652b47353f147824dab15e1989664b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/WheatFiedl.mat using Guid(652b47353f147824dab15e1989664b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ba23d00c3941f3f5e06b091934282d') in 0.061180 seconds 
+  Import took 0.067875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000604 seconds.
+  path: Assets/CropModels/WheatTextures/WheatStage2.mat
+  artifactKey: Guid(a7f0462167dbc7c438640ca0bee45716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/WheatStage2.mat using Guid(a7f0462167dbc7c438640ca0bee45716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a568ef922e4cc88b40985f6f1f42d3b') in 0.076578 seconds 
+  Import took 0.081217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/CropModels/WheatTextures/WheatStage3.mat
+  artifactKey: Guid(614aa7df2753d914196a5ed3bc7d53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/WheatStage3.mat using Guid(614aa7df2753d914196a5ed3bc7d53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152616b7ca7af237d475135df3476944') in 0.062592 seconds 
+  Import took 0.068623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_MaskMap.png
+  artifactKey: Guid(a66dcf12cfef2ea4480601f04c5c0ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_MaskMap.png using Guid(a66dcf12cfef2ea4480601f04c5c0ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff0e8f1e15a04f79c208ddc87a29077') in 0.038326 seconds 
+  Import took 0.045133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000772 seconds.
+  path: Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_BaseMap.png
+  artifactKey: Guid(cabbd3938f2b3c946bdac0f17b978c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/WheatTextures/Wheat_Wheat_Stage2_BaseMap.png using Guid(cabbd3938f2b3c946bdac0f17b978c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0cc523e78d88c29b2c1f7aa2ae92a0') in 0.037777 seconds 
+  Import took 0.047144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.781605 seconds.
+  path: Assets/Enviornment Models/HouseTextures
+  artifactKey: Guid(f96d6b8d5a0cd1445ae4327c1a2c067c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures using Guid(f96d6b8d5a0cd1445ae4327c1a2c067c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8c0eaf765fe8de7d1be9ca0c0bcb5c') in 0.010919 seconds 
+  Import took 0.014410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063578 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseCanvas_BaseMap.png
+  artifactKey: Guid(484ba5b60f928f1408a045552722e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseCanvas_BaseMap.png using Guid(484ba5b60f928f1408a045552722e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcebcdac3bda4625522ff5d7d5099f89') in 0.014817 seconds 
+  Import took 0.018304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseStone_BaseMap.png
+  artifactKey: Guid(8013ad050e624f64bb043fb2facad3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseStone_BaseMap.png using Guid(8013ad050e624f64bb043fb2facad3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31a25d70e539b1dd4c11fcff5ba8abb') in 0.021006 seconds 
+  Import took 0.024157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000700 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseCanvas_Normal.png
+  artifactKey: Guid(dd5fbbf6f2022634d9b239eb8ffa2060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseCanvas_Normal.png using Guid(dd5fbbf6f2022634d9b239eb8ffa2060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68303c8cf643bf67e4a08eff7cda3692') in 0.026993 seconds 
+  Import took 0.030866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseWood_BaseMap.png
+  artifactKey: Guid(e561933f86c7dcf41a8f4202da03494d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseWood_BaseMap.png using Guid(e561933f86c7dcf41a8f4202da03494d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5179b2280b54d3cd99a7c0ffc0058d91') in 0.038378 seconds 
+  Import took 0.042962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseStone_Normal.png
+  artifactKey: Guid(eb7819fa864b88d4e814d9ba82c8cb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseStone_Normal.png using Guid(eb7819fa864b88d4e814d9ba82c8cb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc54052f76942b295684c5504f70ab95') in 0.017924 seconds 
+  Import took 0.021822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Enviornment Models/HouseTextures/HouseCanvas.mat
+  artifactKey: Guid(ef0a1d329ff7387479d0022b2131777b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/HouseCanvas.mat using Guid(ef0a1d329ff7387479d0022b2131777b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2389647eea3a6a223634c00474a75e2') in 0.050587 seconds 
+  Import took 0.056587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseCanvas_MaskMap.png
+  artifactKey: Guid(a2da3e7f405bf0b4d8f8213fdd328684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseCanvas_MaskMap.png using Guid(a2da3e7f405bf0b4d8f8213fdd328684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a558760ff8b42955788707bd68ffb57e') in 0.027143 seconds 
+  Import took 0.036083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000542 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseWood_Normal.png
+  artifactKey: Guid(371b5f49958107341a5deb3b9a4a947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseWood_Normal.png using Guid(371b5f49958107341a5deb3b9a4a947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7c22555ab6a7a2acad955533b1fc4d') in 0.033804 seconds 
+  Import took 0.039007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseStone_MaskMap.png
+  artifactKey: Guid(956d3477aa9a31547b8be2ef2667cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseStone_MaskMap.png using Guid(956d3477aa9a31547b8be2ef2667cca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac55ed1a9e2ced5c9d0dd774ee3a66a') in 0.044336 seconds 
+  Import took 0.048435 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000276 seconds.
-  path: Assets/Characters/Necromancer/Necromancer3.fbx
-  artifactKey: Guid(9907c25f09315ac42a16368103b88437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer3.fbx using Guid(9907c25f09315ac42a16368103b88437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e261d2b35df4e8529fc244b17a3370b8') in 0.164561 seconds 
-  Import took 0.170488 seconds .
+  path: Assets/Enviornment Models/HouseTextures/HouseStone.mat
+  artifactKey: Guid(e55ac598680a4664d824cb52ef933af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/HouseStone.mat using Guid(e55ac598680a4664d824cb52ef933af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd66cbcf7dfd13c31aa0f0e2c5b513312') in 0.041479 seconds 
+  Import took 0.045513 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000520 seconds.
-  path: Assets/Characters/Necromancer
-  artifactKey: Guid(84b4a8b56e65b1f4a826201ac0dc6d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer using Guid(84b4a8b56e65b1f4a826201ac0dc6d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51714a1af3c3319ad9972504a7bac93f') in 0.013557 seconds 
-  Import took 0.016092 seconds .
+  Time since last request: 0.000353 seconds.
+  path: Assets/Enviornment Models/HouseTextures/House_HouseWood_MaskMap.png
+  artifactKey: Guid(ad165fdf9ffca9b45abcf3f139cc0799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/House_HouseWood_MaskMap.png using Guid(ad165fdf9ffca9b45abcf3f139cc0799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d8ff36185ad03aeffc15481e4a786c') in 0.027797 seconds 
+  Import took 0.033609 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/CropModels
-  artifactKey: Guid(d4bdc27b82df6d047b954ebc7c3b7478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels using Guid(d4bdc27b82df6d047b954ebc7c3b7478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a62a3e93c4cfb5a9d40458f441a856') in 0.008793 seconds 
-  Import took 0.011370 seconds .
+  Time since last request: 0.000379 seconds.
+  path: Assets/Enviornment Models/HouseTextures/Housewood.mat
+  artifactKey: Guid(15197a604b8b667439b974a67576f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/HouseTextures/Housewood.mat using Guid(15197a604b8b667439b974a67576f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353a47bf900118d8073f2f93d0c730ad') in 0.044239 seconds 
+  Import took 0.049514 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/Characters/Necromancer/NecromancerStaff.mat
-  artifactKey: Guid(ac7812af57426ff41bedde85846a3017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerStaff.mat using Guid(ac7812af57426ff41bedde85846a3017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c6e3934a3d2a6e14a46d85cc135ad6') in 0.019120 seconds 
-  Import took 0.022841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Characters
-  artifactKey: Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters using Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33edbf6951d8722384d54b87a9cd4ca4') in 0.006899 seconds 
-  Import took 0.009563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.613159 seconds.
-  path: Assets/CropModels/Models
-  artifactKey: Guid(fec0fef6afebb62488f078d1d43c33a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models using Guid(fec0fef6afebb62488f078d1d43c33a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630a4abc31855c889008ecf89d294c99') in 0.007353 seconds 
-  Import took 0.010264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.154518 seconds.
-  path: Assets/CropModels/Models/Carrot.fbx
-  artifactKey: Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Carrot.fbx using Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9d5572b03e1955cdce4d9bf5ba0816') in 0.086979 seconds 
-  Import took 0.090528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/CropModels/Models/Corn.fbx
-  artifactKey: Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Corn.fbx using Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4121fd0fb2da68d42a9f8bb5569acf') in 0.082812 seconds 
-  Import took 0.085719 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.060412 seconds.
-  path: Assets/CropModels/Models/Fence.blend
-  artifactKey: Guid(178e0d72c9e0b814db192ed556ac78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.blend using Guid(178e0d72c9e0b814db192ed556ac78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190033b2ed2424678162a2a46d33aaff') in 0.005410 seconds 
-  Import took 0.008300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009122 seconds.
-  path: Assets/CropModels/Models/Fence.blend
-  artifactKey: Guid(178e0d72c9e0b814db192ed556ac78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.blend using Guid(178e0d72c9e0b814db192ed556ac78e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190033b2ed2424678162a2a46d33aaff') in 0.002692 seconds 
-  Import took 0.005410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.932796 seconds.
-  path: Assets/CropModels/Models/Wheat.blend
-  artifactKey: Guid(81b20063be7694045ac55b45199c9b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Wheat.blend using Guid(81b20063be7694045ac55b45199c9b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b3305fd1114fe7aa7e97a21158d144') in 0.007377 seconds 
-  Import took 0.010410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.692162 seconds.
-  path: Assets/CropModels/Models/Fence.fbx
-  artifactKey: Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.fbx using Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef9686f9d9e5d07b303658537e98f66') in 0.031871 seconds 
-  Import took 0.035474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005239 seconds.
-  path: Assets/CropModels/Models/Fence.fbx
-  artifactKey: Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.fbx using Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef9686f9d9e5d07b303658537e98f66') in 0.025892 seconds 
-  Import took 0.028840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.029334 seconds.
-  path: Assets/CropModels/Models/Wheat.fbx
-  artifactKey: Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Wheat.fbx using Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c1ac98e4301d1824627b7e05cde1ee') in 0.094897 seconds 
-  Import took 0.102591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.392553 seconds.
-  path: Assets/CropModels/WheatTextures/WheatFiedl.mat
-  artifactKey: Guid(652b47353f147824dab15e1989664b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/WheatTextures/WheatFiedl.mat using Guid(652b47353f147824dab15e1989664b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88374745d0d6b3e9aaf2c8f64aedd2b1') in 0.110742 seconds 
-  Import took 0.116401 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000716 seconds.
-  path: Assets/CropModels/WheatTextures/WheatStage1.mat
-  artifactKey: Guid(bc48467ff40b3534785bc0985c90cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/WheatTextures/WheatStage1.mat using Guid(bc48467ff40b3534785bc0985c90cf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb8988893c7f7d4858e49bb13711869') in 0.103635 seconds 
-  Import took 0.109474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000514 seconds.
-  path: Assets/CropModels/WheatTextures/WheatStage2.mat
-  artifactKey: Guid(a7f0462167dbc7c438640ca0bee45716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/WheatTextures/WheatStage2.mat using Guid(a7f0462167dbc7c438640ca0bee45716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf53364d7f583493a00377096273cd6') in 0.073427 seconds 
-  Import took 0.076081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000472 seconds.
-  path: Assets/CropModels/WheatTextures/WheatStage3.mat
-  artifactKey: Guid(614aa7df2753d914196a5ed3bc7d53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/WheatTextures/WheatStage3.mat using Guid(614aa7df2753d914196a5ed3bc7d53ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8184f98ff7f63e087bcce87c368a426b') in 0.081849 seconds 
-  Import took 0.084488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.018850 seconds.
-  path: Assets/CropModels/Models/Wheat.fbx
-  artifactKey: Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Wheat.fbx using Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f4a32667fbc58e2be045a97f7e6214') in 0.142449 seconds 
-  Import took 0.148796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.818911 seconds.
-  path: Assets/CropModels/Wheat.prefab
-  artifactKey: Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Wheat.prefab using Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09959a4fb109e1037c860fbaaab0bb38') in 0.038635 seconds 
-  Import took 0.043328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000608 seconds.
-  path: Assets/CropModels/Wheat.prefab
-  artifactKey: Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Wheat.prefab using Guid(86fe964a01cf6df459021e28c8eb31f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09959a4fb109e1037c860fbaaab0bb38') in 0.036834 seconds 
-  Import took 0.044429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.491492 seconds.
-  path: Assets/CropModels/Models/Carrot.fbx
-  artifactKey: Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Carrot.fbx using Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303d661de042a7d7194da54c5fe6b2fe') in 0.100877 seconds 
-  Import took 0.105581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.178740 seconds.
+  Time since last request: 23.856147 seconds.
   path: Assets/Mats/farmerMat.mat
   artifactKey: Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mats/farmerMat.mat using Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bffd6ae12761840856c30f222fc9cc2') in 0.022782 seconds 
-  Import took 0.026712 seconds .
+Start importing Assets/Mats/farmerMat.mat using Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bffd6ae12761840856c30f222fc9cc2') in 0.023507 seconds 
+  Import took 0.028473 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008736 seconds.
+  Time since last request: 0.000591 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - BigTitle.mat
+  artifactKey: Guid(6e4d4559e3a41e6418dcb05af2664e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - BigTitle.mat using Guid(6e4d4559e3a41e6418dcb05af2664e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15b6503e0a58b559367e5032b726635') in 0.089331 seconds 
+  Import took 0.098539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
   path: Assets/Mats/farmerMat.mat
   artifactKey: Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mats/farmerMat.mat using Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bffd6ae12761840856c30f222fc9cc2') in 0.012301 seconds 
-  Import took 0.015325 seconds .
+Start importing Assets/Mats/farmerMat.mat using Guid(d79ad68a8b24b1d4db2870cf0e121785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bffd6ae12761840856c30f222fc9cc2') in 0.025614 seconds 
+  Import took 0.031848 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.203248 seconds.
-  path: Assets/CropModels/Models/Corn.fbx
-  artifactKey: Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Corn.fbx using Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5aa07386e9a89621fd61cda30642dff') in 0.107846 seconds 
-  Import took 0.112205 seconds .
+  Time since last request: 0.000281 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e143054b8876423854b9930d83538af4') in 0.076692 seconds 
+  Import took 0.084112 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.219409 seconds.
-  path: Assets/CropModels/Corn.prefab
-  artifactKey: Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Corn.prefab using Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c414705e8e846a25e44f260ba31d8a15') in 0.035572 seconds 
-  Import took 0.039189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003444 seconds.
-  path: Assets/CropModels/Corn.prefab
-  artifactKey: Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Corn.prefab using Guid(2a47733a3e487ad4baa70bd7888483a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c414705e8e846a25e44f260ba31d8a15') in 0.024545 seconds 
-  Import took 0.028177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.261704 seconds.
-  path: Assets/CropModels/Carrot.prefab
-  artifactKey: Guid(e5a5707984ef1f74e877ea26e5e3a10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Carrot.prefab using Guid(e5a5707984ef1f74e877ea26e5e3a10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3525bb2098bd1377fb486c65fe421f44') in 0.029369 seconds 
-  Import took 0.034047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.079980 seconds.
-  path: Assets/CropModels/FenceTextures
-  artifactKey: Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/FenceTextures using Guid(8a5aa8a7cfa5c1949827c151c4f8f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35dba12b23f9954a4ff8e1ba6ce54eaa') in 0.008504 seconds 
-  Import took 0.011474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.052896 seconds.
-  path: Assets/CropModels/FenceTextures/Fence.mat
-  artifactKey: Guid(256e52209cddc4442b3be415a5ea1384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/FenceTextures/Fence.mat using Guid(256e52209cddc4442b3be415a5ea1384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faafc1c5f017405ea6b901671f3c306c') in 0.034268 seconds 
-  Import took 0.039655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000639 seconds.
-  path: Assets/CropModels/FenceTextures/Fence_Fence_Normal.png
-  artifactKey: Guid(b2285c8ffb6b48241ad2b6b729f922f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/FenceTextures/Fence_Fence_Normal.png using Guid(b2285c8ffb6b48241ad2b6b729f922f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a932deeeecfb8b4618adde0ff39efa2b') in 0.037850 seconds 
-  Import took 0.042063 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/CropModels/FenceTextures/Fence_Fence_MaskMap.png
-  artifactKey: Guid(d53568d954129e04a8c917beebd3464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/FenceTextures/Fence_Fence_MaskMap.png using Guid(d53568d954129e04a8c917beebd3464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51783867e74e1018d7a797db18c12e3') in 0.014752 seconds 
-  Import took 0.017433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png
-  artifactKey: Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/FenceTextures/Fence_Fence_BaseMap.png using Guid(707be300b898cb84ebb11cbdbbcde0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60f3a684d8047868416dc2246cbf2c2') in 0.015362 seconds 
-  Import took 0.017998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.807095 seconds.
-  path: Assets/CropModels/Models/Fence.fbx
-  artifactKey: Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.fbx using Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66104ec825bbd88295f607d928799ebe') in 0.036048 seconds 
-  Import took 0.039607 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005542 seconds.
-  path: Assets/CropModels/Models/Fence.fbx
-  artifactKey: Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Models/Fence.fbx using Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66104ec825bbd88295f607d928799ebe') in 0.024114 seconds 
-  Import took 0.027721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.133917 seconds.
+  Time since last request: 3.908930 seconds.
   path: Assets/CropModels/Fence.prefab
   artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e547c220f57d10efe8f07a6db032becc') in 0.027424 seconds 
-  Import took 0.030933 seconds .
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0323bae3e67fa482ed0d8659abc5c25') in 0.034739 seconds 
+  Import took 0.044838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000692 seconds.
+  path: Assets/CropModels/Fence2.fbx
+  artifactKey: Guid(b55e8cd620afc3b499be5d57f8dc674e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence2.fbx using Guid(b55e8cd620afc3b499be5d57f8dc674e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671f02414b2b8598c0834a5e373f7b17') in 0.051411 seconds 
+  Import took 0.060786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.197480 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e69aac1ba12bee796b2c8a56668338') in 0.034133 seconds 
+  Import took 0.042926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/CropModels/Fence3.fbx
+  artifactKey: Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence3.fbx using Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b236e6137706f1dab47bfcb117668b') in 0.047649 seconds 
+  Import took 0.059929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007162 seconds.
+  path: Assets/CropModels/Fence3.fbx
+  artifactKey: Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence3.fbx using Guid(1294d2e9cfba05b4aaec8064e88db30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b236e6137706f1dab47bfcb117668b') in 0.030688 seconds 
+  Import took 0.036598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.532888 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7ebf1208dab1db3d144452e8fdd4f6') in 0.015419 seconds 
+  Import took 0.022269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.397993 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfb60a2f7c9a2b13ea04f02c2eb07f3') in 0.030414 seconds 
+  Import took 0.035146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.629729 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5207fb1b5044079c03e129217d59ae69') in 0.025240 seconds 
+  Import took 0.029999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.113987 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdd9f06a0875fc90dca7dcda08596a8') in 0.044917 seconds 
+  Import took 0.049165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.583975 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371e564f069177dcc2fc8319d47dc813') in 0.057492 seconds 
+  Import took 0.061941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.547559 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca96a744fc04ead6f0d061522dd20990') in 0.059901 seconds 
+  Import took 0.064488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.157419 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146986f315141fce31f1678b6e910bba') in 0.072743 seconds 
+  Import took 0.077845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.183013 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7583ec7f5e502a5a4aad9dcfe536f29') in 0.073108 seconds 
+  Import took 0.078057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.417484 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5af1d94e8d96728827d373031f7b475') in 0.083105 seconds 
+  Import took 0.088735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.942547 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788610c4ed6cb07499c1616c75b85f3c') in 0.070940 seconds 
+  Import took 0.075770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.025449 seconds.
+  path: Assets/CropModels/Models
+  artifactKey: Guid(fec0fef6afebb62488f078d1d43c33a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Models using Guid(fec0fef6afebb62488f078d1d43c33a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bdf9bebc9dec0ed2576578dbd373568') in 0.010381 seconds 
+  Import took 0.013398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147609 seconds.
+  path: Assets/CropModels/Models/Carrot.fbx
+  artifactKey: Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Models/Carrot.fbx using Guid(4bfe33910f71880408198b1e510cdc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f858fac50bd9ac2e741894201df1286') in 0.093321 seconds 
+  Import took 0.097376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/CropModels/Models/Fence.fbx
+  artifactKey: Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Models/Fence.fbx using Guid(f4547289ace1b354b8ef634db6f1e630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36bfe03a9cad1d92a40dd160a09393f9') in 0.212853 seconds 
+  Import took 0.215519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/CropModels/Models/Corn.fbx
+  artifactKey: Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Models/Corn.fbx using Guid(41904fed5fb9d45438e1c088d484e888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e40a331fca2c26297d2217f0379c2ab') in 0.107744 seconds 
+  Import took 0.111293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/CropModels/Models/Wheat.fbx
+  artifactKey: Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Models/Wheat.fbx using Guid(afea22cea4e0bdf4ab61508695657446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ef3eb51a2a2780afb05da349e8f479') in 0.148118 seconds 
+  Import took 0.154151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.667724 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Stage2.mat
+  artifactKey: Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Stage2.mat using Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64be6751c7f6e59084a3719c714c737c') in 0.023739 seconds 
+  Import took 0.028497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage1.mat
+  artifactKey: Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage1.mat using Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f152cfec781d0c2377667c053a1879e6') in 0.039220 seconds 
+  Import took 0.045137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage3.mat
+  artifactKey: Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage3.mat using Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4734fc1585c4d8aaa32657ef4c4d8f') in 0.029024 seconds 
+  Import took 0.032696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008803 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage3.mat
+  artifactKey: Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage3.mat using Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4734fc1585c4d8aaa32657ef4c4d8f') in 0.040966 seconds 
+  Import took 0.047448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.308039 seconds.
+  path: Assets/CropModels/FenceTextures/Fence_Stage2.mat
+  artifactKey: Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fence_Stage2.mat using Guid(f487db097607c7e42b779a7df7a4303a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7d52c1c9b7b2d165b95aa2f830c780') in 0.048824 seconds 
+  Import took 0.053583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage1.mat
+  artifactKey: Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage1.mat using Guid(8661d6a0684f15d4da2485d4d9cde3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d41567b965a75bfb6deee8925f5ba8') in 0.042771 seconds 
+  Import took 0.047441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/CropModels/FenceTextures/Fencer_Stage3.mat
+  artifactKey: Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/FenceTextures/Fencer_Stage3.mat using Guid(104a7ca9bb9e35d44bde84ce02705419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cd4dc6a10de713b60dee44c26f955c') in 0.035503 seconds 
+  Import took 0.042635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.058520 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31fc4a9637d3ae7d7d0955a450a790d') in 0.067860 seconds 
+  Import took 0.075626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.201245 seconds.
+  path: Assets/CropModels/Fence.prefab
+  artifactKey: Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CropModels/Fence.prefab using Guid(d35700c1188ba85458c22b8e596a2e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666d0bbdbc05ac5b7178d5e332323da7') in 0.086576 seconds 
+  Import took 0.091432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.776309 seconds.
+  path: Assets/Enviornment Models/Barn.prefab
+  artifactKey: Guid(306aaaa360fa6c041bdee79f41847e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/Barn.prefab using Guid(306aaaa360fa6c041bdee79f41847e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d19a7dfdd0b9cbcde205489b47e31c') in 0.107281 seconds 
+  Import took 0.115820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.329798 seconds.
+  path: Assets/Enviornment Models/House.prefab
+  artifactKey: Guid(645db3bdecb57934895f9074e1db54a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/House.prefab using Guid(645db3bdecb57934895f9074e1db54a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad3138784cd9eafc6fa683e1dd4f7e7') in 0.047978 seconds 
+  Import took 0.052924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.273218 seconds.
+  path: Assets/Enviornment Models/Models
+  artifactKey: Guid(b24bd2bd320aa2d439bb413f8ae2ec86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/Models using Guid(b24bd2bd320aa2d439bb413f8ae2ec86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88aed8a2cd3657fab94fc695ca545d66') in 0.003678 seconds 
+  Import took 0.010028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.587379 seconds.
+  path: Assets/Enviornment Models/House.prefab
+  artifactKey: Guid(645db3bdecb57934895f9074e1db54a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/House.prefab using Guid(645db3bdecb57934895f9074e1db54a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d44bd8dffe7a943a2f29c986d70d93') in 0.049898 seconds 
+  Import took 0.054610 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
