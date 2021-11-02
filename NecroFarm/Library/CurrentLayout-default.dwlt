@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 696}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 15101
+  controlID: 141
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,7 +97,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 696}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 116
+  controlID: 162
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 14227
+  controlID: 64
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 14228
+  controlID: 65
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -361,7 +361,6 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 2854955241484264927, guid: 0228e2c25ed8001459c36eb29f1e2b8d, type: 2}
     - {fileID: -3429938675954123473, guid: bedee386296b7b94b916d288bdbbba9f, type: 2}
     - {fileID: 7687407319316882756, guid: 531a48a9e50f1bd458dbec1bb62ada79, type: 2}
     - {fileID: -8280830029365892116, guid: 838ba9f41c90f9d42a3adf28720f5e70, type: 2}
@@ -370,22 +369,6 @@ MonoBehaviour:
     - {fileID: 8899186777472597819, guid: 342e86bb0c0290e44b609487616cab04, type: 2}
     - {fileID: -6411840809152505121, guid: 5b2484440b5881c40a0b8dc29897bcd1, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 13
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 63
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
     - e00: 0.79080445
       e01: 0
       e02: 0
@@ -661,7 +644,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2ea0f8ff3ea0f8ffe8e7ffffb8f9ffff
+      m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -721,9 +704,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 737.3632, y: 0.8077743, z: 731.68286}
+    m_Target: {x: 760.674, y: 3.5311868, z: 761.5487}
     speed: 2
-    m_Value: {x: 737.3632, y: 0.8077743, z: 731.68286}
+    m_Value: {x: 760.37854, y: 3.6019704, z: 762.6411}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -770,13 +753,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.02854187, y: 0.96985894, z: -0.14153442, w: 0.19609068}
+    m_Target: {x: -0.080810815, y: -0.38780406, z: 0.034276444, w: -0.91751915}
     speed: 2
-    m_Value: {x: 0.028542947, y: 0.96989554, z: -0.14153975, w: 0.19609809}
+    m_Value: {x: -0.08086462, y: -0.3864392, z: 0.034156237, w: -0.918128}
   m_Size:
-    m_Target: 10.00891
+    m_Target: 14.21723
     speed: 2
-    m_Value: 10.00891
+    m_Value: 14.887152
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -864,22 +847,22 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Characters
+    - Assets/Enviornment Models
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Characters
+  - Assets/Enviornment Models
   m_LastFoldersGridSize: 55
   m_LastProjectPath: C:\Users\Game & Dev\Documents\GitHub\NecroFarm\NecroFarm
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa420000
-    m_LastClickedID: 17146
-    m_ExpandedIDs: 00000000d2420000d4420000d6420000d8420000da420000dc420000de420000e0420000e2420000e4420000e6420000e8420000ea420000ec420000ee420000f0420000f2420000f8420000fa42000000ca9a3b
+    m_SelectedIDs: 0a410000
+    m_LastClickedID: 16650
+    m_ExpandedIDs: 00000000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f64000000a41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -907,7 +890,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2420000d4420000d6420000d8420000da420000dc420000de420000e0420000e2420000e4420000e6420000e8420000ea420000ec420000ee420000f0420000f2420000
+    m_ExpandedIDs: 00000000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f6400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
