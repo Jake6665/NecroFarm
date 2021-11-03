@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using ES3Internal;
+using ES3Types;
+using UnityEngine.UI;
 
 namespace RTS_Cam
 {
+
+
     [RequireComponent(typeof(Camera))]
     [AddComponentMenu("RTS Camera")]
     public class RTS_Camera : MonoBehaviour
@@ -40,6 +45,16 @@ namespace RTS_Cam
         public float rotationSped = 3f;
         public float panningSpeed = 10f;
         public float mouseRotationSpeed = 10f;
+
+
+        [SerializeField]
+        public Slider panSliderUI;
+
+        [SerializeField]
+        public Slider zoomSliderUI;
+
+        [SerializeField]
+        public Toggle edgeToggleUI;
 
         #endregion
 
@@ -167,11 +182,33 @@ namespace RTS_Cam
 
         #endregion
 
+
+
+
         #region Unity_Methods
 
         private void Start()
         {
             m_Transform = transform;
+
+            //Load move settings
+            keyboardMovementSpeed = ES3.Load("keyboardMovementSpeed", startingSpeed);
+            screenEdgeMovementSpeed = ES3.Load("screenEdgeMovementSpeed", startingSpeed);
+            settingsMoveFloat = ES3.Load("settingsMoveFloat", 0.0f);
+
+            //Load zoom settings
+            scrollWheelZoomingSensitivity = ES3.Load("scrollWheelZoomingSensitivity", startingZoom);
+            settingsZoomFloat = ES3.Load("settingsZoomFloat", 0.0f);
+
+            //Load edge toggle
+            useScreenEdgeInput = ES3.Load("useScreenEdgeInput", true);
+
+            //Update UI to reflect loaded values
+            panSliderUI.value = settingsMoveFloat;
+            zoomSliderUI.value = settingsZoomFloat;
+            edgeToggleUI.isOn = useScreenEdgeInput;
+
+
         }
 
         private void Update()
@@ -360,11 +397,26 @@ namespace RTS_Cam
             keyboardMovementSpeed = startingSpeed + 8 * spd;
             screenEdgeMovementSpeed = startingSpeed + (8 * spd);
             settingsMoveFloat = spd;
-    }
+        }
         public void SetZoomSpeed(float spd)
         {
             scrollWheelZoomingSensitivity = startingZoom + (50 * spd);
             settingsZoomFloat = spd;
+        }
+
+        public void SaveSettings()
+        {
+            //Save move settings
+            ES3.Save("keyboardMovementSpeed", keyboardMovementSpeed);
+            ES3.Save("screenEdgeMovementSpeed", screenEdgeMovementSpeed);
+            ES3.Save("settingsMoveFloat", settingsMoveFloat);
+
+            //Save zoom settings
+            ES3.Save("scrollWheelZoomingSensitivity", scrollWheelZoomingSensitivity);
+            ES3.Save("settingsZoomFloat", settingsZoomFloat);
+
+            //Save edge move toggle
+            ES3.Save("useScreenEdgeInput", useScreenEdgeInput);
 
 
         }
@@ -374,6 +426,14 @@ namespace RTS_Cam
             keyboardMovementSpeed = startingSpeed;
             screenEdgeMovementSpeed = startingSpeed;
             scrollWheelZoomingSensitivity = startingZoom;
+            settingsMoveFloat = 0.0f;
+            settingsZoomFloat = 0.0f;
+            useScreenEdgeInput = true;
+
+            //Update UI to reflect reset values
+            panSliderUI.value = settingsMoveFloat;
+            zoomSliderUI.value = settingsZoomFloat;
+            edgeToggleUI.isOn = useScreenEdgeInput;
         }
         #endregion
     }

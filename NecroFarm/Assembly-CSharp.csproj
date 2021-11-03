@@ -53,21 +53,14 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\SaveSystem\SavingProfile.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SavingSystem.cs" />
     <Compile Include="Assets\Scripts\CropsEcon\cropGrowth.cs" />
     <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
-    <Compile Include="Assets\Scripts\Seralization\SerializationManager.cs" />
     <Compile Include="Assets\Scripts\UtilsClass.cs" />
     <Compile Include="Assets\Scripts\Block_Character_Collision.cs" />
     <Compile Include="Assets\Scripts\Grid\GridBuildingSystem.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SaveableEntity.cs" />
     <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\PlayerProfileSave.cs" />
     <Compile Include="Assets\Scripts\Spawn_UnitA.cs" />
     <Compile Include="Assets\Scripts\Grid\Mouse3D.cs" />
-    <Compile Include="Assets\Scripts\Seralization\SaveData.cs" />
-    <Compile Include="Assets\Scripts\Seralization\SaveSettings.cs" />
     <Compile Include="Assets\cameraMovement.cs" />
     <Compile Include="Assets\farmerGrowth.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuSettings.cs" />
@@ -75,14 +68,10 @@
     <Compile Include="Assets\Scripts\ScriptableObjects.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Grid\PlacedObject.cs" />
-    <Compile Include="Assets\Scripts\Seralization\PlayerProfile.cs" />
     <Compile Include="Assets\Scripts\CropsEcon\playerEconomy.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\ISaveable.cs" />
     <Compile Include="Assets\Scripts\Grid\GridXZ.cs" />
     <Compile Include="Assets\Scripts\Switch_Character.cs" />
-    <Compile Include="Assets\Scripts\Seralization\Crops.cs" />
-    <Compile Include="Assets\Scripts\Seralization\Vector3SerializationSurrogate.cs" />
-    <Compile Include="Assets\Scripts\Seralization\QuaternionSerializationSurrogate.cs" />
+    <Compile Include="Assets\Easy Save 3\Types\ES3UserType_cropGrowth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -710,6 +699,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C99A579F-0729-AA48-6157-9B50780EF81B}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -15,9 +15,6 @@ public class playerEconomy : MonoBehaviour
     void Start()
     {
         playerFundsText.SetText("$" + playerMoney);
-
-        //Generate Save Id
-        GetComponent<SaveableEntity>().createGUID();
     }
     public void addFunds(int cash)
     {

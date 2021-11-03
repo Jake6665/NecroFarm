@@ -12,14 +12,31 @@ public class cropGrowth : MonoBehaviour
     DateTime fullGrown;
     private bool finshedGrowing = false;
     private List<GameObject> ObjectsInRange = new List<GameObject>();
+    [SerializeField]
+    private bool initialPlacement;
+    [SerializeField]
+    public ScriptableObjects selfRef;
+    private GameObject gridObj;
+
 
     private void Start()
     {
-        plantTime = DateTime.Now;
-        midGrowth = plantTime.AddSeconds(growthTime / 2);
-        fullGrown = plantTime.AddSeconds(growthTime);
+        Debug.Log(initialPlacement.ToString());
+        gridObj = GameObject.FindGameObjectWithTag("GBS");
+        if (initialPlacement == true)
+        {
+            plantTime = DateTime.Now;
+            midGrowth = plantTime.AddSeconds(growthTime / 2);
+            fullGrown = plantTime.AddSeconds(growthTime);
 
-        transform.localScale = new Vector3(1f, 0.1f, 1f);
+            transform.localScale = new Vector3(1f, 0.1f, 1f);
+            initialPlacement = false;
+        }else{
+            selfRef.prefab = this.transform;
+            gridObj.GetComponent<GridBuildingSystem>().RestoreToGrid(this.gameObject);
+            Debug.Log("Restroing " + this.gameObject.name.ToString());
+            GameObject.Destroy(this.gameObject);
+        }
     }
 
     public bool isGrown()
@@ -42,7 +59,6 @@ public class cropGrowth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if (other.tag == "Well")
         {
             midGrowth = midGrowth.AddSeconds((-1 * ((growthTime / 2) / 2)));

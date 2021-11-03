@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Carrot
   m_EditorClassIdentifier: 
   nameString: Carrot
-  prefab: {fileID: 6554903290923379446, guid: fb4814063d564224488e63e1cccd67a4, type: 3}
+  prefab: {fileID: 0}
   visual: {fileID: 6554903290923379446, guid: 7157643259f9c244f9ede5061cce0cef, type: 3}
   width: 1
   height: 1

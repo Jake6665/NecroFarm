@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class GridBuildingSystem : MonoBehaviour {
     public static GridBuildingSystem Instance { get; private set; }
-    private GridXZ<GridObject> grid;
+    public GridXZ<GridObject> grid;
     [SerializeField]
     private List<ScriptableObjects> scriptableObjectList;
     private ScriptableObjects scriptableObject;
@@ -120,7 +120,7 @@ public class GridBuildingSystem : MonoBehaviour {
                             break;
                         }
                     }
-
+                    
                     //Check location to see if on grid is occupied
                     if (canBuild)
                     {
@@ -247,13 +247,42 @@ public class GridBuildingSystem : MonoBehaviour {
         }
 
     }
-
+    
     public void ChangeGhostObject(int i )
     {
         Destroy(heldGhost);
         ghostObject = ghostObjectList[i];
         heldGhost = Instantiate(ghostObject, Mouse3D.GetMouseWorldPosition(), Quaternion.identity);
         ghostName = heldGhost.name;
+    }
+
+    public void RestoreToGrid(GameObject obj)
+    {
+        Debug.Log("running restore");
+        scriptableObject = obj.GetComponent<cropGrowth>().selfRef;
+        {
+
+            {
+                Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
+                grid.GetXZ(mousePosition, out int x, out int z);
+                Vector2Int placedObjectOrigin = new Vector2Int(x, z);
+                placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);
+
+                List<Vector2Int> gridPositionList = scriptableObject.GetGridPositionList(new Vector2Int(x, z), dir);
+                {
+                    Vector2Int rotationOffest = scriptableObject.GetRotationOffset(dir);
+                    Vector3 scriptableWorldPosition2 = grid.GetWorldPosition(x, z) + new Vector3(rotationOffest.x, 0, rotationOffest.y) * grid.GetCellSize();
+                    PlacedObject placedObject2 = PlacedObject.Create(scriptableWorldPosition2, new Vector2Int(x, z), dir, scriptableObject);
+                    //Handle mutli-tiled claims from objects
+                    foreach (Vector2Int gridPosition in gridPositionList)
+                    {
+                        grid.GetGridObject(gridPosition.x, gridPosition.y).SetPlacedObject(placedObject2);
+                    }
+                }
+            }
+
+        }
+   
     }
 
 }
