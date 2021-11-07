@@ -17,11 +17,13 @@ public class cropGrowth : MonoBehaviour
     [SerializeField]
     public ScriptableObjects selfRef;
     private GameObject gridObj;
+    private bool hasRestored = true;
 
 
     private void Start()
     {
-        Debug.Log(initialPlacement.ToString());
+        hasRestored = ES3.Load("hasR", true);
+        Debug.Log("Inital Placement: "+initialPlacement.ToString());
         gridObj = GameObject.FindGameObjectWithTag("GBS");
         if (initialPlacement == true)
         {
@@ -31,11 +33,29 @@ public class cropGrowth : MonoBehaviour
 
             transform.localScale = new Vector3(1f, 0.1f, 1f);
             initialPlacement = false;
-        }else{
-            selfRef.prefab = this.transform;
-            gridObj.GetComponent<GridBuildingSystem>().RestoreToGrid(this.gameObject);
-            Debug.Log("Restroing " + this.gameObject.name.ToString());
-            GameObject.Destroy(this.gameObject);
+        }
+        else{
+            Debug.Log("Has Restored: " + hasRestored.ToString());
+            if (hasRestored == true)
+            {
+                hasRestored = false;
+                ES3.Save("hasR", hasRestored);
+                //Create clone refrence
+                selfRef.currentPrefab = this.transform;
+
+                //Add self to grid
+                gridObj.GetComponent<GridBuildingSystem>().RestoreToGrid(this.gameObject);
+                Debug.Log("Restroing " + this.gameObject.name.ToString());
+
+                //Reser refrence to self
+                selfRef.currentPrefab = selfRef.defaultPrefab;
+
+                //Kill self
+                Debug.Log("DESTROY DESTORY");
+                GameObject.Destroy(this.gameObject);
+            }
+
+
         }
     }
 

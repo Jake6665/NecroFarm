@@ -258,12 +258,12 @@ public class GridBuildingSystem : MonoBehaviour {
 
     public void RestoreToGrid(GameObject obj)
     {
-        Debug.Log("running restore");
+        Debug.Log("Running restore");
         scriptableObject = obj.GetComponent<cropGrowth>().selfRef;
         {
 
             {
-                Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
+                Vector3 mousePosition = new Vector3(obj.transform.position.x, 0, obj.transform.position.z);
                 grid.GetXZ(mousePosition, out int x, out int z);
                 Vector2Int placedObjectOrigin = new Vector2Int(x, z);
                 placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);

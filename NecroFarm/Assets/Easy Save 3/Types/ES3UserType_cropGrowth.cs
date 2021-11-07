@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ES3Types
 {
 	[UnityEngine.Scripting.Preserve]
-	[ES3PropertiesAttribute("growthTime", "plantTime", "initialPlacement", "selfRef", "gridObj")]
+	[ES3PropertiesAttribute("plantTime", "finshedGrowing", "initialPlacement", "gridObj", "hasRestored")]
 	public class ES3UserType_cropGrowth : ES3ComponentType
 	{
 		public static ES3Type Instance = null;
@@ -16,11 +16,11 @@ namespace ES3Types
 		{
 			var instance = (cropGrowth)obj;
 			
-			writer.WritePrivateField("growthTime", instance);
 			writer.WritePrivateField("plantTime", instance);
+			writer.WritePrivateField("finshedGrowing", instance);
 			writer.WritePrivateField("initialPlacement", instance);
-			writer.WritePropertyByRef("selfRef", instance.selfRef);
 			writer.WritePrivateFieldByRef("gridObj", instance);
+			writer.WritePrivateField("hasRestored", instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
@@ -31,20 +31,20 @@ namespace ES3Types
 				switch(propertyName)
 				{
 					
-					case "growthTime":
-					reader.SetPrivateField("growthTime", reader.Read<System.Double>(), instance);
-					break;
 					case "plantTime":
 					reader.SetPrivateField("plantTime", reader.Read<System.DateTime>(), instance);
+					break;
+					case "finshedGrowing":
+					reader.SetPrivateField("finshedGrowing", reader.Read<System.Boolean>(), instance);
 					break;
 					case "initialPlacement":
 					reader.SetPrivateField("initialPlacement", reader.Read<System.Boolean>(), instance);
 					break;
-					case "selfRef":
-						instance.selfRef = reader.Read<ScriptableObjects>();
-						break;
 					case "gridObj":
 					reader.SetPrivateField("gridObj", reader.Read<UnityEngine.GameObject>(), instance);
+					break;
+					case "hasRestored":
+					reader.SetPrivateField("hasRestored", reader.Read<System.Boolean>(), instance);
 					break;
 					default:
 						reader.Skip();

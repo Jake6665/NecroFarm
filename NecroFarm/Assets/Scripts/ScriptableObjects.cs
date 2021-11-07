@@ -26,7 +26,8 @@ public class ScriptableObjects : ScriptableObject
     }
 
     public string nameString;
-    public Transform prefab;
+    public Transform currentPrefab;
+    public Transform defaultPrefab;
     public Transform visual;
     public int width;
     public int height;
