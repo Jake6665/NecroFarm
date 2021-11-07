@@ -17,12 +17,12 @@ public class cropGrowth : MonoBehaviour
     [SerializeField]
     public ScriptableObjects selfRef;
     private GameObject gridObj;
-    private bool hasRestored = true;
+    public bool hasRestored = true;
 
 
     private void Start()
     {
-        hasRestored = ES3.Load("hasR", true);
+        //hasRestored = ES3.Load("hasR", true);
         Debug.Log("Inital Placement: "+initialPlacement.ToString());
         gridObj = GameObject.FindGameObjectWithTag("GBS");
         if (initialPlacement == true)
@@ -39,7 +39,7 @@ public class cropGrowth : MonoBehaviour
             if (hasRestored == true)
             {
                 hasRestored = false;
-                ES3.Save("hasR", hasRestored);
+                Debug.Log("Has Restored: " + hasRestored.ToString());
                 //Create clone refrence
                 selfRef.currentPrefab = this.transform;
 
@@ -54,7 +54,6 @@ public class cropGrowth : MonoBehaviour
                 Debug.Log("DESTROY DESTORY");
                 GameObject.Destroy(this.gameObject);
             }
-
 
         }
     }
