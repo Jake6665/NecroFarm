@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 141
+  controlID: 148
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 162
+  controlID: 169
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 64
+  controlID: 147
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,14 +401,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.7705263
+    - e00: 0.58450764
       e01: 0
       e02: 0
-      e03: -23.526306
+      e03: 216.95627
       e10: 0
-      e11: 0.7705263
+      e11: 0.58450764
       e12: 0
-      e13: 101.3
+      e13: 105.53687
       e20: 0
       e21: 0
       e22: 1
@@ -482,9 +482,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 5b2484440b5881c40a0b8dc29897bcd1, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 838ba9f41c90f9d42a3adf28720f5e70, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -6411840809152505121, guid: 5b2484440b5881c40a0b8dc29897bcd1, type: 2}
+  - m_Target: {fileID: -8280830029365892116, guid: 838ba9f41c90f9d42a3adf28720f5e70, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 23612
+  m_LastSelectedObjectID: 16552
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 80440000
       m_LastClickedID: 0
       m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
@@ -704,9 +704,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 760.674, y: 3.5311868, z: 761.5487}
+    m_Target: {x: 753.0973, y: 2.8897688, z: 771.3352}
     speed: 2
-    m_Value: {x: 760.37854, y: 3.6019704, z: 762.6411}
+    m_Value: {x: 753.0973, y: 2.8897688, z: 771.3352}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -753,13 +753,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.080810815, y: -0.38780406, z: 0.034276444, w: -0.91751915}
+    m_Target: {x: -0.066552565, y: -0.44261143, z: 0.033089336, w: -0.8935939}
     speed: 2
-    m_Value: {x: -0.08086462, y: -0.3864392, z: 0.034156237, w: -0.918128}
+    m_Value: {x: 0.066552565, y: 0.4426114, z: -0.033089332, w: 0.8935939}
   m_Size:
-    m_Target: 14.21723
+    m_Target: 14.707183
     speed: 2
-    m_Value: 14.887152
+    m_Value: 14.707183
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -847,22 +847,22 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Enviornment Models
+    - Assets/Enviornment Models/FarmingInstruments
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Enviornment Models
+  - Assets/Enviornment Models/FarmingInstruments
   m_LastFoldersGridSize: 55
   m_LastProjectPath: C:\Users\Game & Dev\Documents\GitHub\NecroFarm\NecroFarm
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a410000
-    m_LastClickedID: 16650
-    m_ExpandedIDs: 00000000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f64000000a41000000ca9a3b
+    m_SelectedIDs: 80440000
+    m_LastClickedID: 17536
+    m_ExpandedIDs: 00000000d2400000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000024100000641000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,7 +890,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f6400000
+    m_ExpandedIDs: 00000000d2400000d4400000d6400000d8400000da400000dc400000de400000e0400000e2400000e4400000e6400000e8400000ea400000ec400000ee400000f0400000f2400000f4400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -999,7 +999,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 381
+    m_CachedPref: -381
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1

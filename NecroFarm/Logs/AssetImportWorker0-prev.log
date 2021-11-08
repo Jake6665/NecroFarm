@@ -15,11 +15,11 @@ C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57440
+63458
 Successfully changed project path to: C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
 C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 70.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 48.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,48 +35,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002808 seconds.
+Registered in 0.002770 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.12 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 45.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.046 seconds
+- Completed reload, in  1.414 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2047ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1414ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (875ms)
-			LoadAssemblies (85ms)
+		EndReloadAssembly (596ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (304ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (330ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (218ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (155ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005503 seconds.
+Registered in 0.005126 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 log4net:ERROR Error while loading XML configuration
 System.Xml.XmlException: An error occurred while parsing EntityName. Line 3, position 33.
@@ -94,45 +94,45 @@ System.Xml.XmlException: An error occurred while parsing EntityName. Line 3, pos
   at System.Xml.XmlDocument.Load (System.Xml.XmlReader reader) [0x0002e] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
   at log4net.Config.XmlConfigurator.InternalConfigure (log4net.Repository.ILoggerRepository repository, System.IO.Stream configStream) [0x00063] in <e1a77b5dfa0c4a1f8ba616c017f5e0b8>:0 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.678 seconds
+- Completed reload, in  1.479 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1679ms)
-		BeginReloadAssembly (210ms)
+	ReloadAssembly (1480ms)
+		BeginReloadAssembly (239ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1385ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1160ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (420ms)
+			SetupTypeCache (343ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (570ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (521ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (403ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (394ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1430 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 69.5 MB.
 System memory in use after: 69.5 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1864.
-Total: 3.366300 ms (FindLiveObjects: 0.156700 ms CreateObjectMapping: 0.064700 ms MarkObjects: 3.012200 ms  DeleteObjects: 0.131200 ms)
+Total: 3.378900 ms (FindLiveObjects: 0.145800 ms CreateObjectMapping: 0.065400 ms MarkObjects: 3.034500 ms  DeleteObjects: 0.131600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -146,1649 +146,241 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab6a736feb4d7d18e56261352e177fc') in 0.315498 seconds 
-  Import took 0.320963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 256.441476 seconds.
-  path: Assets/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb88c7c3c2a436e56175efaab2d02d8') in 0.115071 seconds 
-  Import took 0.120356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 129.682395 seconds.
-  path: Assets/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1032b7dbb08f9aa53f2672075118fce') in 0.125559 seconds 
-  Import took 0.130279 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.942863 seconds.
-  path: Assets/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ab375f786a62ca22024867f641eb64') in 0.099152 seconds 
-  Import took 0.103871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.482749 seconds.
-  path: Assets/Characters
-  artifactKey: Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters using Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33edbf6951d8722384d54b87a9cd4ca4') in 0.009021 seconds 
-  Import took 0.011988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.047335 seconds.
-  path: Assets/Characters/Knight
-  artifactKey: Guid(84a53465a58bd8a4d810963ec1f4ae06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight using Guid(84a53465a58bd8a4d810963ec1f4ae06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3354a23bd5a44a79a9c9fdbb814bf8f') in 0.008788 seconds 
-  Import took 0.011641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.043860 seconds.
-  path: Assets/Characters/Knight/Knight2.fbx
-  artifactKey: Guid(6a894c16055a3c348b2689e67ec23833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight2.fbx using Guid(6a894c16055a3c348b2689e67ec23833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a8e1c3dfdad1b81b72d05c2d8a4d1f') in 0.141011 seconds 
-  Import took 0.146416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Characters/Knight/KnightWeapon.mat
-  artifactKey: Guid(fd8b6e0eda97c4b47b2153bff37640af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/KnightWeapon.mat using Guid(fd8b6e0eda97c4b47b2153bff37640af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc9775e0d913d250b5b6b8bbc6c54b') in 0.037653 seconds 
-  Import took 0.040323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Characters/Knight/KnightSkin.mat
-  artifactKey: Guid(bf5041b26d300c94bbf7cc4058d24af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/KnightSkin.mat using Guid(bf5041b26d300c94bbf7cc4058d24af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c3167a3552ebbe0b57065c7a631a9b') in 0.021905 seconds 
-  Import took 0.025126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Characters/Knight/KnightClothing.mat
-  artifactKey: Guid(281071befcf3c8e41a5fd5efa97010a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/KnightClothing.mat using Guid(281071befcf3c8e41a5fd5efa97010a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07accbf64064753c68d7e3f01b111d5') in 0.028386 seconds 
-  Import took 0.031162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.162257 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8cfd52bbecbd46709cfba808038e8d') in 0.110228 seconds 
-  Import took 0.118379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 140.572281 seconds.
-  path: Assets/Characters/Necromancer6.fbx
-  artifactKey: Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer6.fbx using Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc855185114865d29feb5f09bfb6671') in 0.620943 seconds 
-  Import took 0.633847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.070308 seconds.
-  path: Assets/Characters/Necromancer6.fbx
-  artifactKey: Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer6.fbx using Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f208a9a87ea05d1a2a78f9c542f1f0a9') in 0.086983 seconds 
-  Import took 0.094225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 389.380379 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f989d129ed8c58d3eac78a680fba8303') in 0.165061 seconds 
-  Import took 0.175264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 232.129847 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895386c121bd59d4238ca85833440664') in 0.133467 seconds 
-  Import took 0.143124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.216910 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f364f4657ad6bebf6fcac63ce8e387') in 0.099317 seconds 
-  Import took 0.104278 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 122.600616 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673399705b634b2463b2e177b813b1ba') in 0.121383 seconds 
-  Import took 0.126425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.316751 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bd0a25673156944e09353bfb7719b8') in 0.137408 seconds 
-  Import took 0.143135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 135.325232 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b578dfb349709afc44bc254b1319b6') in 0.107728 seconds 
-  Import took 0.113564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1679.705635 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd7931f007d2dfb818ad9b7fde821e5') in 0.115883 seconds 
-  Import took 0.125383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 250.966126 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60bac667f3629080a53a4e50f929c08a') in 0.126800 seconds 
-  Import took 0.137539 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 161.503242 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360ba4fd8f1998e725e5560d60acf516') in 0.140441 seconds 
-  Import took 0.149209 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.640778 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda3093b0cdb8dab34823205c4d5a6da') in 0.114919 seconds 
-  Import took 0.124343 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.276807 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc117b9b834949180a3dfcb6483b31d') in 0.128281 seconds 
-  Import took 0.137762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 518.372700 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681c40c3a4a846fe0e6e3a5e4ddf561a') in 0.112108 seconds 
-  Import took 0.117538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 215.090880 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f9d566f7daeafde55c77c1827f3b42') in 0.006110 seconds 
-  Import took 0.013150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.483064 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa7d2d07ffbae8577b1326e9f7b8d77') in 0.097936 seconds 
-  Import took 0.102901 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002321 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa7d2d07ffbae8577b1326e9f7b8d77') in 0.089292 seconds 
-  Import took 0.098715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 165.735170 seconds.
-  path: Assets/Characters/Knight/Knight5.fbx
-  artifactKey: Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight5.fbx using Guid(81590e6339ff9e74487c0a943c933615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ec52bbac975714df9425c162baab01') in 0.103693 seconds 
-  Import took 0.112357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.024191 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd288a28d68e68ad5782eb352e002072d') in 0.164345 seconds 
-  Import took 0.169915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001643 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd288a28d68e68ad5782eb352e002072d') in 0.131180 seconds 
-  Import took 0.141638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 201.009744 seconds.
-  path: Assets/Characters/Necromancer
-  artifactKey: Guid(84b4a8b56e65b1f4a826201ac0dc6d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer using Guid(84b4a8b56e65b1f4a826201ac0dc6d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51714a1af3c3319ad9972504a7bac93f') in 0.008267 seconds 
-  Import took 0.011793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041029 seconds.
-  path: Assets/Characters/Necromancer/Necromancer3.fbx
-  artifactKey: Guid(9907c25f09315ac42a16368103b88437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer3.fbx using Guid(9907c25f09315ac42a16368103b88437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e261d2b35df4e8529fc244b17a3370b8') in 0.144321 seconds 
-  Import took 0.150475 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000582 seconds.
-  path: Assets/Characters/Necromancer/NecromancerClothing.mat
-  artifactKey: Guid(bc8b51ec010e93d47882755c1bd52929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerClothing.mat using Guid(bc8b51ec010e93d47882755c1bd52929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a315ec255779875685cb3b8268c4c3a') in 0.021547 seconds 
-  Import took 0.025368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Characters/Necromancer/NecromancerSkin.mat
-  artifactKey: Guid(edf5d23123db132469d4d087df467730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerSkin.mat using Guid(edf5d23123db132469d4d087df467730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dab7fc4e814db507f0fd3bf8e004355') in 0.021905 seconds 
-  Import took 0.026329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/Characters/Necromancer/NecromancerStaff.mat
-  artifactKey: Guid(ac7812af57426ff41bedde85846a3017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerStaff.mat using Guid(ac7812af57426ff41bedde85846a3017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c6e3934a3d2a6e14a46d85cc135ad6') in 0.019399 seconds 
-  Import took 0.022121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 265.370523 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4180db1c900b45e458366f355b016976') in 0.111875 seconds 
-  Import took 0.122120 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 169.182940 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8621d2f7b2b95a8befb89ba1355bc470') in 0.106169 seconds 
-  Import took 0.112165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 231.447812 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef2653c3aaa7961d73b77cf49fffc18') in 0.100252 seconds 
-  Import took 0.106037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 95.175886 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f846a70b0fb7116ca166a515680fff') in 0.151830 seconds 
-  Import took 0.159668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 164.457258 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1abfd2988bf7b4bccf84a7a18996a75') in 0.122092 seconds 
-  Import took 0.132469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 85.774739 seconds.
-  path: Assets/Characters/Walk_Knight.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Knight.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79734358782d4ef406a72fa7d70ed8a') in 0.019774 seconds 
-  Import took 0.026378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003606 seconds.
-  path: Assets/Characters/Walk_Knight.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Knight.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79734358782d4ef406a72fa7d70ed8a') in 0.003470 seconds 
-  Import took 0.007301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 246.789163 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47434a36b51deb8411d45c20cb82186a') in 0.101610 seconds 
-  Import took 0.106981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.113795 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e009144a57d735f09eecfff67cab883') in 0.109991 seconds 
-  Import took 0.115071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 715.976348 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f686c496d60f9bba7835bf8b65855b78') in 0.109815 seconds 
-  Import took 0.115332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 84.363158 seconds.
-  path: Assets/Characters/Knight5.controller
-  artifactKey: Guid(0228e2c25ed8001459c36eb29f1e2b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.controller using Guid(0228e2c25ed8001459c36eb29f1e2b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e7c9325a75dea32539ab71e963d8bc') in 0.006401 seconds 
-  Import took 0.009491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001016 seconds.
-  path: Assets/Characters/Knight5.controller
-  artifactKey: Guid(0228e2c25ed8001459c36eb29f1e2b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.controller using Guid(0228e2c25ed8001459c36eb29f1e2b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e7c9325a75dea32539ab71e963d8bc') in 0.002950 seconds 
-  Import took 0.005568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 97.537225 seconds.
-  path: Assets/Characters/Ranger
-  artifactKey: Guid(92ceefab1be4c90428a6d29ee7da070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger using Guid(92ceefab1be4c90428a6d29ee7da070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684571d3aff6e707f0044279ce8fdeb8') in 0.007736 seconds 
-  Import took 0.010891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.072558 seconds.
-  path: Assets/Characters/Ranger/Ranger2.fbx
-  artifactKey: Guid(f3fa0c6d66b9efd4d948574cc9dd6913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger2.fbx using Guid(f3fa0c6d66b9efd4d948574cc9dd6913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c947eb281ffca9a70eeea22f388bdc75') in 0.120834 seconds 
-  Import took 0.124016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Characters/Ranger/RangerWeapon.mat
-  artifactKey: Guid(32f0d7607d527584684cd080bc09a0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/RangerWeapon.mat using Guid(32f0d7607d527584684cd080bc09a0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add15157b5fd6b4fe18ac55e17ec1845') in 0.019556 seconds 
-  Import took 0.022298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Characters/Ranger/RangerSkin.mat
-  artifactKey: Guid(b749d4f827540244086e3d5939a0a5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/RangerSkin.mat using Guid(b749d4f827540244086e3d5939a0a5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b398e5471c58ea2605ed3004610c46') in 0.025195 seconds 
-  Import took 0.028004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Characters/Ranger/RangerClothing.mat
-  artifactKey: Guid(779c6f4d23455544ea244ef17ce3bfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/RangerClothing.mat using Guid(779c6f4d23455544ea244ef17ce3bfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb97d7640d66a4efe5638d57502e02c') in 0.020811 seconds 
-  Import took 0.023495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.748932 seconds.
-  path: Assets/Characters/Walk_Knight.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Knight.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f4cf13e9a6e1d5e115d88de1a3fd496') in 0.041407 seconds 
-  Import took 0.044562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 275.488963 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee31a03d021c95fe0544a4d120c5dd65') in 0.109249 seconds 
-  Import took 0.114438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.396567 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a67524d70f8b5b80f29cfcb773e01') in 0.117581 seconds 
-  Import took 0.127494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 88.127895 seconds.
-  path: Assets/Characters/ZombieSoldier
-  artifactKey: Guid(619e766c248f8c04493dca8ee3b9616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier using Guid(619e766c248f8c04493dca8ee3b9616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1112778ba6cf21c35ed94bef689a388d') in 0.007766 seconds 
-  Import took 0.010691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.093806 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldier2.fbx
-  artifactKey: Guid(376d0c43eed40e748bfa7928f515e7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldier2.fbx using Guid(376d0c43eed40e748bfa7928f515e7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ffc092d363c0a7676fdb3197573383') in 0.128904 seconds 
-  Import took 0.135880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000583 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldierWeapon.mat
-  artifactKey: Guid(ec14689211e181445a03e8e504f11abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldierWeapon.mat using Guid(ec14689211e181445a03e8e504f11abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a7347d07d38080fac7840e1edc971a') in 0.030325 seconds 
-  Import took 0.034368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldierSkin.mat
-  artifactKey: Guid(6565d32f1e7ab3042b343f1a1cd49472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldierSkin.mat using Guid(6565d32f1e7ab3042b343f1a1cd49472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3380c43ce5cfe4292f704ce66c11c999') in 0.022375 seconds 
-  Import took 0.025872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldierClothing.mat
-  artifactKey: Guid(e3ab728ad5363e54896ffd9c1a2520ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldierClothing.mat using Guid(e3ab728ad5363e54896ffd9c1a2520ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0731f5c205e6e367e4d9345b7f8d7c') in 0.023625 seconds 
-  Import took 0.027013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 177.996692 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e55d1d072f1a154878e38cbd40a0d5') in 0.097036 seconds 
-  Import took 0.102538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 388.975816 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75598f739125ea1cd8f1aa79495b5147') in 0.098665 seconds 
-  Import took 0.108934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 193.447975 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1c6a9e3065c17ae00c211fc475f169') in 0.140040 seconds 
-  Import took 0.149603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 65.158785 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d8b21c3c7f292f48adf09676b32624') in 0.119612 seconds 
-  Import took 0.129641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.350281 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.fbx
-  artifactKey: Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.fbx using Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c881bd14fa9220d14f025c4d4ba9d9a') in 0.103622 seconds 
-  Import took 0.108662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.289388 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec21c93471e129056b0918666477808') in 0.113601 seconds 
-  Import took 0.119087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.149014 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b9b52d4e99a7a1de1c0eefcc1c977b') in 0.128130 seconds 
-  Import took 0.133124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 245.551553 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.fbx
-  artifactKey: Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.fbx using Guid(9c73593f496985b4db66b4507f92ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6ddd5513ebf896afd24143613260e3') in 0.127759 seconds 
-  Import took 0.139542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.119383 seconds.
-  path: Assets/Characters/Necromancer6.fbx
-  artifactKey: Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer6.fbx using Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3032609a91d75aa61c9cf4916c9e4a48') in 0.103613 seconds 
-  Import took 0.109957 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.667829 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a3e9eb37aa7a316515bf29af7147a49') in 0.090791 seconds 
-  Import took 0.095951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.153696 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6def0b5343f1438aa5ee29c78277f181') in 0.112533 seconds 
-  Import took 0.117417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 88.781049 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26882288d95ab3a68fb1ac7722fa9d06') in 0.096363 seconds 
-  Import took 0.101091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.673192 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2365c799cc2ca78fc1ea63a5c9184161') in 0.005117 seconds 
-  Import took 0.008365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.904181 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e5d692f6909f178134e95d3435c8a1') in 0.128688 seconds 
-  Import took 0.141048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.834292 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf7793bb1eb3cb12b9d2886be460035') in 0.097816 seconds 
-  Import took 0.102641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 98.662298 seconds.
-  path: Assets/Characters/Knight6.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight6.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330679b825f87f782c03b8771e10e918') in 0.121267 seconds 
-  Import took 0.130804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.448242 seconds.
-  path: Assets/Characters/Knight5.fbx
-  artifactKey: Guid(8c11bcbd6daeb1745a314968ad1a153d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight5.fbx using Guid(8c11bcbd6daeb1745a314968ad1a153d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d58c7eaf0d4ef7e6824869978da77f') in 0.090613 seconds 
-  Import took 0.098565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.537153 seconds.
-  path: Assets/Characters/Walk_Knight.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Knight.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa2b658f82c11d8f84e3b26e3676335') in 0.039781 seconds 
-  Import took 0.044573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005269 seconds.
-  path: Assets/Characters/Walk_Knight.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Knight.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa2b658f82c11d8f84e3b26e3676335') in 0.029564 seconds 
-  Import took 0.032765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 58.052876 seconds.
-  path: Assets/Characters/Knight/Knight6.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8263ba4898c12b43909e56c67d029f24') in 0.114740 seconds 
-  Import took 0.123727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 121.921841 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8159d064036c9a22c8b31dff5c9fc6') in 0.111834 seconds 
-  Import took 0.118270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001035 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8159d064036c9a22c8b31dff5c9fc6') in 0.139055 seconds 
-  Import took 0.149188 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.245333 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a675b3a7cde25972b1fbfb7437b37a') in 0.178565 seconds 
-  Import took 0.188577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 93.822730 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de55c4e0338f9f7671314cf93be2f5af') in 0.110591 seconds 
-  Import took 0.117560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 62.530301 seconds.
-  path: Assets/Characters/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ddbef604d51d7d7c18cc111183987ec') in 0.128837 seconds 
-  Import took 0.134622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.394615 seconds.
-  path: Assets/Characters/RangerWalk.fbx
-  artifactKey: Guid(83a2b4c968a8dbc4abd6ee99fe99c776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/RangerWalk.fbx using Guid(83a2b4c968a8dbc4abd6ee99fe99c776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f7051310cb7c4f31ab895ec0c58ce0') in 0.144701 seconds 
-  Import took 0.153199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012655 seconds.
-  path: Assets/Characters/RangerWalk.fbx
-  artifactKey: Guid(83a2b4c968a8dbc4abd6ee99fe99c776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/RangerWalk.fbx using Guid(83a2b4c968a8dbc4abd6ee99fe99c776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f7051310cb7c4f31ab895ec0c58ce0') in 0.105593 seconds 
-  Import took 0.110035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.199815 seconds.
-  path: Assets/Characters/Walk_Ranger.anim
-  artifactKey: Guid(f803beaa7b9c44b4399b5e509daca884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Ranger.anim using Guid(f803beaa7b9c44b4399b5e509daca884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda8caa88adf5899a1e0bdca54a3b589') in 0.036765 seconds 
-  Import took 0.040077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001530 seconds.
-  path: Assets/Characters/Walk_Ranger.anim
-  artifactKey: Guid(f803beaa7b9c44b4399b5e509daca884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Ranger.anim using Guid(f803beaa7b9c44b4399b5e509daca884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda8caa88adf5899a1e0bdca54a3b589') in 0.025168 seconds 
-  Import took 0.028299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.686647 seconds.
-  path: Assets/Characters/RangerIdle.fbx
-  artifactKey: Guid(3548d71a34260cc48ac07f8b65abbca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/RangerIdle.fbx using Guid(3548d71a34260cc48ac07f8b65abbca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1857711851c54fdd8a84d87d42c680') in 0.121214 seconds 
-  Import took 0.125380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.526506 seconds.
-  path: Assets/Characters/Idle_Ranger.anim
-  artifactKey: Guid(b50f059fbfb541444969d6f98d7eaac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_Ranger.anim using Guid(b50f059fbfb541444969d6f98d7eaac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa6f05e52c08092d10c6a83d501d365') in 0.022981 seconds 
-  Import took 0.027792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.887760 seconds.
-  path: Assets/Characters/Ranger/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df9e39ddcbde2e658174d3faa111a35') in 0.130040 seconds 
-  Import took 0.135465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 97.525447 seconds.
-  path: Assets/Characters/Solider3.fbx
-  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9b6f18d6c54d4517d70b744f3b327f') in 0.115304 seconds 
-  Import took 0.120366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.733632 seconds.
-  path: Assets/Characters/Knight/Knight_Walk.anim
-  artifactKey: Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight_Walk.anim using Guid(21fb70dfef3a6644f8fe35fbc1b7e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7e27e8c332e7284f4810597db0c37a') in 0.041702 seconds 
-  Import took 0.045431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 140.863375 seconds.
-  path: Assets/Characters/SoldierIdle.fbx
-  artifactKey: Guid(4741457ccbbb65247a884146fd6f8345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/SoldierIdle.fbx using Guid(4741457ccbbb65247a884146fd6f8345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50896b3abbd38348055609c82d3433c6') in 0.114222 seconds 
-  Import took 0.118958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Characters/SoldierWalk.fbx
-  artifactKey: Guid(6faf27830db01a94bb52570ef731c1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/SoldierWalk.fbx using Guid(6faf27830db01a94bb52570ef731c1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4542dfd2c7a0fbb14404bcc121805af') in 0.117084 seconds 
-  Import took 0.120933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.436402 seconds.
-  path: Assets/Characters/Solider3.fbx
-  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b6578668f28c37d5dd6efbca091dba') in 0.118206 seconds 
-  Import took 0.126623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.142573 seconds.
-  path: Assets/Characters/Walk_Soldier.anim
-  artifactKey: Guid(d46de348e470dd747a138555c95a23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Soldier.anim using Guid(d46de348e470dd747a138555c95a23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f21b3009c090e21963204bf5f701479') in 0.035670 seconds 
-  Import took 0.039186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003855 seconds.
-  path: Assets/Characters/Walk_Soldier.anim
-  artifactKey: Guid(d46de348e470dd747a138555c95a23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_Soldier.anim using Guid(d46de348e470dd747a138555c95a23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f21b3009c090e21963204bf5f701479') in 0.024092 seconds 
-  Import took 0.027814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.577747 seconds.
-  path: Assets/Characters/Idle_Soldier.anim
-  artifactKey: Guid(2d493d258c7d9fb449d726e4b9a6dc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_Soldier.anim using Guid(2d493d258c7d9fb449d726e4b9a6dc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7b8c17bb125ada21bd447e549266fb') in 0.026354 seconds 
-  Import took 0.030321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.565306 seconds.
-  path: Assets/Characters/Soldier
-  artifactKey: Guid(f4514ce5c33aeee4097c5f346001e838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier using Guid(f4514ce5c33aeee4097c5f346001e838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26ea66b6a9b7636cc896865530552ad') in 0.007781 seconds 
-  Import took 0.010688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.047597 seconds.
-  path: Assets/Characters/Soldier/SoldierClothing.mat
-  artifactKey: Guid(808c4101e9a7ae344819fa5dfe5f8717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/SoldierClothing.mat using Guid(808c4101e9a7ae344819fa5dfe5f8717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b068bd1c34993340089ab0d258025c') in 0.078693 seconds 
-  Import took 0.083781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Characters/Soldier/SoldierSkin.mat
-  artifactKey: Guid(11299bcc94fb24946a244542723be57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/SoldierSkin.mat using Guid(11299bcc94fb24946a244542723be57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda438bd33f827d0c3f57909d7dd8a09') in 0.045238 seconds 
-  Import took 0.047929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Characters/Soldier/SoldierWeapon.mat
-  artifactKey: Guid(a1f4de19cfab55b4199966155663481b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/SoldierWeapon.mat using Guid(a1f4de19cfab55b4199966155663481b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801e79b824b0e4cb6ba526fde3b454a3') in 0.045760 seconds 
-  Import took 0.048490 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/Characters/Soldier/Solider2.fbx
-  artifactKey: Guid(04673d03936e5c44b93cd17bee56e1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider2.fbx using Guid(04673d03936e5c44b93cd17bee56e1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4088a01badfc0742fa4b0130cd67ff09') in 0.047271 seconds 
-  Import took 0.050757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.783894 seconds.
-  path: Assets/Characters/Soldier/Solider3.fbx
-  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241fa01dbd2a64c39aa590ccdc71e207') in 0.107895 seconds 
-  Import took 0.112843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 193.222047 seconds.
-  path: Assets/Characters/ZombieKnight3.fbx
-  artifactKey: Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight3.fbx using Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9892b3c213107fca63f8b562f0401bc2') in 0.103821 seconds 
-  Import took 0.112013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000511 seconds.
-  path: Assets/Characters/ZombieKnightIdle.fbx
-  artifactKey: Guid(b050e0d853e156c4b89c106be3ff5952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnightIdle.fbx using Guid(b050e0d853e156c4b89c106be3ff5952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3517e2d04a3327ec3b90b520eb3800e5') in 0.093257 seconds 
-  Import took 0.099557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000534 seconds.
-  path: Assets/Characters/ZombieKnightWalk.fbx
-  artifactKey: Guid(61b37ec686fac2141ac7bf12367371d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnightWalk.fbx using Guid(61b37ec686fac2141ac7bf12367371d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fd3be89fed1240b45771476a3031d5') in 0.107837 seconds 
-  Import took 0.111661 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.130407 seconds.
-  path: Assets/Characters/Idle_ZombieK.anim
-  artifactKey: Guid(0679ec973fec36042ace4fbbe2376471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_ZombieK.anim using Guid(0679ec973fec36042ace4fbbe2376471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0894ac95506e42020ab8a122421e1006') in 0.030875 seconds 
-  Import took 0.036673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.383065 seconds.
-  path: Assets/Characters/Walk_ZombieK.anim
-  artifactKey: Guid(8880f23755c246d4295e7ad14bd0aa37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_ZombieK.anim using Guid(8880f23755c246d4295e7ad14bd0aa37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c567fa8dd30bb42bcb41a697f40f17') in 0.054427 seconds 
-  Import took 0.057952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.867627 seconds.
-  path: Assets/Characters/ZombieKnight
-  artifactKey: Guid(fd75538f1ccf2b748a3f9f8c428601b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight using Guid(fd75538f1ccf2b748a3f9f8c428601b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4137d1e6e399d4685e7efaefe885cdb') in 0.008551 seconds 
-  Import took 0.012215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.192354 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight2.fbx
-  artifactKey: Guid(aae67f6ccbee06048955a542535358d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight2.fbx using Guid(aae67f6ccbee06048955a542535358d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cfc4c8e89cf0b4a6d6c87c73ba539a') in 0.126921 seconds 
-  Import took 0.131269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnightWeapon.mat
-  artifactKey: Guid(77bfc5ed72c660c44b6ed4cf4c8fba7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnightWeapon.mat using Guid(77bfc5ed72c660c44b6ed4cf4c8fba7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18be37b49cdc6ff105b007b491d01ff2') in 0.018169 seconds 
-  Import took 0.020837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnightSkin.mat
-  artifactKey: Guid(9d767565e155d344a8f7bec8f2b5edd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnightSkin.mat using Guid(9d767565e155d344a8f7bec8f2b5edd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af02990e458b201089f40b96fb6d804') in 0.026587 seconds 
-  Import took 0.029364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnightClothing.mat
-  artifactKey: Guid(687c4cedf99d7bf48a56a1fa85a85419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnightClothing.mat using Guid(687c4cedf99d7bf48a56a1fa85a85419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfd4364778fe4b13be58e2514c3ef31') in 0.029874 seconds 
-  Import took 0.032811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.783860 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight3.fbx
-  artifactKey: Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight3.fbx using Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b23d991523411042ee0f84297cd20cb') in 0.100130 seconds 
-  Import took 0.105060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 146.279053 seconds.
-  path: Assets/Characters/ZombieRanger3.fbx
-  artifactKey: Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger3.fbx using Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecf0c49c7cd663af6a9c1d89e743fc3') in 0.088409 seconds 
-  Import took 0.096314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Characters/ZombieRangerIdle.fbx
-  artifactKey: Guid(0aee389b9b866d44ea2a785841317bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRangerIdle.fbx using Guid(0aee389b9b866d44ea2a785841317bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b561301b3f1036d52fe5b7729892163') in 0.075126 seconds 
-  Import took 0.079771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000508 seconds.
-  path: Assets/Characters/ZombieRangerWalk.fbx
-  artifactKey: Guid(9d92469502246204aafb3219acbbb0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRangerWalk.fbx using Guid(9d92469502246204aafb3219acbbb0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28eb8fe41ee8771c6592991b47fd8a60') in 0.088574 seconds 
-  Import took 0.092302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.558510 seconds.
-  path: Assets/Characters/Idle_ZombieR.anim
-  artifactKey: Guid(66d255aaa18c6574db95d7a40a46a860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_ZombieR.anim using Guid(66d255aaa18c6574db95d7a40a46a860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f945f64ccc765c79bcb2170c5c3a7550') in 0.030352 seconds 
-  Import took 0.034065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005473 seconds.
-  path: Assets/Characters/Idle_ZombieR.anim
-  artifactKey: Guid(66d255aaa18c6574db95d7a40a46a860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_ZombieR.anim using Guid(66d255aaa18c6574db95d7a40a46a860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f945f64ccc765c79bcb2170c5c3a7550') in 0.021690 seconds 
-  Import took 0.024886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.688422 seconds.
-  path: Assets/Characters/Walk_ZombieR.anim
-  artifactKey: Guid(0a070c01e3cbdc94c9a221b1a41cd75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_ZombieR.anim using Guid(0a070c01e3cbdc94c9a221b1a41cd75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed614cf9699aaf5631bd5541519ab65a') in 0.048501 seconds 
-  Import took 0.053715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.057690 seconds.
-  path: Assets/Characters/ZombieRanger
-  artifactKey: Guid(2a4989a142df04941adb5ccb4eab3c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger using Guid(2a4989a142df04941adb5ccb4eab3c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f31605df2e46525687b33e20671fa6') in 0.007962 seconds 
-  Import took 0.010858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.099346 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger2.fbx
-  artifactKey: Guid(f9eec4c0d499f3540a526bcc865639b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger2.fbx using Guid(f9eec4c0d499f3540a526bcc865639b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0cd453e91c2fcb83c0b9d47262160a') in 0.122914 seconds 
-  Import took 0.126594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerClothing.mat
-  artifactKey: Guid(a403b162845b2234f8fe5cc6f514d41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerClothing.mat using Guid(a403b162845b2234f8fe5cc6f514d41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab08049758f3e59c528f9b764123c85d') in 0.023146 seconds 
-  Import took 0.027751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerSkin.mat
-  artifactKey: Guid(28a0af42b6e92fa448b078ea51b9222f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerSkin.mat using Guid(28a0af42b6e92fa448b078ea51b9222f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2d6164dfb787da5a83ad6b6415a5e8') in 0.021632 seconds 
-  Import took 0.025198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000517 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerWeapon.mat
-  artifactKey: Guid(02fba9275995ece42b34e9a4427d9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerWeapon.mat using Guid(02fba9275995ece42b34e9a4427d9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beac44dbe5c1100f85d1f63f3911fdd8') in 0.020651 seconds 
-  Import took 0.023850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.541041 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger3.fbx
-  artifactKey: Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger3.fbx using Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb91bfe8ac8d202f1274e2f8d4aa3e3') in 0.079811 seconds 
-  Import took 0.084681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.789385 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerClothing.mat
-  artifactKey: Guid(a403b162845b2234f8fe5cc6f514d41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerClothing.mat using Guid(a403b162845b2234f8fe5cc6f514d41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef642d1d8ae139f0286396f019457486') in 0.019634 seconds 
-  Import took 0.023324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerSkin.mat
-  artifactKey: Guid(28a0af42b6e92fa448b078ea51b9222f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerSkin.mat using Guid(28a0af42b6e92fa448b078ea51b9222f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d94e3020ba01a913e2dd2f51b3ff4c8') in 0.020205 seconds 
-  Import took 0.023209 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRangerWeapon.mat
-  artifactKey: Guid(02fba9275995ece42b34e9a4427d9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRangerWeapon.mat using Guid(02fba9275995ece42b34e9a4427d9059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd51f5bb71423543270d10b411e73a3') in 0.027023 seconds 
-  Import took 0.029912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 110.705934 seconds.
-  path: Assets/Characters/ZombieSoldier3.fbx
-  artifactKey: Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier3.fbx using Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79dafc5d585f56b748695f5fa243a90') in 0.100821 seconds 
-  Import took 0.106204 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Characters/ZombieSoldierIdle.fbx
-  artifactKey: Guid(6bb4fa50c2722d84d9a4ac4ea8166169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldierIdle.fbx using Guid(6bb4fa50c2722d84d9a4ac4ea8166169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90429a8bd56e0b109f3ed284748e9d0') in 0.110394 seconds 
-  Import took 0.114389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Characters/ZombieSoldierWalk.fbx
-  artifactKey: Guid(6a8042cdbac9ef9408cf04b252bb5b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldierWalk.fbx using Guid(6a8042cdbac9ef9408cf04b252bb5b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11141c58e763db2c95f82ea0bdfa02bd') in 0.094180 seconds 
-  Import took 0.098160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.107437 seconds.
-  path: Assets/Characters/Idle_ZombieS.001.anim
-  artifactKey: Guid(b0008ead0dca26b43b1751328bb7c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Idle_ZombieS.001.anim using Guid(b0008ead0dca26b43b1751328bb7c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2af27e06cc5cbf2157df0cf34deba64') in 0.024459 seconds 
-  Import took 0.027647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.367503 seconds.
-  path: Assets/Characters/Walk_ZombieS.anim
-  artifactKey: Guid(5d6283cca672d8445a956fcadf57642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_ZombieS.anim using Guid(5d6283cca672d8445a956fcadf57642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa63a0528911b4bdcc28501cb0e65b62') in 0.035806 seconds 
-  Import took 0.039181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002872 seconds.
-  path: Assets/Characters/Walk_ZombieS.anim
-  artifactKey: Guid(5d6283cca672d8445a956fcadf57642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Walk_ZombieS.anim using Guid(5d6283cca672d8445a956fcadf57642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa63a0528911b4bdcc28501cb0e65b62') in 0.027686 seconds 
-  Import took 0.030751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.056134 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx
-  artifactKey: Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx using Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041b6b56c653667f7ba666171ac23974') in 0.093108 seconds 
-  Import took 0.098300 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.920912 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldierSkin.mat
-  artifactKey: Guid(6565d32f1e7ab3042b343f1a1cd49472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldierSkin.mat using Guid(6565d32f1e7ab3042b343f1a1cd49472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a6a4fa460c18b699b668e57a51d963') in 0.027343 seconds 
-  Import took 0.030529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.961999 seconds.
   path: Assets/Characters/Knight/Knight6.prefab
   artifactKey: Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e97fd60a7593a370cd833ab81231e7') in 0.045912 seconds 
-  Import took 0.051182 seconds .
+Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddddf002f275c41d4c00dc13b8203043') in 0.247842 seconds 
+  Import took 0.252983 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001059 seconds.
-  path: Assets/Characters/Knight/Knight6.prefab
-  artifactKey: Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e97fd60a7593a370cd833ab81231e7') in 0.039251 seconds 
-  Import took 0.043328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.681543 seconds.
-  path: Assets/Characters/Knight/Knight6.prefab
-  artifactKey: Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'badc9e546d675f81a47d09957a1fa838') in 0.051843 seconds 
-  Import took 0.058681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.618124 seconds.
-  path: Assets/Characters/Knight/Knight6.fbx
-  artifactKey: Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.fbx using Guid(fc8324c14ddb800499618beb5144000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8c71686253a64a7cf3387de46f7cec') in 0.090212 seconds 
-  Import took 0.097858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.622205 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.fbx
-  artifactKey: Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.fbx using Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e2fd4bf93816b756596a9baef1d206') in 0.109081 seconds 
-  Import took 0.117850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.070915 seconds.
-  path: Assets/Characters/Ranger/Ranger3.fbx
-  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500aa7922c3b522ef8842e40498387eb') in 0.113274 seconds 
-  Import took 0.121980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.101675 seconds.
-  path: Assets/Characters/Soldier/Solider3.fbx
-  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6902c800769c54416853d65a1d434d0') in 0.127645 seconds 
-  Import took 0.136323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.823556 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight3.fbx
-  artifactKey: Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight3.fbx using Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552c24dae8dc8dfdda33f7e293ad9268') in 0.089207 seconds 
-  Import took 0.094679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.233132 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger3.fbx
-  artifactKey: Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger3.fbx using Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b41ebff2a2ef51bf79e3cf7231ae3f2') in 0.086964 seconds 
-  Import took 0.091775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.507047 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx
-  artifactKey: Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx using Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8db9278811090a59c9ab7c86559771') in 0.096542 seconds 
-  Import took 0.102601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.108938 seconds.
-  path: Assets/Characters/Knight/Knight6.prefab
-  artifactKey: Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a40c8889991b381d1fc0e82bd98309e') in 0.042274 seconds 
-  Import took 0.046405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.005127 seconds.
-  path: Assets/Characters/Knight/KnightController.controller
-  artifactKey: Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/KnightController.controller using Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81371976ba7ee23acb28fc72ba626a2f') in 0.012665 seconds 
-  Import took 0.016308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004253 seconds.
-  path: Assets/Characters/Knight/KnightController.controller
-  artifactKey: Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/KnightController.controller using Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81371976ba7ee23acb28fc72ba626a2f') in 0.003863 seconds 
-  Import took 0.008016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.935833 seconds.
-  path: Assets/Characters/Knight/Knight6.prefab
-  artifactKey: Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Knight/Knight6.prefab using Guid(0b5b1b491bab4624e969785ceb18588a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (KnightController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (KnightController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'cf3cdc3e257dfea4f06dca91477f2252') in 0.041561 seconds 
-  Import took 0.045880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 73.110808 seconds.
+  Time since last request: 45.578654 seconds.
   path: Assets/Characters/Necromancer/NecromancerController.controller
   artifactKey: Guid(531a48a9e50f1bd458dbec1bb62ada79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/NecromancerController.controller using Guid(531a48a9e50f1bd458dbec1bb62ada79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbc83c2b34dfbe43b73ed75cb95f430') in 0.009340 seconds 
-  Import took 0.012534 seconds .
+Start importing Assets/Characters/Necromancer/NecromancerController.controller using Guid(531a48a9e50f1bd458dbec1bb62ada79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21b047b5f0f12cd06fe7233404723ec') in 0.019968 seconds 
+  Import took 0.023903 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.217747 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.fbx
-  artifactKey: Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.fbx using Guid(c062d084e27e75b4fa1668bacd881fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd435bfe7e23e307ad1ed0c4289bbb8d6') in 0.111796 seconds 
-  Import took 0.121248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.186041 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.prefab
-  artifactKey: Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.prefab using Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b91c3cbb8d2eb1dbb4201e804c5e68') in 0.062941 seconds 
-  Import took 0.069108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000505 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.prefab
-  artifactKey: Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.prefab using Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b91c3cbb8d2eb1dbb4201e804c5e68') in 0.039954 seconds 
-  Import took 0.044544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.009934 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.prefab
-  artifactKey: Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.prefab using Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (NecromancerController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (NecromancerController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '7b9df04a62f71014245adb1cc4fc024d') in 0.042190 seconds 
-  Import took 0.046430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013380 seconds.
-  path: Assets/Characters/Necromancer/Necromancer6.prefab
-  artifactKey: Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Necromancer/Necromancer6.prefab using Guid(f924568a64381db45b55b409f60fc7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (NecromancerController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (NecromancerController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '7b9df04a62f71014245adb1cc4fc024d') in 0.042342 seconds 
-  Import took 0.049259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.362280 seconds.
-  path: Assets/Characters/Ranger/Ranger3.prefab
-  artifactKey: Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger3.prefab using Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430a2167966020eaadfbbf0a0660a3c6') in 0.043588 seconds 
-  Import took 0.047755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001323 seconds.
-  path: Assets/Characters/Ranger/Ranger3.prefab
-  artifactKey: Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger3.prefab using Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430a2167966020eaadfbbf0a0660a3c6') in 0.037890 seconds 
-  Import took 0.041842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.617112 seconds.
-  path: Assets/Characters/Ranger/RanherController.controller
-  artifactKey: Guid(838ba9f41c90f9d42a3adf28720f5e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/RanherController.controller using Guid(838ba9f41c90f9d42a3adf28720f5e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c6fc819051760c01c80863bb65ca35') in 0.009092 seconds 
-  Import took 0.013298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.878252 seconds.
-  path: Assets/Characters/Ranger/Ranger3.prefab
-  artifactKey: Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/Ranger3.prefab using Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (RanherController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (RanherController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '15a97150cb00ef0651e6d1d24f21f877') in 0.046928 seconds 
-  Import took 0.051288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.843585 seconds.
+  Time since last request: 5.195985 seconds.
   path: Assets/Characters/Ranger/RangerController.controller
   artifactKey: Guid(838ba9f41c90f9d42a3adf28720f5e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ranger/RangerController.controller using Guid(838ba9f41c90f9d42a3adf28720f5e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed147d2914951e5748578cde0756f9e9') in 0.009323 seconds 
-  Import took 0.012845 seconds .
+Start importing Assets/Characters/Ranger/RangerController.controller using Guid(838ba9f41c90f9d42a3adf28720f5e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30044011141e0cbb58c7fe1fedd6fe37') in 0.059311 seconds 
+  Import took 0.063385 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.829136 seconds.
-  path: Assets/Characters/Soldier/SoldierController.controller
-  artifactKey: Guid(3ff7d331532a0e34185e86e27c2c1b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/SoldierController.controller using Guid(3ff7d331532a0e34185e86e27c2c1b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96ad34ffc1d4886ee0739b27524be01') in 0.014230 seconds 
-  Import took 0.017555 seconds .
+  Time since last request: 52.548406 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(9122ea4c874530a42bf43ef57c36da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(9122ea4c874530a42bf43ef57c36da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2303d6d42c74e36cf37e14131f2404') in 0.007270 seconds 
+  Import took 0.010264 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.997846 seconds.
-  path: Assets/Characters/Soldier/Solider3.prefab
-  artifactKey: Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider3.prefab using Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe09799927e4f5537f312e11e4d0487a') in 0.051888 seconds 
-  Import took 0.057743 seconds .
+  Time since last request: 1.229005 seconds.
+  path: Assets/Scripts/Block_Character_Collision.cs
+  artifactKey: Guid(42214902097284620a3d879640a3586b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Block_Character_Collision.cs using Guid(42214902097284620a3d879640a3586b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bfd95e8abc05e478c325d995ecbf2ee') in 0.013971 seconds 
+  Import took 0.016814 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001228 seconds.
-  path: Assets/Characters/Soldier/Solider3.prefab
-  artifactKey: Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider3.prefab using Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe09799927e4f5537f312e11e4d0487a') in 0.044337 seconds 
-  Import took 0.048311 seconds .
+  Time since last request: 1.642016 seconds.
+  path: Assets/Scripts/cropGrowth.cs
+  artifactKey: Guid(365e7a9e542d2bf489bf75a97189568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/cropGrowth.cs using Guid(365e7a9e542d2bf489bf75a97189568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7e13e07dfefd25cbfca0356311b497') in 0.008182 seconds 
+  Import took 0.011030 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.230327 seconds.
-  path: Assets/Characters/Soldier/Solider3.prefab
-  artifactKey: Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Soldier/Solider3.prefab using Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (SoldierController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (SoldierController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '309e961426dfa3d0db031791dc0250ec') in 0.057869 seconds 
-  Import took 0.064313 seconds .
+  Time since last request: 0.000529 seconds.
+  path: Assets/Scripts/cropGrowth.cs
+  artifactKey: Guid(365e7a9e542d2bf489bf75a97189568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/cropGrowth.cs using Guid(365e7a9e542d2bf489bf75a97189568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7e13e07dfefd25cbfca0356311b497') in 0.002252 seconds 
+  Import took 0.004834 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.268629 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKController.controller
-  artifactKey: Guid(d71c60adbe7b1504e8ef2782a205dd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKController.controller using Guid(d71c60adbe7b1504e8ef2782a205dd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6a75aef3db4f8e52c95290a4c9e71f') in 0.011810 seconds 
-  Import took 0.016799 seconds .
+  Time since last request: 1.522736 seconds.
+  path: Assets/Scripts/FunctionUpdater.cs
+  artifactKey: Guid(7eacfbf662ad34e46932f36084c15e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FunctionUpdater.cs using Guid(7eacfbf662ad34e46932f36084c15e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb33e36025b841afcba6802e035f24d') in 0.008196 seconds 
+  Import took 0.011046 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.428172 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight3.prefab
-  artifactKey: Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight3.prefab using Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a73074daae6e9fc5bb8bfbda4bd4f6') in 0.063882 seconds 
-  Import took 0.068231 seconds .
+  Time since last request: 0.003800 seconds.
+  path: Assets/Scripts/FunctionUpdater.cs
+  artifactKey: Guid(7eacfbf662ad34e46932f36084c15e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FunctionUpdater.cs using Guid(7eacfbf662ad34e46932f36084c15e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb33e36025b841afcba6802e035f24d') in 0.002219 seconds 
+  Import took 0.005005 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001464 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight3.prefab
-  artifactKey: Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight3.prefab using Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a73074daae6e9fc5bb8bfbda4bd4f6') in 0.034201 seconds 
-  Import took 0.038798 seconds .
+  Time since last request: 0.640455 seconds.
+  path: Assets/Scripts/GridBuildingSystem.cs
+  artifactKey: Guid(f19a6e328721df640963e9f2f9ac7cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GridBuildingSystem.cs using Guid(f19a6e328721df640963e9f2f9ac7cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edd86dded1c527f664a34f0f0c1930b') in 0.006935 seconds 
+  Import took 0.009879 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.964704 seconds.
-  path: Assets/Characters/ZombieKnight/ZombieKnight3.prefab
-  artifactKey: Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieKnight/ZombieKnight3.prefab using Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ZombieKController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ZombieKController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '172a99afaf88e6ab9a549ef109d398ec') in 0.041175 seconds 
-  Import took 0.046824 seconds .
+  Time since last request: 0.001538 seconds.
+  path: Assets/Scripts/GridBuildingSystem.cs
+  artifactKey: Guid(f19a6e328721df640963e9f2f9ac7cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GridBuildingSystem.cs using Guid(f19a6e328721df640963e9f2f9ac7cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edd86dded1c527f664a34f0f0c1930b') in 0.002337 seconds 
+  Import took 0.005526 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.644450 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRController.controller
-  artifactKey: Guid(342e86bb0c0290e44b609487616cab04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRController.controller using Guid(342e86bb0c0290e44b609487616cab04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ea93d89d7cddca3e4632b9b1cbbc99') in 0.012830 seconds 
-  Import took 0.016645 seconds .
+  Time since last request: 1.137716 seconds.
+  path: Assets/Scripts/GridXZ.cs
+  artifactKey: Guid(9f0971b4ed786d74d920866dad33b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GridXZ.cs using Guid(9f0971b4ed786d74d920866dad33b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755806a15e556df012c6e20089c781c9') in 0.007162 seconds 
+  Import took 0.010044 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.990197 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger3.prefab
-  artifactKey: Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger3.prefab using Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadf01fd69a69d232b22aae4decdd53') in 0.051644 seconds 
-  Import took 0.057122 seconds .
+  Time since last request: 0.000588 seconds.
+  path: Assets/Scripts/GridXZ.cs
+  artifactKey: Guid(9f0971b4ed786d74d920866dad33b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GridXZ.cs using Guid(9f0971b4ed786d74d920866dad33b2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755806a15e556df012c6e20089c781c9') in 0.002225 seconds 
+  Import took 0.004796 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000888 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger3.prefab
-  artifactKey: Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger3.prefab using Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadf01fd69a69d232b22aae4decdd53') in 0.034906 seconds 
-  Import took 0.038761 seconds .
+  Time since last request: 1.030428 seconds.
+  path: Assets/Scripts/playerEconomy.cs
+  artifactKey: Guid(a85b23aa3589cd64abdd95698b6f33a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/playerEconomy.cs using Guid(a85b23aa3589cd64abdd95698b6f33a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7d18dac26f0c446ccf1373a42373e7') in 0.007166 seconds 
+  Import took 0.010045 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.995131 seconds.
-  path: Assets/Characters/ZombieRanger/ZombieRanger3.prefab
-  artifactKey: Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieRanger/ZombieRanger3.prefab using Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ZombieRController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ZombieRController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'eaf003098b42cd038466246b1d30e05f') in 0.040418 seconds 
-  Import took 0.044543 seconds .
+  Time since last request: 0.000551 seconds.
+  path: Assets/Scripts/playerEconomy.cs
+  artifactKey: Guid(a85b23aa3589cd64abdd95698b6f33a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/playerEconomy.cs using Guid(a85b23aa3589cd64abdd95698b6f33a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7d18dac26f0c446ccf1373a42373e7') in 0.002329 seconds 
+  Import took 0.004841 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.032241 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSController.controller
-  artifactKey: Guid(5b2484440b5881c40a0b8dc29897bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSController.controller using Guid(5b2484440b5881c40a0b8dc29897bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7831ab7b2bcf63fb97095811bfd39c') in 0.008747 seconds 
-  Import took 0.011829 seconds .
+  Time since last request: 1.535521 seconds.
+  path: Assets/Scripts/Player_Movement.cs
+  artifactKey: Guid(d3a9c56843a697947a0bb7f4fa977736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player_Movement.cs using Guid(d3a9c56843a697947a0bb7f4fa977736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a391d6817617f08231266ab52d6729') in 0.007038 seconds 
+  Import took 0.009914 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.896574 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldier3.prefab
-  artifactKey: Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldier3.prefab using Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567f2c0905aced0a6f28d265e4cbc526') in 0.061716 seconds 
-  Import took 0.065893 seconds .
+  Time since last request: 0.001265 seconds.
+  path: Assets/Scripts/Player_Movement.cs
+  artifactKey: Guid(d3a9c56843a697947a0bb7f4fa977736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player_Movement.cs using Guid(d3a9c56843a697947a0bb7f4fa977736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a391d6817617f08231266ab52d6729') in 0.002247 seconds 
+  Import took 0.004914 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.348631 seconds.
-  path: Assets/Characters/ZombieSoldier/ZombieSoldier3.prefab
-  artifactKey: Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/ZombieSoldier/ZombieSoldier3.prefab using Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ZombieSController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+  Time since last request: 4.312736 seconds.
+  path: Assets/Scripts/PlacedObject.cs
+  artifactKey: Guid(30f7a76ef59195440a59a519d2d7c56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlacedObject.cs using Guid(30f7a76ef59195440a59a519d2d7c56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8201f507ddd8478b1d0678bbedae106b') in 0.006971 seconds 
+  Import took 0.009891 seconds .
 
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/Scripts/PlacedObject.cs
+  artifactKey: Guid(30f7a76ef59195440a59a519d2d7c56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlacedObject.cs using Guid(30f7a76ef59195440a59a519d2d7c56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8201f507ddd8478b1d0678bbedae106b') in 0.002280 seconds 
+  Import took 0.004958 seconds .
 
-The Animator Controller (ZombieSController) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+========================================================================
+Received Import Request.
+  Time since last request: 0.440901 seconds.
+  path: Assets/Scripts/Mouse3D.cs
+  artifactKey: Guid(78ae842c6da5aeb4a99503b05a947f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mouse3D.cs using Guid(78ae842c6da5aeb4a99503b05a947f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b240c0dad453b9d32eda4ec7ada15b') in 0.007699 seconds 
+  Import took 0.010540 seconds .
 
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+========================================================================
+Received Import Request.
+  Time since last request: 0.493029 seconds.
+  path: Assets/Scripts/MainMenu.cs
+  artifactKey: Guid(b95226e0b1141af4eae25efbe472332f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenu.cs using Guid(b95226e0b1141af4eae25efbe472332f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3013a7e375986adc5616a5a6c7fa01') in 0.006984 seconds 
+  Import took 0.009857 seconds .
 
- -> (artifact id: 'eda931e1a79bca4f040a45737f4b640c') in 0.050886 seconds 
-  Import took 0.055193 seconds .
+========================================================================
+Received Import Request.
+  Time since last request: 0.547190 seconds.
+  path: Assets/Scripts/ScriptableObjects.cs
+  artifactKey: Guid(039e326afcda6bc41b664c921870f496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScriptableObjects.cs using Guid(039e326afcda6bc41b664c921870f496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065ea3a9e04c6b1829030ea60dcc7b26') in 0.006990 seconds 
+  Import took 0.010308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001938 seconds.
+  path: Assets/Scripts/ScriptableObjects.cs
+  artifactKey: Guid(039e326afcda6bc41b664c921870f496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScriptableObjects.cs using Guid(039e326afcda6bc41b664c921870f496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065ea3a9e04c6b1829030ea60dcc7b26') in 0.002204 seconds 
+  Import took 0.004714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.594271 seconds.
+  path: Assets/Scripts/Spawn_UnitA.cs
+  artifactKey: Guid(9ec7a9d1ff87144b89ab13c335b3e22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spawn_UnitA.cs using Guid(9ec7a9d1ff87144b89ab13c335b3e22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828fb38825459487ad8a4dd1ed2c9c5a') in 0.007105 seconds 
+  Import took 0.010168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.421337 seconds.
+  path: Assets/Scripts/SpawnUnit.cs
+  artifactKey: Guid(545dee1b3b7564e3d9c2ec51e5a777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnUnit.cs using Guid(545dee1b3b7564e3d9c2ec51e5a777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6989438801478e06ec51fd3c8a5d2e18') in 0.006951 seconds 
+  Import took 0.009775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000677 seconds.
+  path: Assets/Scripts/SpawnUnit.cs
+  artifactKey: Guid(545dee1b3b7564e3d9c2ec51e5a777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnUnit.cs using Guid(545dee1b3b7564e3d9c2ec51e5a777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6989438801478e06ec51fd3c8a5d2e18') in 0.002153 seconds 
+  Import took 0.004720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.473194 seconds.
+  path: Assets/Scripts/Switch_Character.cs
+  artifactKey: Guid(37f48c590a40c480da8958d5b47500dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Switch_Character.cs using Guid(37f48c590a40c480da8958d5b47500dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab95571314c8aeefaaa13248f980e11') in 0.007251 seconds 
+  Import took 0.010343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.222509 seconds.
+  path: Assets/Scripts/UtilsClass.cs
+  artifactKey: Guid(ce2355f335dcae94abba806390b1bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UtilsClass.cs using Guid(ce2355f335dcae94abba806390b1bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ab15224b02628703135f8c989a3061') in 0.006969 seconds 
+  Import took 0.010030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Scripts/UtilsClass.cs
+  artifactKey: Guid(ce2355f335dcae94abba806390b1bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UtilsClass.cs using Guid(ce2355f335dcae94abba806390b1bd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ab15224b02628703135f8c989a3061') in 0.002294 seconds 
+  Import took 0.005331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.841116 seconds.
+  path: Assets/Characters/Prefabs
+  artifactKey: Guid(85c6146e14a606741a99d3029ad323c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs using Guid(85c6146e14a606741a99d3029ad323c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b8f060d4c4ff5c4236faa6e40c0131') in 0.008060 seconds 
+  Import took 0.012319 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
