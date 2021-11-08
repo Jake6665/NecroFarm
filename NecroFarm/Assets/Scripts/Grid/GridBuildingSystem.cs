@@ -259,7 +259,10 @@ public class GridBuildingSystem : MonoBehaviour {
     public void RestoreToGrid(GameObject obj)
     {
         Debug.Log("Running restore");
+
+        
         scriptableObject = obj.GetComponent<cropGrowth>().selfRef;
+        
         {
 
             {
