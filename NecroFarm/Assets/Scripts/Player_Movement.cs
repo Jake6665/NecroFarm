@@ -47,8 +47,19 @@ public class Player_Movement : MonoBehaviour
                 {
                     myAgent.SetDestination(hitInfo.point);
                     Debug.Log("Moving");
+                    Walk();
                 }
             }
         }
+    }
+
+    void Idle()
+    {
+        anim.SetFloat("Walk", 0f, 0.01f, Time.deltaTime);
+    }
+
+    void Walk()
+    {
+        anim.SetFloat("Walk", 1f, 0.01f, Time.deltaTime);
     }
 }
