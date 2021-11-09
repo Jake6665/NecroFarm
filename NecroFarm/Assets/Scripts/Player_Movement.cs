@@ -14,12 +14,15 @@ public class Player_Movement : MonoBehaviour
 
     public bool isUI;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         isMoveable = false;
         isUI = false;
         myAgent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
