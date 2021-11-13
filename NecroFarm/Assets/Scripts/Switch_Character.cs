@@ -16,8 +16,8 @@ public class Switch_Character : MonoBehaviour
 
     void Start()
     {
-        //myCharacter = "ZombieSoldier2";
-        selectedCharacter = "ZombieSoldier2";
+        //myCharacter = "Capsule";
+        selectedCharacter = "Capsule";
         deselectedCharacters[0] = "Not Empty";
         selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
         selected.enabled = true;
@@ -30,7 +30,7 @@ public class Switch_Character : MonoBehaviour
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
 
-            var myRaycast = Physics.Raycast(myRay, out hitInfo, 1000);
+            var myRaycast = Physics.Raycast(myRay, out hitInfo, 100);
 
             if (myRaycast && hitInfo.transform.gameObject.tag == "Zombie")
             {
@@ -54,42 +54,10 @@ public class Switch_Character : MonoBehaviour
                     selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
                     selected.enabled = false;
                 }
-
-                GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
-                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selected.enabled = true;
             }
-
-            else
-            {
-                GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
-                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selected.enabled = false;
-
-                myCharacter = "none selected";
-
-                deselectedCharacters.Add(selectedCharacter);
-
-                deselectedCharacters = deselectedCharacters.Distinct().ToList();
-
-                for (int i = 0; i < deselectedCharacters.Count; i++)
-                {
-                    if (selectedCharacter == deselectedCharacters[i])
-                    {
-                        deselectedCharacters.RemoveAt(i);
-                    }
-                    GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
-                    selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
-                    selected.enabled = false;
-                }
-
-                selectedCharacter = myCharacter;
-            }
-
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
             selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
             selected.enabled = true;
-            
         }
 
         if (Input.GetMouseButtonDown (2))
