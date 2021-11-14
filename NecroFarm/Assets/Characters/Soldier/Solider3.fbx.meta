@@ -4,14 +4,14 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -5824452955198520966
-    second: TPose_Soldier.001
-  - first:
-      74: -8001438212814462195
-    second: Attack_Soldier
+      74: 6688297662850050773
+    second: TPose_Soldier
   - first:
       74: -7844925268288255564
     second: Death_Soldier
+  - first:
+      74: -8001438212814462195
+    second: Attack_Soldier
   externalObjects:
   - first:
       type: UnityEngine:Material

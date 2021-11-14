@@ -7,11 +7,11 @@ ModelImporter:
       74: -3538357643935083640
     second: TPose_Ranger
   - first:
-      74: -6500434785359440683
-    second: Attack_Ranger
-  - first:
       74: -2366630982082804880
     second: Death_Ranger
+  - first:
+      74: -6500434785359440683
+    second: Attack_Ranger
   externalObjects:
   - first:
       type: UnityEngine:Material

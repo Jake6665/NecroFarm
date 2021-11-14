@@ -4,14 +4,14 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 6290250957437366056
-    second: TPose_ZombieR.001
-  - first:
-      74: 4010056192412567284
-    second: Attack_ZombieR
+      74: 7586183209315167317
+    second: TPose_ZombieR
   - first:
       74: 1510715133486898202
     second: Death_ZombieR
+  - first:
+      74: 4010056192412567284
+    second: Attack_ZombieR
   externalObjects:
   - first:
       type: UnityEngine:Material

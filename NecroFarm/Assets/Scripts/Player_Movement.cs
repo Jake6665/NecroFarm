@@ -23,6 +23,7 @@ public class Player_Movement : MonoBehaviour
         isUI = false;
         myAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        Idle();
     }
 
     // Update is called once per frame
