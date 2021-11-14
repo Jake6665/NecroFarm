@@ -16,6 +16,8 @@ public class Player_Movement : MonoBehaviour
 
     private Animator anim;
 
+    public bool isWalking;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,11 +58,11 @@ public class Player_Movement : MonoBehaviour
 
     void Idle()
     {
-        anim.SetFloat("Walk", 0f, 0.01f, Time.deltaTime);
+        isWalking = false;
     }
 
     void Walk()
     {
-        anim.SetFloat("Walk", 1f, 0.01f, Time.deltaTime);
+        isWalking = true;
     }
 }
