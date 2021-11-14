@@ -53,7 +53,6 @@
      <Compile Include="Assets\Scripts\Block_Character_Collision.cs" />
      <Compile Include="Assets\Scripts\GridBuildingSystem.cs" />
      <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
-     <Compile Include="Assets\Scripts\Spawn_UnitA.cs" />
      <Compile Include="Assets\Scripts\Mouse3D.cs" />
      <Compile Include="Assets\Scripts\SpawnUnit.cs" />
      <Compile Include="Assets\cameraMovement.cs" />

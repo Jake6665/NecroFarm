@@ -18,14 +18,30 @@ public class Player_Movement : MonoBehaviour
 
     public bool isWalking;
 
+    public Rigidbody rb;
+
+    public Vector3 lastPos;
+
+    void Walk()
+    {
+        Debug.Log("Walking");
+        anim.SetBool("isWalking", true);
+    }
+
+    void Idle()
+    {
+        Debug.Log("Idle");
+        anim.SetBool("isWalking", false);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        
         isMoveable = false;
         isUI = false;
         myAgent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        Idle();
     }
 
     // Update is called once per frame
@@ -35,6 +51,7 @@ public class Player_Movement : MonoBehaviour
         {
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
+            rb = gameObject.GetComponent<Rigidbody>();
 
             var myRaycast = Physics.Raycast(myRay, out hitInfo, 100);
 
@@ -50,19 +67,18 @@ public class Player_Movement : MonoBehaviour
                 {
                     myAgent.SetDestination(hitInfo.point);
                     Debug.Log("Moving");
-                    Walk();
                 }
             }
         }
-    }
-
-    void Idle()
-    {
-        isWalking = false;
-    }
-
-    void Walk()
-    {
-        isWalking = true;
-    }
+        if (rb.transform.position != lastPos)
+        {
+            Debug.Log("Velocity: " + rb.velocity.magnitude);
+            Walk();
+        }
+        else
+        {
+            Idle();
+        }
+        lastPos = rb.transform.position;
+    }  
 }
