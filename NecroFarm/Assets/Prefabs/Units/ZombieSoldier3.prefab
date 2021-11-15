@@ -2540,6 +2540,7 @@ MonoBehaviour:
   isUI: 0
   isWalking: 0
   rb: {fileID: 542832570109556416}
+  lastPos: {x: 0, y: 0, z: 0}
 --- !u!136 &2204406323898666917
 CapsuleCollider:
   m_ObjectHideFlags: 0

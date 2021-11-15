@@ -17,7 +17,7 @@ public class Switch_Character : MonoBehaviour
     void Start()
     {
         //myCharacter = "ZombieSoldier2";
-        selectedCharacter = "ZombieRanger3";
+        selectedCharacter = "NecroFarmer";
         deselectedCharacters[0] = "Not Empty";
         selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
         selected.enabled = true;
