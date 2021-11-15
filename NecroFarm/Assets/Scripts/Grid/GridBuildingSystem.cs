@@ -12,7 +12,7 @@ public class GridBuildingSystem : MonoBehaviour {
     private List<ScriptableObjects> scriptableObjectList;
     private ScriptableObjects scriptableObject;
     private ScriptableObjects.Dir dir = ScriptableObjects.Dir.Down;
-    private bool plantingState = false;
+
     [SerializeField]
     private GameObject gameManager;
     [SerializeField]
@@ -22,6 +22,14 @@ public class GridBuildingSystem : MonoBehaviour {
     private String ghostName = null;
     private Vector3 ghostPOS;
     private float ghostCellSize;
+
+
+    //Game States
+        //If crop UI is open
+    private bool plantingState = false;
+        //If displaying the buy plot grid
+    private bool plotState = false;
+
     private void Awake()
     {
         Instance = this;
@@ -81,7 +89,7 @@ public class GridBuildingSystem : MonoBehaviour {
 
     private void Update()
     {
-        if (plantingState)
+        if (plantingState && !plotState)
         {
             if (GameObject.Find(ghostName))
             {
@@ -247,7 +255,26 @@ public class GridBuildingSystem : MonoBehaviour {
         }
 
     }
-    
+
+    public void TogglePlot()
+    {
+        scriptableObject = null;
+        if (plotState == true)
+        {
+            plotState = false;
+        }
+        else
+        {
+            plotState = true;
+        }
+
+    }
+
+    public bool CheckPlotState()
+    {
+        return plotState;
+    }
+
     public void ChangeGhostObject(int i )
     {
         Destroy(heldGhost);
@@ -256,6 +283,8 @@ public class GridBuildingSystem : MonoBehaviour {
         ghostName = heldGhost.name;
     }
 
+
+    //Upon loading adds object back into the grid
     public void RestoreToGrid(GameObject obj)
     {
         Debug.Log("Running restore");

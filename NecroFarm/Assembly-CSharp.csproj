@@ -59,20 +59,20 @@
     <Compile Include="Assets\Scripts\UtilsClass.cs" />
     <Compile Include="Assets\Scripts\Block_Character_Collision.cs" />
     <Compile Include="Assets\Scripts\Grid\GridBuildingSystem.cs" />
+    <Compile Include="Assets\Scripts\CropsEcon\buyPlot.cs" />
     <Compile Include="Assets\Scripts\FunctionUpdater.cs" />
     <Compile Include="Assets\Scripts\Spawn_UnitA.cs" />
     <Compile Include="Assets\Scripts\Grid\Mouse3D.cs" />
     <Compile Include="Assets\cameraMovement.cs" />
     <Compile Include="Assets\farmerGrowth.cs" />
-    <Compile Include="Assets\Scripts\Menu\MenuSettings.cs" />
-    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\Menu\MenuSettings.cs" />
+    <Compile Include="Assets\Scripts\UI\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Grid\PlacedObject.cs" />
     <Compile Include="Assets\Scripts\CropsEcon\playerEconomy.cs" />
     <Compile Include="Assets\Scripts\Grid\GridXZ.cs" />
     <Compile Include="Assets\Scripts\Switch_Character.cs" />
-    <Compile Include="Assets\Scripts\CropsEcon\buyPlot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

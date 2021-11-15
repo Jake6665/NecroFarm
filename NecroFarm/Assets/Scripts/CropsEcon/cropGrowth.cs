@@ -75,14 +75,16 @@ public class cropGrowth : MonoBehaviour
             transform.localScale = new Vector3(1f, 0.5f, 1f);
         }
     }
-
+    /**
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.tag == "Well")
         {
             midGrowth = midGrowth.AddSeconds((-1 * ((growthTime / 2) / 2)));
             fullGrown = fullGrown.AddSeconds(-1 * (growthTime / 2));
         }
-    }
 
+    }
+    **/
 }
