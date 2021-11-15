@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEngine.UI;
 
 namespace RTS_Cam
 {
@@ -81,9 +82,14 @@ namespace RTS_Cam
             }
 
             GUILayout.Label("Follow target", EditorStyles.boldLabel);
-            camera.targetFollow = EditorGUILayout.ObjectField("Target to follow: ", camera.targetFollow, typeof(Transform)) as Transform;
+            camera.targetFollow = EditorGUILayout.ObjectField("Target to follow: ", camera.targetFollow, typeof(Transform), true) as Transform;
             camera.targetOffset = EditorGUILayout.Vector3Field("Target offset: ", camera.targetOffset);
             camera.followingSpeed = EditorGUILayout.FloatField("Following speed: ", camera.followingSpeed);
+
+            GUILayout.Label("UI", EditorStyles.boldLabel);
+            camera.panSliderUI = EditorGUILayout.ObjectField("Pan Slider: ", camera.panSliderUI, typeof(Slider), true) as Slider;
+            camera.zoomSliderUI = EditorGUILayout.ObjectField("Zoom Slider: ", camera.zoomSliderUI, typeof(Slider), true) as Slider;
+            camera.edgeToggleUI = EditorGUILayout.ObjectField("Toggle Slider: ", camera.edgeToggleUI, typeof(Toggle), true) as Toggle;
         }
 
         private void RotationTab()
