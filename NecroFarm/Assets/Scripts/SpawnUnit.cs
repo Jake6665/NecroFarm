@@ -6,14 +6,14 @@ public class SpawnUnit : MonoBehaviour
 {
     public GameObject unitToSpawn;
 
-    public string pointName = "Cube_Button";
-
     public Vector3 spawnPosition;
+
+    public string name;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnPosition = GameObject.Find(pointName).transform.position;
+
     }
 
     // Update is called once per frame
@@ -21,6 +21,6 @@ public class SpawnUnit : MonoBehaviour
     {
         Debug.Log("Spawning...");
         Instantiate(unitToSpawn, spawnPosition, unitToSpawn.transform.rotation);
-        unitToSpawn.name = ("Capsule" + Time.deltaTime);
+        unitToSpawn.name = (name + Time.deltaTime);
     }
 }
