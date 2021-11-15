@@ -6285,8 +6285,9 @@ MonoBehaviour:
     m_Bits: 1
   isMoveable: 0
   isUI: 0
-  isWalking: 0
   rb: {fileID: -4374287878004385413}
+  mousePos: {x: 0, y: 0, z: 0}
+  unitPos: {x: 0, y: 0, z: 0}
 --- !u!136 &1260722118507348051
 CapsuleCollider:
   m_ObjectHideFlags: 0
