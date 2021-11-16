@@ -270,6 +270,11 @@ public class GridBuildingSystem : MonoBehaviour {
 
     }
 
+    public void DisablePlot()
+    {
+        plotState = false;
+    }
+
     public bool CheckPlotState()
     {
         return plotState;
