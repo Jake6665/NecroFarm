@@ -56,10 +56,10 @@
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Util\ImageHook.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\EventSystem\InputModuleTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\InputField\GenericInputFieldTests.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\TextEditor\TextEditorTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\EventSystem\GraphicRaycasterWorldSpaceCanvasTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\RectMask2DWithNestedCanvasCullsUsingCorrectCanvasRect.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Graphic\MaskTests.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Runtime\TextEditor\TextEditorTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\CanvasScalerWithChildTextObjectDoesNotCrash.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Util\GraphicTestHelper.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Runtime\Canvas\BridgeScriptForRetainingObjects.cs" />

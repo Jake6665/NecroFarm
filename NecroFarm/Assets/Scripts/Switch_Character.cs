@@ -44,17 +44,6 @@ public class Switch_Character : MonoBehaviour
 
                 selectedCharacter = myCharacter;
 
-                for (int i = 0; i < deselectedCharacters.Count; i++)
-                {
-                    if (selectedCharacter == deselectedCharacters[i])
-                    {
-                        deselectedCharacters.RemoveAt(i);
-                    }
-                    GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
-                    selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
-                    selected.enabled = false;
-                }
-
                 GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
                 selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
                 selected.enabled = true;
@@ -66,25 +55,33 @@ public class Switch_Character : MonoBehaviour
                 selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
                 selected.enabled = false;
 
-                myCharacter = "none selected";
+                myCharacter = "NecroFarmer";
 
                 deselectedCharacters.Add(selectedCharacter);
 
                 deselectedCharacters = deselectedCharacters.Distinct().ToList();
 
-                for (int i = 0; i < deselectedCharacters.Count; i++)
-                {
-                    if (selectedCharacter == deselectedCharacters[i])
-                    {
-                        deselectedCharacters.RemoveAt(i);
-                    }
-                    GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
-                    selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
-                    selected.enabled = false;
-                }
+                GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
+                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selected.enabled = false;
 
                 selectedCharacter = myCharacter;
             }
+
+            for (int i = 0; i < deselectedCharacters.Count; i++)
+            {
+                if (selectedCharacter == deselectedCharacters[i])
+                {
+                    deselectedCharacters.RemoveAt(i);
+                }
+                GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
+                selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
+                selected.enabled = false;
+            }
+
+            deselectedCharacters.Add(selectedCharacter);
+
+            deselectedCharacters = deselectedCharacters.Distinct().ToList();
 
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
             selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");

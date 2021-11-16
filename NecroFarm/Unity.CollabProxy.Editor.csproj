@@ -122,8 +122,8 @@
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Models\IStartModel.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Components\ChangeEntryGroup.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Settings\CollabSetting.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Settings\CollabSettings.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Models\Structures\IChangeEntry.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Settings\CollabSettings.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Views\Adapters\ListAdapters\BaseListAdapter.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Models\Enums\ProjectStatus.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Editor\Collaborate\Components\ChangeListElements\ConflictedChangeListElement.cs" />
