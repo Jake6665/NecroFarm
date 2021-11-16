@@ -47,6 +47,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ZombieSFX.cs" />
      <Compile Include="Assets\Easy Save 3\Types\ES3UserType_cropGrowth.cs" />
      <Compile Include="Assets\Scripts\CropsEcon\cropGrowth.cs" />
      <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
