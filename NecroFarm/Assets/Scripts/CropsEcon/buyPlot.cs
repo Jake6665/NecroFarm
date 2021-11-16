@@ -2,48 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using CodeMonkey.Utils;
 
 public class buyPlot : MonoBehaviour
 {
     [SerializeField]
-    GameObject gridSys;
-    private bool buyMenu;
+    GameObject plot;
+    [SerializeField]
+    private int plotPrice = 1000;
+    [SerializeField]
+    GameObject gameManager;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        gameManager = GameObject.FindGameObjectWithTag("GM");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PurchasePlot()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (gameManager.GetComponent<playerEconomy>().canAfford(plotPrice))
         {
-            if (gridSys.GetComponent<GridBuildingSystem>().CheckPlotState())
-            {
-                if (EventSystem.current.IsPointerOverGameObject())
-                {
-                    return;
-                }
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, 25))
-                {
-                    if (hit.collider.gameObject == this && hit.collider != null)
-                    {
-                        buyMenu = true;
-                        return;
-                    }
-                    else
-                    {
-                        buyMenu = false;
-                        return;
-                    }
-
-                }
-            }
+            Instantiate(plot, new Vector3( this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            gameManager.GetComponent<playerEconomy>().subtractFunds(plotPrice);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            UtilsClass.CreateWorldTextPopup("Cannot afford this!", Mouse3D.GetMouseWorldPosition());
         }
 
-
     }
+
 }

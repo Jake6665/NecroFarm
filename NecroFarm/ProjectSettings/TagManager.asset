@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - UI
   - GBS
+  - GM
   layers:
   - Default
   - TransparentFX
