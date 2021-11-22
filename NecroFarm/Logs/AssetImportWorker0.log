@@ -1,544 +1,727 @@
-Unity Editor version:    2020.3.17f1 (a4537701e4ab)
-Branch:                  2020.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 12.0.1 (Build 21A559)
-Darwin version:          21.1.0
-Architecture:            x86_64
-Running under Rosetta:   YES
-Available memory:        16384 MB
 Using pre-set license
-Pro License: NO
+Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 65468 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm
+C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56364
-Successfully changed project path to: /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm
-/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm
+61151
+Successfully changed project path to: C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
+C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.92 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 55.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Game & Dev/Documents/GitHub/NecroFarm/NecroFarm/Assets
 GfxDevice: creating device client; threaded=0
-2021-11-16 02:22:56.366 Unity[25643:1095554] (null) preferred device: Apple M1 (high power)
-2021-11-16 02:22:56.366 Unity[25643:1095554] Metal devices available: 1
-2021-11-16 02:22:56.366 Unity[25643:1095554] 0: Apple M1 (high power)
-2021-11-16 02:22:56.367 Unity[25643:1095554] Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e82)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56643
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001332 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002785 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 37.16 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 95.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.977 seconds
+- Completed reload, in  1.823 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1977ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (1823ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (838ms)
-			LoadAssemblies (70ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (794ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (168ms)
+			SetupTypeCache (241ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (480ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (357ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (22ms)
-				ProcessInitializeOnLoadAttributes (300ms)
-				ProcessInitializeOnLoadMethodAttributes (108ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (24ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004230 seconds.
+Registered in 0.005322 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+log4net:ERROR Error while loading XML configuration
+System.Xml.XmlException: An error occurred while parsing EntityName. Line 3, position 33.
+  at System.Xml.XmlTextReaderImpl.Throw (System.Exception e) [0x00027] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.Throw (System.String res, System.Int32 lineNo, System.Int32 linePos) [0x00019] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.HandleEntityReference (System.Boolean isInAttributeValue, System.Xml.XmlTextReaderImpl+EntityExpandType expandType, System.Int32& charRefEndPos) [0x000c6] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow (System.Int32 curPos, System.Char quoteChar, System.Xml.XmlTextReaderImpl+NodeData attr) [0x002a5] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.ParseAttributes () [0x0039a] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.ParseElement () [0x001df] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.ParseElementContent () [0x0016f] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlTextReaderImpl.Read () [0x00085] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlLoader.LoadNode (System.Boolean skipOverWhitespace) [0x0025b] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlLoader.LoadDocSequence (System.Xml.XmlDocument parentDoc) [0x0001b] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlLoader.Load (System.Xml.XmlDocument doc, System.Xml.XmlReader reader, System.Boolean preserveWhitespace) [0x000b4] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at System.Xml.XmlDocument.Load (System.Xml.XmlReader reader) [0x0002e] in <0f9699188f0c414ea6fb5557f5c16d15>:0 
+  at log4net.Config.XmlConfigurator.InternalConfigure (log4net.Repository.ILoggerRepository repository, System.IO.Stream configStream) [0x00063] in <e1a77b5dfa0c4a1f8ba616c017f5e0b8>:0 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.175 seconds
+- Completed reload, in  1.779 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2177ms)
-		BeginReloadAssembly (233ms)
+	ReloadAssembly (1780ms)
+		BeginReloadAssembly (301ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (1857ms)
-			LoadAssemblies (178ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1377ms)
+			LoadAssemblies (141ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (1113ms)
+			SetupTypeCache (443ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (536ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (978ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (383ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.004792 seconds.
-Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.015033 seconds.
-Application.AssetDatabase Initial Script Refresh Start
-RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
-RefreshProfiler: Total: 0.000ms
-Application.AssetDatabase Initial Script Refresh End
-Application.AssetDatabase.Refresh Start
-Application.AssetDatabase.Refresh End
-RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
-RefreshProfiler: Total: 0.000ms
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Initializing Unity extensions:
-[C# Project] Writing /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/NecroFarm.sln because it has changed
-[C# Project] First difference on line 4
-
-[C# Project] Current /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/NecroFarm.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{C99A579F-0729-AA48-6157-9B50780EF81B}"
-[C# Project]   005: EndProject
-[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{42C17321-4F9C-82E0-CACF-8945F72480DC}"
-[C# Project]   007: EndProject
-[C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{1E94BA4D-B16A-746B-EE3A-EEDB5CE40618}"
-
-[C# Project] New /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/NecroFarm.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{20C985BA-480B-30CE-FADE-A310C71B4CA3}"
-[C# Project]   005: EndProject
-[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI.Tests", "UnityEngine.UI.Tests.csproj", "{6505BFE8-257F-B632-4A60-F3977AEBF326}"
-[C# Project]   007: EndProject
-[C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{C99A579F-0729-AA48-6157-9B50780EF81B}"
-[C# Project] Writing /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-firstpass.csproj because it has changed
-[C# Project] First difference on line 773
-
-[C# Project] Current /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-firstpass.csproj:
-[C# Project]   773:  <Reference Include="Unity.VSCode.Editor">
-[C# Project]   774:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-[C# Project]   775:  </Reference>
-[C# Project]   776:  <Reference Include="Unity.TextMeshPro.Editor">
-[C# Project]   777:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-
-[C# Project] New /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-firstpass.csproj:
-[C# Project]   773:   </ItemGroup>
-[C# Project]   774:   <ItemGroup>
-[C# Project]   775:     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-[C# Project]   776:       <Project>{8C755904-5FE2-3B14-A5B7-EA521ED1F8D3}</Project>
-[C# Project]   777:       <Name>Unity.VSCode.Editor</Name>
-[C# Project] Writing /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp.csproj because it has changed
-[C# Project] First difference on line 662
-
-[C# Project] Current /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp.csproj:
-[C# Project]   662:  <Reference Include="Unity.VSCode.Editor">
-[C# Project]   663:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-[C# Project]   664:  </Reference>
-[C# Project]   665:  <Reference Include="Unity.TextMeshPro.Editor">
-[C# Project]   666:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-
-[C# Project] New /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp.csproj:
-[C# Project]   662:   </ItemGroup>
-[C# Project]   663:   <ItemGroup>
-[C# Project]   664:     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-[C# Project]   665:       <Project>{C99A579F-0729-AA48-6157-9B50780EF81B}</Project>
-[C# Project]   666:       <Name>Assembly-CSharp-firstpass</Name>
-[C# Project] Writing /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor-firstpass.csproj because it has changed
-[C# Project] First difference on line 669
-
-[C# Project] Current /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor-firstpass.csproj:
-[C# Project]   669:  <Reference Include="UnityEngine.TestRunner">
-[C# Project]   670:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
-[C# Project]   671:  </Reference>
-[C# Project]   672:  <Reference Include="UnityEditor.TestRunner">
-[C# Project]   673:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
-
-[C# Project] New /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor-firstpass.csproj:
-[C# Project]   669:   </ItemGroup>
-[C# Project]   670:   <ItemGroup>
-[C# Project]   671:     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-[C# Project]   672:       <Project>{C99A579F-0729-AA48-6157-9B50780EF81B}</Project>
-[C# Project]   673:       <Name>Assembly-CSharp-firstpass</Name>
-[C# Project] Writing /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor.csproj because it has changed
-[C# Project] First difference on line 646
-
-[C# Project] Current /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor.csproj:
-[C# Project]   646:  <Reference Include="UnityEngine.TestRunner">
-[C# Project]   647:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
-[C# Project]   648:  </Reference>
-[C# Project]   649:  <Reference Include="UnityEditor.TestRunner">
-[C# Project]   650:  <HintPath>/Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
-
-[C# Project] New /Users/cliftonlindsey/Documents/GitHub/NecroFarm/NecroFarm/Assembly-CSharp-Editor.csproj:
-[C# Project]   646:   </ItemGroup>
-[C# Project]   647:   <ItemGroup>
-[C# Project]   648:     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-[C# Project]   649:       <Project>{C99A579F-0729-AA48-6157-9B50780EF81B}</Project>
-[C# Project]   650:       <Name>Assembly-CSharp-firstpass</Name>
-2021-11-16 02:23:01.773 Unity[25643:1095554] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000003040e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2021-11-16 02:23:01.776 Unity[25643:1095554] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000335260 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 202.6 MB.
-System memory in use after: 201.6 MB.
+Unloading 1604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.0 MB.
+System memory in use after: 74.0 MB.
 
-Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 2077.
-Total: 2.557542 ms (FindLiveObjects: 0.108917 ms CreateObjectMapping: 0.030542 ms MarkObjects: 1.955333 ms  DeleteObjects: 0.462042 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2037.
+Total: 5.801000 ms (FindLiveObjects: 0.163300 ms CreateObjectMapping: 0.074900 ms MarkObjects: 5.392200 ms  DeleteObjects: 0.169500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Units/ZombieSoldier3.prefab
-  artifactKey: Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieSoldier3.prefab using Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787502a6a7d5de7ea341737f138eb8d7') in 0.351724 seconds 
-  Import took 0.355797 seconds .
+  path: Assets/Characters/Boss
+  artifactKey: Guid(3e213451edcd0544793981e65fc5c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss using Guid(3e213451edcd0544793981e65fc5c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f2d4ccd879a7a4fac23c0506acf2fb') in 0.011890 seconds 
+  Import took 0.016360 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002047 seconds.
-  path: Assets/Prefabs/Units/Farmer.prefab
-  artifactKey: Guid(f1c29c2125ce6a74794068344c5dd8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/Farmer.prefab using Guid(f1c29c2125ce6a74794068344c5dd8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6460eddea48cf7151641de6ea0e37d3f') in 0.015920 seconds 
-  Import took 0.017986 seconds .
+  Time since last request: 7.676977 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754ae97e9e50db4b07204254adbe6fa9') in 0.315950 seconds 
+  Import took 0.321678 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791fabaabc2e8830583a0657835fb9a0') in 0.078696 seconds 
-  Import took 0.082234 seconds .
+  Time since last request: 185.568897 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b10fd12fdb2fd513102e167466fc493') in 0.100475 seconds 
+  Import took 0.105901 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Prefabs/Units/ZombieRanger3.prefab
-  artifactKey: Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieRanger3.prefab using Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c9a8f546183de141b3c64101392f1e') in 0.060918 seconds 
-  Import took 0.064218 seconds .
+  Time since last request: 26.841060 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30836a9db3dec28440bf9481e0d2e4b9') in 0.116945 seconds 
+  Import took 0.129867 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.534593 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574830c7ce06d3e6f220dd43a86cb23e') in 0.050454 seconds 
-  Import took 0.054366 seconds .
+  Time since last request: 47.240077 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90faccf469c839932d0d103db5e84675') in 0.101971 seconds 
+  Import took 0.112592 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.033220 seconds.
-  path: Assets/Prefabs/Units/ZombieSoldier3.prefab
-  artifactKey: Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieSoldier3.prefab using Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba63a2ad6a9ea763ef38bfbbb2d1507') in 0.048806 seconds 
-  Import took 0.052817 seconds .
+  Time since last request: 2.940017 seconds.
+  path: Assets/Characters/Boss/BossWalk.fbx
+  artifactKey: Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossWalk.fbx using Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cdca1962db192ea45140f988f817e6') in 0.094098 seconds 
+  Import took 0.101016 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.496798 seconds.
-  path: Assets/Prefabs/Units/ZombieRanger3.prefab
-  artifactKey: Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieRanger3.prefab using Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d55b5e3939ebe23abae4ecd7d889e8') in 0.046867 seconds 
-  Import took 0.050572 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002021 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2021-11-16 02:24:45.635 Unity[25643:1095554] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000362d10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.250 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2251ms)
-		BeginReloadAssembly (187ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (27ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1974ms)
-			LoadAssemblies (169ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (1218ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (140ms)
-				ProcessInitializeOnLoadAttributes (1048ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1588 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 216.6 MB.
-System memory in use after: 216.5 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2088.
-Total: 2.101333 ms (FindLiveObjects: 0.097417 ms CreateObjectMapping: 0.029500 ms MarkObjects: 1.878042 ms  DeleteObjects: 0.095250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 76.327990 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4650c24deefab763e266a755ce7b250f') in 0.182421 seconds 
-  Import took 0.185987 seconds .
+  Time since last request: 42.690348 seconds.
+  path: Assets/Characters/Boss/BossWalk.fbx
+  artifactKey: Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossWalk.fbx using Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6afab92e8701d378f658eac088b0cb') in 0.111834 seconds 
+  Import took 0.120588 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.661110 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d45ff0b8089a5396b526292733c130') in 0.049614 seconds 
-  Import took 0.053301 seconds .
+  Time since last request: 54.596108 seconds.
+  path: Assets/Characters/Boss/BossWalk.fbx
+  artifactKey: Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossWalk.fbx using Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e100a4cb187580727acf3d5faa9c97') in 0.081900 seconds 
+  Import took 0.087030 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.167666 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1753137edbf816da7736a92247262be') in 0.045988 seconds 
-  Import took 0.049676 seconds .
+  Time since last request: 74.670342 seconds.
+  path: Assets/Characters
+  artifactKey: Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters using Guid(d14fd05c6bc93124c9a0b4c171ba9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33edbf6951d8722384d54b87a9cd4ca4') in 0.008426 seconds 
+  Import took 0.011566 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.061548 seconds.
-  path: Assets/Prefabs/Units/ZombieKnight3.prefab
-  artifactKey: Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieKnight3.prefab using Guid(813589ca297b9944da4aa07faee8036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647a8890e87e203a3cb35e5b2c3f719b') in 0.045111 seconds 
-  Import took 0.048931 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001215 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2021-11-16 02:27:35.645 Unity[25643:1095554] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000363a30 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.133 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2134ms)
-		BeginReloadAssembly (183ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (31ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1865ms)
-			LoadAssemblies (167ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (282ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1127ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (954ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1588 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 216.9 MB.
-System memory in use after: 216.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2091.
-Total: 2.091417 ms (FindLiveObjects: 0.084334 ms CreateObjectMapping: 0.028958 ms MarkObjects: 1.878875 ms  DeleteObjects: 0.098417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 113.930320 seconds.
-  path: Assets/Prefabs/Units/ZombieSoldier3.prefab
-  artifactKey: Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieSoldier3.prefab using Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974807967fdbced9e0ed053eb6601b01') in 0.180118 seconds 
-  Import took 0.183934 seconds .
+  Time since last request: 5.961535 seconds.
+  path: Assets/Characters/Boss/BossWalk.fbx
+  artifactKey: Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossWalk.fbx using Guid(d59a8c5c257aa664f9277836c66dc88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94716405c1773abed838cec98a53f524') in 0.102392 seconds 
+  Import took 0.110734 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.389479 seconds.
-  path: Assets/Prefabs/Units/ZombieSoldier3.prefab
-  artifactKey: Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieSoldier3.prefab using Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e388c28dab7df3216b0ae56e0268de11') in 0.047998 seconds 
-  Import took 0.051681 seconds .
+  Time since last request: 8.731485 seconds.
+  path: Assets/Characters/Boss/Walk-Boss.anim
+  artifactKey: Guid(ddc3ed6ae0bec1447a6359742d74ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Walk-Boss.anim using Guid(ddc3ed6ae0bec1447a6359742d74ab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8837ee9398a105822857d3a0280746a0') in 0.042431 seconds 
+  Import took 0.045876 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.363935 seconds.
-  path: Assets/Prefabs/Units/ZombieSoldier3.prefab
-  artifactKey: Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieSoldier3.prefab using Guid(ddf9a6a1ec6f3494db76c5bbd936abeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ef343dbdd6216714ba06e20a3f80f0') in 0.046016 seconds 
-  Import took 0.049695 seconds .
+  Time since last request: 29.308532 seconds.
+  path: Assets/Characters/Boss/BossTextures
+  artifactKey: Guid(3038aeaf2ad56c3459ec63a0889907c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures using Guid(3038aeaf2ad56c3459ec63a0889907c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0790f52fcbb9b136372091ec33f272c4') in 0.008313 seconds 
+  Import took 0.011930 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.096657 seconds.
-  path: Assets/Prefabs/Units/ZombieRanger3.prefab
-  artifactKey: Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieRanger3.prefab using Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9f6d43c25dbdf1e3ed47391b4ddeaf') in 0.046331 seconds 
-  Import took 0.050051 seconds .
+  Time since last request: 0.037790 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Armor_BaseMap.png
+  artifactKey: Guid(35fac2d3aa9b50b4285820f2c2dcfe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Armor_BaseMap.png using Guid(35fac2d3aa9b50b4285820f2c2dcfe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161af5ee63ab5266553a654d587e0bfa') in 0.038836 seconds 
+  Import took 0.042053 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.564474 seconds.
-  path: Assets/Prefabs/Units/ZombieRanger3.prefab
-  artifactKey: Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieRanger3.prefab using Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0575d313752ebd0b16570cf95f3ce5') in 0.045186 seconds 
-  Import took 0.049145 seconds .
+  Time since last request: 0.000252 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Hammer_BaseMap.png
+  artifactKey: Guid(2a3787bc1cac4d0468e81209a9b1b96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Hammer_BaseMap.png using Guid(2a3787bc1cac4d0468e81209a9b1b96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e246085e6dc81d58bc8a942a40d56bd') in 0.019232 seconds 
+  Import took 0.022103 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.193686 seconds.
-  path: Assets/Prefabs/Units/ZombieRanger3.prefab
-  artifactKey: Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Units/ZombieRanger3.prefab using Guid(e736058400ed1c448868ee79d6817049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d78b506069ff9d519f904caba79ee5') in 0.045796 seconds 
-  Import took 0.049491 seconds .
+  Time since last request: 0.000205 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Hammer_Normal.png
+  artifactKey: Guid(2f324595956348648a9e9f9fd86039d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Hammer_Normal.png using Guid(2f324595956348648a9e9f9fd86039d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0abf456769c10c2b48cff75f4ff18d2') in 0.016392 seconds 
+  Import took 0.019457 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001173 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2021-11-16 02:29:31.552 Unity[25643:1095554] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000332b50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.128 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2129ms)
-		BeginReloadAssembly (185ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1856ms)
-			LoadAssemblies (166ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1126ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (956ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1588 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 217.3 MB.
-System memory in use after: 217.3 MB.
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Armor_Normal.png
+  artifactKey: Guid(2ec6543821a304143a9ae9d7b2f8fd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Armor_Normal.png using Guid(2ec6543821a304143a9ae9d7b2f8fd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e70f6b492111e6c7704468f8bcfaac') in 0.013266 seconds 
+  Import took 0.016185 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2094.
-Total: 2.102000 ms (FindLiveObjects: 0.085000 ms CreateObjectMapping: 0.029292 ms MarkObjects: 1.888959 ms  DeleteObjects: 0.097875 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_BaseMap.png
+  artifactKey: Guid(7e9892dae815e46458f9437a289a8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_BaseMap.png using Guid(7e9892dae815e46458f9437a289a8286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10cf6f327c2f7a318bea0a41abfaa87d') in 0.014354 seconds 
+  Import took 0.017200 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_MaskMap.png
+  artifactKey: Guid(58d86e5ed11e3b8468ec248ec52a37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_MaskMap.png using Guid(58d86e5ed11e3b8468ec248ec52a37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbad712f1cea90787caa901680df50d') in 0.026145 seconds 
+  Import took 0.029218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_Normal.png
+  artifactKey: Guid(d5e947b909561d34196e308c5f58403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_Normal.png using Guid(d5e947b909561d34196e308c5f58403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc00b0ae9af299245c9e63b8c963d0b6') in 0.020522 seconds 
+  Import took 0.023405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Body_MaskMap.png
+  artifactKey: Guid(837e571eefd5e5540a28667757fc3e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Body_MaskMap.png using Guid(837e571eefd5e5540a28667757fc3e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df03773dec6974d4ae56bb1d99fca70b') in 0.030534 seconds 
+  Import took 0.033399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Body_BaseMap.png
+  artifactKey: Guid(7bd9dd28533ffcb41b3477404e008034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Body_BaseMap.png using Guid(7bd9dd28533ffcb41b3477404e008034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198f3cdc634a5d952ef7631101242ad2') in 0.014799 seconds 
+  Import took 0.017828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Hammer_MaskMap.png
+  artifactKey: Guid(a66323a6b35a2354f92c2d841a36533b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Hammer_MaskMap.png using Guid(a66323a6b35a2354f92c2d841a36533b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e369b11fbf0a4ae24f4fb7ff5e9a89aa') in 0.021528 seconds 
+  Import took 0.024670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Body_Normal.png
+  artifactKey: Guid(0a1ee3137c220314da78df600cd22b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Body_Normal.png using Guid(0a1ee3137c220314da78df600cd22b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b5cd10ea3db4eb86f5eadf04eb249d') in 0.015975 seconds 
+  Import took 0.018874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Armor_MaskMap.png
+  artifactKey: Guid(5e1837c5f9675954c84e3ae8e827811c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Armor_MaskMap.png using Guid(5e1837c5f9675954c84e3ae8e827811c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360bb0c7c1514d9321b39a330e4b17a1') in 0.015103 seconds 
+  Import took 0.018140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.288715 seconds.
+  path: Assets/Characters/Boss/BossTextures/InnerMaterial.mat
+  artifactKey: Guid(65db93a54358d3240b8feaf834e4b7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/InnerMaterial.mat using Guid(65db93a54358d3240b8feaf834e4b7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ac23d3607fa794eebe0930fbfe76c7') in 0.024171 seconds 
+  Import took 0.028548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.337644 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_Normal.png
+  artifactKey: Guid(d5e947b909561d34196e308c5f58403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_InnerMaterial_Normal.png using Guid(d5e947b909561d34196e308c5f58403b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5754b093a0a5bcc95cc3a9429fb31dd') in 0.033412 seconds 
+  Import took 0.037140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.046788 seconds.
+  path: Assets/Characters/Boss/BossTextures/Hammer.mat
+  artifactKey: Guid(8c4914e89e6e9b34fb2ac06aca781487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Hammer.mat using Guid(8c4914e89e6e9b34fb2ac06aca781487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aef47d1880f011b6ba7ebc0453935fc') in 0.023157 seconds 
+  Import took 0.028340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.227817 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Hammer_Normal.png
+  artifactKey: Guid(2f324595956348648a9e9f9fd86039d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Hammer_Normal.png using Guid(2f324595956348648a9e9f9fd86039d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5950dc7aac67c1b62d13244fb3bd519') in 0.023320 seconds 
+  Import took 0.028133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.279582 seconds.
+  path: Assets/Characters/Boss/BossTextures/New Material.mat
+  artifactKey: Guid(dab8143e051cdf045914eafd15222538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/New Material.mat using Guid(dab8143e051cdf045914eafd15222538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77937fbec92ca263390ca1eed3ea7b5') in 0.016704 seconds 
+  Import took 0.020760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.883343 seconds.
+  path: Assets/Characters/Boss/BossTextures/Body.mat
+  artifactKey: Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Body.mat using Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932db924679f9f783f9613a8e712348a') in 0.019860 seconds 
+  Import took 0.023715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.464930 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Body_Normal.png
+  artifactKey: Guid(0a1ee3137c220314da78df600cd22b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Body_Normal.png using Guid(0a1ee3137c220314da78df600cd22b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6beadc78c7a726cb827f4d653f85c458') in 0.019060 seconds 
+  Import took 0.022466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.189944 seconds.
+  path: Assets/Characters/Boss/BossTextures/BossArmor.mat
+  artifactKey: Guid(5f5eeecceafae4248a87ff124e0699e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/BossArmor.mat using Guid(5f5eeecceafae4248a87ff124e0699e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3267ea1e28230912c4c8c298bc44a114') in 0.015345 seconds 
+  Import took 0.018500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.985937 seconds.
+  path: Assets/Characters/Boss/BossTextures/Boss_Armor_Normal.png
+  artifactKey: Guid(2ec6543821a304143a9ae9d7b2f8fd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Boss_Armor_Normal.png using Guid(2ec6543821a304143a9ae9d7b2f8fd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58efb6dafba1a8a0953d03ff4eb472c') in 0.017033 seconds 
+  Import took 0.020787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.664245 seconds.
+  path: Assets/Characters/Boss/BossTextures/Body.mat
+  artifactKey: Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Body.mat using Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33044a5116bbfc2cbf8ac01cae439e30') in 0.041414 seconds 
+  Import took 0.044686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Characters/Boss/BossTextures/InnerMaterial.mat
+  artifactKey: Guid(65db93a54358d3240b8feaf834e4b7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/InnerMaterial.mat using Guid(65db93a54358d3240b8feaf834e4b7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537e33d1898f34e07e9d2998c109810a') in 0.034424 seconds 
+  Import took 0.037466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Characters/Boss/BossTextures/BossArmor.mat
+  artifactKey: Guid(5f5eeecceafae4248a87ff124e0699e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/BossArmor.mat using Guid(5f5eeecceafae4248a87ff124e0699e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23e16a796477a2975ef2796fea70baf') in 0.029312 seconds 
+  Import took 0.032213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/Characters/Boss/BossTextures/Body.mat
+  artifactKey: Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Body.mat using Guid(ccc70519fa7b04b4192767d9a630570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33044a5116bbfc2cbf8ac01cae439e30') in 0.033714 seconds 
+  Import took 0.036684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Characters/Boss/BossTextures/Hammer.mat
+  artifactKey: Guid(8c4914e89e6e9b34fb2ac06aca781487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossTextures/Hammer.mat using Guid(8c4914e89e6e9b34fb2ac06aca781487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce62920a0da8e79c71284ae37f44073') in 0.024157 seconds 
+  Import took 0.027074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.820971 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnStone.mat
+  artifactKey: Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnStone.mat using Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf8a2d0b2381d3e5e86c0ef0a8ad813') in 0.023460 seconds 
+  Import took 0.026769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Enviornment Models/Barracade1_Textures/Barricade_Stage2.mat
+  artifactKey: Guid(d48bfc52d228be646abcdc6ae2150abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/Barracade1_Textures/Barricade_Stage2.mat using Guid(d48bfc52d228be646abcdc6ae2150abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b5e5c28701e396c6118a09981ac662') in 0.018230 seconds 
+  Import took 0.021299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnStone.mat
+  artifactKey: Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnStone.mat using Guid(74246613cf8fdb04a9699b60ee697211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf8a2d0b2381d3e5e86c0ef0a8ad813') in 0.020080 seconds 
+  Import took 0.023229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Enviornment Models/BarnTextures/BarnWood.mat
+  artifactKey: Guid(fc5e180b028b3cb4c8d107b3ccdf0ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/BarnTextures/BarnWood.mat using Guid(fc5e180b028b3cb4c8d107b3ccdf0ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaed3a85de3bd4478e8ca3527145047') in 0.023757 seconds 
+  Import took 0.026705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Enviornment Models/Barracade1_Textures/Barricade_Stage1.mat
+  artifactKey: Guid(72da00f0beece6b469fa72e5b52cdfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviornment Models/Barracade1_Textures/Barricade_Stage1.mat using Guid(72da00f0beece6b469fa72e5b52cdfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c8e6544709da67a8a9fb53a2d776c5') in 0.019579 seconds 
+  Import took 0.022785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.205578 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c0745f1bd8268655dfd484d823e006') in 0.148542 seconds 
+  Import took 0.166810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.233332 seconds.
+  path: Assets/Characters/Prefabs/Boss.prefab
+  artifactKey: Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Boss.prefab using Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9517271b45e8f8e2f30aad254143b0df') in 0.091939 seconds 
+  Import took 0.100207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Characters/Prefabs/ZombieKnight3.prefab
+  artifactKey: Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/ZombieKnight3.prefab using Guid(7e5687e9bc09fc247a489df94f256d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27890c0b33c3e014e1da02f1097278d') in 0.117052 seconds 
+  Import took 0.126889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Characters/Prefabs/Necromancer5.prefab
+  artifactKey: Guid(352b55c40cecf674eb1b336cef56b30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Necromancer5.prefab using Guid(352b55c40cecf674eb1b336cef56b30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4deee26ca002f0784dbbb1eb87e773') in 0.068489 seconds 
+  Import took 0.076143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Characters/Prefabs/Solider3.prefab
+  artifactKey: Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Solider3.prefab using Guid(85faf398511a6c1419ab0eb2bbff1d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a427ffc43330ee61bca06b740122ea5') in 0.086361 seconds 
+  Import took 0.091420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Characters/Prefabs/ZombieSoldier3.prefab
+  artifactKey: Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/ZombieSoldier3.prefab using Guid(3ce856895711d7840b7f9f86a0e3bbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53be66fadb303c23ed7176a7ed1e983') in 0.102585 seconds 
+  Import took 0.112192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000502 seconds.
+  path: Assets/Characters/Prefabs/Ranger3.prefab
+  artifactKey: Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Ranger3.prefab using Guid(2d1fc271364bfc245bc276fd3a8cf9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a88149912d40364af078d6fb6c5a35a') in 0.103720 seconds 
+  Import took 0.108981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Characters/Prefabs/ZombieRanger3.prefab
+  artifactKey: Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/ZombieRanger3.prefab using Guid(2edc751df6a58ce4699c7bed01ca37cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3dc1607f274b7d730ef55a720a855d') in 0.094680 seconds 
+  Import took 0.104543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000533 seconds.
+  path: Assets/Characters/Prefabs/Knight4.prefab
+  artifactKey: Guid(1b42cac91f5c56f4595c3d8a3ef8ba6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Knight4.prefab using Guid(1b42cac91f5c56f4595c3d8a3ef8ba6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Controller 'KnightController': Transition '' in state 'Idle_Knight' uses parameter 'isWalking' which is not compatible with condition type.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\AnimatorController.cpp line 881]
+
+ -> (artifact id: 'dcc3ac6488c6a8ab3722661039619cd1') in 0.126079 seconds 
+  Import took 0.132421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.275287 seconds.
+  path: Assets/Characters/Prefabs/Boss.prefab
+  artifactKey: Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Boss.prefab using Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fff704a2d6d46f0afe70fc2b9d792b') in 0.087075 seconds 
+  Import took 0.097734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.703036 seconds.
+  path: Assets/Characters/Boss/Boss.fbx
+  artifactKey: Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/Boss.fbx using Guid(8a8ff08a6063d5340b79911a0f0ef470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221d67b50171629f9516674dd6759793') in 0.137963 seconds 
+  Import took 0.155705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.599153 seconds.
+  path: Assets/Characters/Knight/Knight4.fbx
+  artifactKey: Guid(501fb2da2a0442b4ab8f6912af9d36f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight/Knight4.fbx using Guid(501fb2da2a0442b4ab8f6912af9d36f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d5cdd194de28cfd50933e974418d42') in 0.086192 seconds 
+  Import took 0.092301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Characters/Soldier/Solider3.fbx
+  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Soldier/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deea863e8b5ba3f3eb0a747ee3df8650') in 0.087838 seconds 
+  Import took 0.092624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Characters/Ranger/Ranger3.fbx
+  artifactKey: Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ranger/Ranger3.fbx using Guid(7752079a5d742244c98154b8fafae925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0895e5e5df53eeaef49154df07413be4') in 0.087532 seconds 
+  Import took 0.092269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Characters/Soldier/Solider3.fbx
+  artifactKey: Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Soldier/Solider3.fbx using Guid(9861031c09923ed49a6030eb0d4938b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deea863e8b5ba3f3eb0a747ee3df8650') in 0.085329 seconds 
+  Import took 0.090190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Characters/ZombieKnight/ZombieKnight3.fbx
+  artifactKey: Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/ZombieKnight/ZombieKnight3.fbx using Guid(eef10f1daa6dc8a418fd9094d8f9f9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db90782da9ebf4dfe1eb43d345d96045') in 0.081291 seconds 
+  Import took 0.086083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Characters/Necromancer/Necromancer5.fbx
+  artifactKey: Guid(b065f8df564bca94babc12619ec6bd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Necromancer/Necromancer5.fbx using Guid(b065f8df564bca94babc12619ec6bd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97886dd9cdfeec1e96f1b7d2129063a9') in 0.074697 seconds 
+  Import took 0.079727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Characters/ZombieRanger/ZombieRanger3.fbx
+  artifactKey: Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/ZombieRanger/ZombieRanger3.fbx using Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5f5e6359846758354ee099e73a57ef') in 0.067191 seconds 
+  Import took 0.072008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx
+  artifactKey: Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/ZombieSoldier/ZombieSoldier3.fbx using Guid(747b1f5e2215468419e6d79cb968d340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf6f78d59e781e99b52699f2ce2b2ba') in 0.074175 seconds 
+  Import took 0.078930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Characters/ZombieRanger/ZombieRanger3.fbx
+  artifactKey: Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/ZombieRanger/ZombieRanger3.fbx using Guid(5eed358c56194624d82b195cd647a570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5f5e6359846758354ee099e73a57ef') in 0.068407 seconds 
+  Import took 0.073076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.037077 seconds.
+  path: Assets/Characters/Prefabs/Boss.prefab
+  artifactKey: Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Prefabs/Boss.prefab using Guid(ead4372972d709a4ba547c1dff7a1313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313373597f305c5e945c3b0df4ab3876') in 0.076609 seconds 
+  Import took 0.083989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.336141 seconds.
+  path: Assets/Characters/Boss/BossController.controller
+  artifactKey: Guid(dda1f6582c671114d882f4faa1d89129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossController.controller using Guid(dda1f6582c671114d882f4faa1d89129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e8b17f0f355bd59a8f7fb6a99d6266') in 0.010671 seconds 
+  Import took 0.014045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004008 seconds.
+  path: Assets/Characters/Boss/BossController.controller
+  artifactKey: Guid(dda1f6582c671114d882f4faa1d89129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Boss/BossController.controller using Guid(dda1f6582c671114d882f4faa1d89129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e8b17f0f355bd59a8f7fb6a99d6266') in 0.002911 seconds 
+  Import took 0.005976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.566818 seconds.
+  path: Assets/Characters/Knight
+  artifactKey: Guid(84a53465a58bd8a4d810963ec1f4ae06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight using Guid(84a53465a58bd8a4d810963ec1f4ae06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3354a23bd5a44a79a9c9fdbb814bf8f') in 0.007094 seconds 
+  Import took 0.010348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049909 seconds.
+  path: Assets/Characters/Knight/KnightClothing.mat
+  artifactKey: Guid(281071befcf3c8e41a5fd5efa97010a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight/KnightClothing.mat using Guid(281071befcf3c8e41a5fd5efa97010a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07accbf64064753c68d7e3f01b111d5') in 0.023556 seconds 
+  Import took 0.026823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Characters/Knight/KnightWeapon.mat
+  artifactKey: Guid(fd8b6e0eda97c4b47b2153bff37640af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight/KnightWeapon.mat using Guid(fd8b6e0eda97c4b47b2153bff37640af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc9775e0d913d250b5b6b8bbc6c54b') in 0.019621 seconds 
+  Import took 0.022747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Characters/Knight/KnightSkin.mat
+  artifactKey: Guid(bf5041b26d300c94bbf7cc4058d24af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight/KnightSkin.mat using Guid(bf5041b26d300c94bbf7cc4058d24af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c3167a3552ebbe0b57065c7a631a9b') in 0.021079 seconds 
+  Import took 0.024010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.741480 seconds.
+  path: Assets/Characters/Knight/KnightController.controller
+  artifactKey: Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Knight/KnightController.controller using Guid(bedee386296b7b94b916d288bdbbba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ea72080a9a9dc157e9cef641535cb3') in 0.070781 seconds 
+  Import took 0.078378 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
