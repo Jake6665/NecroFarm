@@ -108,6 +108,17 @@ public class GridBuildingSystem : MonoBehaviour {
                 {
                     return;
                 }
+
+                //Ensure planting on soil
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f))
+                {
+                    if (raycastHit.transform.tag != "Soil")
+                    {
+                        return;
+                    }
+                }
+
                 //Check if player can afford
                 if (gameManager.GetComponent<playerEconomy>().canAfford(scriptableObject.buyPrice))
                 {

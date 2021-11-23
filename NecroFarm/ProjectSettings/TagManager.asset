@@ -11,6 +11,11 @@ TagManager:
   - Ground
   - UI
   - GBS
+<<<<<<< Updated upstream
+=======
+  - GM
+  - Soil
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

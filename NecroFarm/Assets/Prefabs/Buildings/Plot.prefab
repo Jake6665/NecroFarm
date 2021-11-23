@@ -774,9 +774,9 @@ GameObject:
   - component: {fileID: 6037409444123665790}
   m_Layer: 0
   m_Name: Plot
-  m_TagString: Well
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6037409443976557153

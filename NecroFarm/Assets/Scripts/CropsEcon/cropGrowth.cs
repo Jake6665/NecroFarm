@@ -10,6 +10,16 @@ public class cropGrowth : MonoBehaviour
     DateTime plantTime;
     DateTime midGrowth;
     DateTime fullGrown;
+
+    [SerializeField]
+    GameObject firstStage;
+    [SerializeField]
+    GameObject secondStage;
+    [SerializeField]
+    GameObject thirdStage;
+
+
+
     private bool finshedGrowing = false;
     private List<GameObject> ObjectsInRange = new List<GameObject>();
     [SerializeField]
@@ -22,7 +32,7 @@ public class cropGrowth : MonoBehaviour
 
     private void Start()
     {
-        //hasRestored = ES3.Load("hasR", true);
+
         Debug.Log("Inital Placement: "+initialPlacement.ToString());
         gridObj = GameObject.FindGameObjectWithTag("GBS");
         if (initialPlacement == true)
@@ -31,7 +41,7 @@ public class cropGrowth : MonoBehaviour
             midGrowth = plantTime.AddSeconds(growthTime / 2);
             fullGrown = plantTime.AddSeconds(growthTime);
 
-            transform.localScale = new Vector3(1f, 0.1f, 1f);
+
             initialPlacement = false;
         }
         else{
@@ -69,10 +79,14 @@ public class cropGrowth : MonoBehaviour
         if (plantTime > fullGrown)
         {
             finshedGrowing = true;
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            thirdStage.SetActive(true);
+            firstStage.SetActive(false);
+            secondStage.SetActive(false);
+
         }else if (plantTime > midGrowth)
         {
-            transform.localScale = new Vector3(1f, 0.5f, 1f);
+            secondStage.SetActive(true);
+            firstStage.SetActive(false);
         }
     }
     /**

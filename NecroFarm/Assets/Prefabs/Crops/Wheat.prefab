@@ -158,6 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTime: 10
+  firstStage: {fileID: 5634399739153146608}
+  secondStage: {fileID: 4779751671543296092}
+  thirdStage: {fileID: 8259108175203199694}
   initialPlacement: 1
   selfRef: {fileID: 11400000, guid: 5280ddfd3d7954a409f8082a7e947bbb, type: 2}
   hasRestored: 1
@@ -271,9 +274,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5099063198413974698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 1, y: -0.5, z: 1}
   m_LocalScale: {x: 2, y: 0.5, z: 2}
   m_Children: []
+=======
+  m_LocalPosition: {x: 3, y: -0.18, z: 3}
+  m_LocalScale: {x: 6, y: 0.25, z: 6}
+  m_Children:
+  - {fileID: 8303317834596310014}
+>>>>>>> Stashed changes
   m_Father: {fileID: 6554903290923379446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -360,7 +370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 462906d45f336ba48a6e8f43e0e47142, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< Updated upstream
       value: 0
+=======
+      value: 0.5
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 462906d45f336ba48a6e8f43e0e47142, type: 3}
       propertyPath: m_LocalPosition.z
