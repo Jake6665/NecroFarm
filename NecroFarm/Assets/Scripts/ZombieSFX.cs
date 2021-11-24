@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ZombieSFX : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private AudioSource sound;
+    public AudioClip clip;
+
+    void Awake()
     {
-        
+        sound = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Step()
     {
-        
+        sound.PlayOneShot(clip);
     }
 }
