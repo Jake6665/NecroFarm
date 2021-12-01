@@ -16,7 +16,7 @@ MonoBehaviour:
   currentPrefab: {fileID: 6554903290923379446, guid: fa17b72bb6aa0044f982f82aa5f35ad2, type: 3}
   defaultPrefab: {fileID: 6554903290923379446, guid: fa17b72bb6aa0044f982f82aa5f35ad2, type: 3}
   visual: {fileID: 6554903290923379446, guid: dbd95a57cba3b404dbaa9e2bc79a3543, type: 3}
-  width: 1
-  height: 1
+  width: 3
+  height: 3
   buyPrice: 120
   sellPrice: 180

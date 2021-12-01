@@ -108,54 +108,63 @@ public class GridBuildingSystem : MonoBehaviour {
                 {
                     return;
                 }
-                //Check if player can afford
-                if (gameManager.GetComponent<playerEconomy>().canAfford(scriptableObject.buyPrice))
+                //Make sure planint in soil
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f))
                 {
-
-                    Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
-                    grid.GetXZ(mousePosition, out int x, out int z);
-                    Vector2Int placedObjectOrigin = new Vector2Int(x, z);
-                    placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);
-
-                    List<Vector2Int> gridPositionList = scriptableObject.GetGridPositionList(new Vector2Int(x, z), dir);
-                    bool canBuild = true;
-
-                    foreach (Vector2Int gridPosition in gridPositionList)
+                    if(raycastHit.transform.tag == "Well")
                     {
-                        if (!grid.GetGridObject(gridPosition.x, gridPosition.y).CanBuild())
+                        //Check if player can afford
+                        if (gameManager.GetComponent<playerEconomy>().canAfford(scriptableObject.buyPrice))
                         {
-                            canBuild = false;
-                            break;
-                        }
-                    }
-                    
-                    //Check location to see if on grid is occupied
-                    if (canBuild)
-                    {
-                        Vector2Int rotationOffest = scriptableObject.GetRotationOffset(dir);
-                        Vector3 scriptableWorldPosition = grid.GetWorldPosition(x, z) + new Vector3(rotationOffest.x, 0, rotationOffest.y) * grid.GetCellSize();
-                        PlacedObject placedObject = PlacedObject.Create(scriptableWorldPosition, new Vector2Int(x, z), dir, scriptableObject);
-                        //Handle mutli-tiled claims from objects
-                        foreach (Vector2Int gridPosition in gridPositionList)
+
+                            Vector3 mousePosition = Mouse3D.GetMouseWorldPosition();
+                            grid.GetXZ(mousePosition, out int x, out int z);
+                            Vector2Int placedObjectOrigin = new Vector2Int(x, z);
+                            placedObjectOrigin = grid.ValidateGridPosition(placedObjectOrigin);
+
+                            List<Vector2Int> gridPositionList = scriptableObject.GetGridPositionList(new Vector2Int(x, z), dir);
+                            bool canBuild = true;
+
+                            foreach (Vector2Int gridPosition in gridPositionList)
+                            {
+                                if (!grid.GetGridObject(gridPosition.x, gridPosition.y).CanBuild())
+                                {
+                                    canBuild = false;
+                                    break;
+                                }
+                            }
+
+                            //Check location to see if on grid is occupied
+                            if (canBuild)
+                            {
+                                Vector2Int rotationOffest = scriptableObject.GetRotationOffset(dir);
+                                Vector3 scriptableWorldPosition = grid.GetWorldPosition(x, z) + new Vector3(rotationOffest.x, 0, rotationOffest.y) * grid.GetCellSize();
+                                PlacedObject placedObject = PlacedObject.Create(scriptableWorldPosition, new Vector2Int(x, z), dir, scriptableObject);
+                                //Handle mutli-tiled claims from objects
+                                foreach (Vector2Int gridPosition in gridPositionList)
+                                {
+                                    grid.GetGridObject(gridPosition.x, gridPosition.y).SetPlacedObject(placedObject);
+                                }
+
+                                gameManager.GetComponent<playerEconomy>().subtractFunds(scriptableObject.buyPrice);
+                            }//Gird tile is occupied
+                            else
+                            {
+                                UtilsClass.CreateWorldTextPopup("Cannot build here!", Mouse3D.GetMouseWorldPosition());
+                            }
+                        }//Not enough funds to purchase
+                        else
                         {
-                            grid.GetGridObject(gridPosition.x, gridPosition.y).SetPlacedObject(placedObject);
+                            UtilsClass.CreateWorldTextPopup("Cannot afford this!", Mouse3D.GetMouseWorldPosition());
                         }
 
-                        gameManager.GetComponent<playerEconomy>().subtractFunds(scriptableObject.buyPrice);
-                    }//Gird tile is occupied
-                    else
-                    {
-                        UtilsClass.CreateWorldTextPopup("Cannot build here!", Mouse3D.GetMouseWorldPosition());
                     }
-                }//Not enough funds to purchase
-                else
-                {
-                    UtilsClass.CreateWorldTextPopup("Cannot afford this!", Mouse3D.GetMouseWorldPosition());
+
+
                 }
-
             }
 
-         
             //Sell grown crops
             if (Input.GetMouseButtonDown(1))
             {

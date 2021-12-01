@@ -12,6 +12,7 @@ TagManager:
   - UI
   - GBS
   - GM
+  - Crop
   layers:
   - Default
   - TransparentFX

@@ -71,7 +71,7 @@ public class Player_Movement : MonoBehaviour
                     myRaycast = Physics.Raycast(myRay, out hitInfo, 0);
                     Debug.Log("UI is: " + isUI);
                 }
-                else if (myRaycast && isMoveable && isUI == false && (hitInfo.transform.gameObject.tag == "Ground" || hitInfo.transform.gameObject.tag == "Well" ))
+                else if (myRaycast && isMoveable && isUI == false && (hitInfo.transform.gameObject.tag == "Ground" || hitInfo.transform.gameObject.tag == "Well" || hitInfo.transform.gameObject.tag == "Crop"))
                 {
                     myAgent.SetDestination(hitInfo.point);
                     Debug.Log("Moving");

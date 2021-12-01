@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ES3Types
 {
 	[UnityEngine.Scripting.Preserve]
-	[ES3PropertiesAttribute("plantTime", "finshedGrowing", "initialPlacement", "gridObj", "hasRestored")]
+	[ES3PropertiesAttribute("plantTime", "midGrowth", "fullGrown", "initialPlacement", "gridObj", "hasRestored")]
 	public class ES3UserType_cropGrowth : ES3ComponentType
 	{
 		public static ES3Type Instance = null;
@@ -17,10 +17,11 @@ namespace ES3Types
 			var instance = (cropGrowth)obj;
 			
 			writer.WritePrivateField("plantTime", instance);
-			writer.WritePrivateField("finshedGrowing", instance);
+			writer.WritePrivateField("midGrowth", instance);
+			writer.WritePrivateField("fullGrown", instance);
 			writer.WritePrivateField("initialPlacement", instance);
 			writer.WritePrivateFieldByRef("gridObj", instance);
-			writer.WritePrivateField("hasRestored", instance);
+			writer.WriteProperty("hasRestored", instance.hasRestored, ES3Type_bool.Instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
@@ -34,8 +35,11 @@ namespace ES3Types
 					case "plantTime":
 					reader.SetPrivateField("plantTime", reader.Read<System.DateTime>(), instance);
 					break;
-					case "finshedGrowing":
-					reader.SetPrivateField("finshedGrowing", reader.Read<System.Boolean>(), instance);
+					case "midGrowth":
+					reader.SetPrivateField("midGrowth", reader.Read<System.DateTime>(), instance);
+					break;
+					case "fullGrown":
+					reader.SetPrivateField("fullGrown", reader.Read<System.DateTime>(), instance);
 					break;
 					case "initialPlacement":
 					reader.SetPrivateField("initialPlacement", reader.Read<System.Boolean>(), instance);
@@ -44,8 +48,8 @@ namespace ES3Types
 					reader.SetPrivateField("gridObj", reader.Read<UnityEngine.GameObject>(), instance);
 					break;
 					case "hasRestored":
-					reader.SetPrivateField("hasRestored", reader.Read<System.Boolean>(), instance);
-					break;
+						instance.hasRestored = reader.Read<System.Boolean>(ES3Type_bool.Instance);
+						break;
 					default:
 						reader.Skip();
 						break;

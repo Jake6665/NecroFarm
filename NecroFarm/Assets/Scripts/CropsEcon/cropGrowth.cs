@@ -7,9 +7,22 @@ public class cropGrowth : MonoBehaviour
 {
     [SerializeField]
     private double growthTime = 10;
+
+
+    [SerializeField]
+    private GameObject firstStage;
+    [SerializeField]
+    private GameObject secondStage;
+    [SerializeField]
+    private GameObject thirdStage;
+
     DateTime plantTime;
+
     DateTime midGrowth;
+
     DateTime fullGrown;
+
+    DateTime timeGrown;
     private bool finshedGrowing = false;
     private List<GameObject> ObjectsInRange = new List<GameObject>();
     [SerializeField]
@@ -22,16 +35,13 @@ public class cropGrowth : MonoBehaviour
 
     private void Start()
     {
-        //hasRestored = ES3.Load("hasR", true);
-        Debug.Log("Inital Placement: "+initialPlacement.ToString());
+        //Debug.Log("Inital Placement: "+initialPlacement.ToString());
         gridObj = GameObject.FindGameObjectWithTag("GBS");
         if (initialPlacement == true)
         {
             plantTime = DateTime.Now;
             midGrowth = plantTime.AddSeconds(growthTime / 2);
             fullGrown = plantTime.AddSeconds(growthTime);
-
-            transform.localScale = new Vector3(1f, 0.1f, 1f);
             initialPlacement = false;
         }
         else{
@@ -47,7 +57,7 @@ public class cropGrowth : MonoBehaviour
                 gridObj.GetComponent<GridBuildingSystem>().RestoreToGrid(this.gameObject);
                 Debug.Log("Restroing " + this.gameObject.name.ToString());
 
-                //Reser refrence to self
+                //Reset refrence to self
                 selfRef.currentPrefab = selfRef.defaultPrefab;
 
                 //Kill self
@@ -65,16 +75,22 @@ public class cropGrowth : MonoBehaviour
 
     private void Update()
     {
-        plantTime = DateTime.Now;
-        if (plantTime > fullGrown)
+        timeGrown = DateTime.Now;
+        if (timeGrown > fullGrown)
         {
             finshedGrowing = true;
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }else if (plantTime > midGrowth)
+            thirdStage.SetActive(true);
+            secondStage.SetActive(false);
+            firstStage.SetActive(false);
+        }else if (timeGrown > midGrowth)
         {
-            transform.localScale = new Vector3(1f, 0.5f, 1f);
+            secondStage.SetActive(true);
+            firstStage.SetActive(false);
         }
     }
+
+
+    //If time to code, add variable growth time
     /**
     private void OnTriggerEnter(Collider other)
     {
