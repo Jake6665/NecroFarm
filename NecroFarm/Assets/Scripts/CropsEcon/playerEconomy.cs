@@ -19,7 +19,7 @@ public class playerEconomy : MonoBehaviour
     void Start()
     {
         playerFundsText.SetText("$" + playerMoney);
-        playerFundsText.SetText("Bones: " + numBones);
+        playerBonesText.SetText("Bones: " + numBones);
     }
     public void addFunds(int cash)
     {

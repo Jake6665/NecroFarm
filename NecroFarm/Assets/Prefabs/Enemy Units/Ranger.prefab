@@ -3536,6 +3536,7 @@ GameObject:
   - component: {fileID: 3114748669612418521}
   - component: {fileID: 6433944113445714043}
   - component: {fileID: 7543938267543723132}
+  - component: {fileID: -2695893581997376679}
   m_Layer: 0
   m_Name: Ranger
   m_TagString: Enemy
@@ -3799,6 +3800,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2695893581997376679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2880235271926615864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4848a6b8246302a4c93243a21cb02073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 3114748669612418522}
+  target: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 16384
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 1048576
+  attackRange: 1
+  attackCooldown: 0.2
+  targetInAttackRange: 0
+  hasAttacked: 0
+  health: 50
 --- !u!1 &2935447097972940443
 GameObject:
   m_ObjectHideFlags: 0

@@ -3914,6 +3914,7 @@ GameObject:
   - component: {fileID: 4183823026660386460}
   - component: {fileID: 5796288647226594839}
   - component: {fileID: 7451590306127758516}
+  - component: {fileID: -2170337231585357423}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Enemy
@@ -4177,6 +4178,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2170337231585357423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3949240370903880946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4848a6b8246302a4c93243a21cb02073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4183823026660386433}
+  target: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 16384
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 1048576
+  attackRange: 2.5
+  attackCooldown: 0.6
+  targetInAttackRange: 0
+  hasAttacked: 0
+  health: 200
 --- !u!1 &3983749875977257644
 GameObject:
   m_ObjectHideFlags: 0

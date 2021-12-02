@@ -8195,6 +8195,7 @@ GameObject:
   - component: {fileID: 7730564655977344389}
   - component: {fileID: 3432392064937458673}
   - component: {fileID: 798828203231884144}
+  - component: {fileID: 8103877688882679766}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Enemy
@@ -8457,6 +8458,31 @@ MonoBehaviour:
   damage: 10
   waitTime: 3
   playerHealth: {fileID: 0}
+--- !u!114 &8103877688882679766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460514363688923257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4848a6b8246302a4c93243a21cb02073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 7730564655977344408}
+  target: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 16384
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 1048576
+  attackRange: 2
+  attackCooldown: 0.5
+  targetInAttackRange: 0
+  hasAttacked: 0
+  health: 125
 --- !u!1 &7478630308705910438
 GameObject:
   m_ObjectHideFlags: 0

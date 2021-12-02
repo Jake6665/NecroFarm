@@ -7,7 +7,7 @@ public class enemyMoveScript : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    public GameObject target;
+    GameObject target;
 
     public LayerMask whatIsGround, whatIsTarget;
 
