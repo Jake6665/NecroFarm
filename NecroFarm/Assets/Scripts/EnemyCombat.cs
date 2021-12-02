@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
-    private bool hasCollided = false;
+    public bool hasCollided = false;
 
     private Animator anim;
 
@@ -27,13 +27,18 @@ public class EnemyCombat : MonoBehaviour
             anim = gameObject.GetComponent<Animator>();
             StartCoroutine(AttackWait());
         }
+
+        if (target == null)
+        {
+            hasCollided = false;
+        }
     }
 
     IEnumerator AttackWait()
     {
         yield return new WaitForSeconds(waitTime);
         anim.Play(attackAnim);
-        //playerHealth.DamagePlayer(damage, target);
+        playerHealth.DamagePlayer(damage, target);
         yield return new WaitForSeconds(waitTime);
 
     }

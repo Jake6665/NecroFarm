@@ -18,7 +18,7 @@ public class Switch_Character : MonoBehaviour
     void Start()
     {
         //myCharacter = "ZombieSoldier2";
-        //selectedCharacter = "NecroFarmer";
+        selectedCharacter = "NecroFarmer";
         deselectedCharacters[0] = "Not Empty";
 
         selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
@@ -57,17 +57,9 @@ public class Switch_Character : MonoBehaviour
                 selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
                 selectedAudioSource.enabled = true;
             }
-
             else
             {
-                GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
-                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selectedHalo.enabled = false;
-
-                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
-                selectedAudioSource.enabled = false;
-
-                myCharacter = "";
+                myCharacter = "NecroFarmer";
 
                 deselectedCharacters.Add(selectedCharacter);
 
@@ -90,10 +82,10 @@ public class Switch_Character : MonoBehaviour
                     deselectedCharacters.RemoveAt(i);
                 }
                 GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
-                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selectedHalo = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
                 selectedHalo.enabled = false;
 
-                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+                selectedAudioSource = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent<AudioSource>();
                 selectedAudioSource.enabled = false;
             }
 
@@ -110,7 +102,7 @@ public class Switch_Character : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButtonDown (2))
+        if (Input.GetMouseButtonDown(2))
         {
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
             selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");

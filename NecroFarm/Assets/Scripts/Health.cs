@@ -20,6 +20,8 @@ public class Health : MonoBehaviour
 
     public AudioClip clip;
 
+    private GameObject unit;
+
     void Start()
     {
         curHealth = maxHealth;
