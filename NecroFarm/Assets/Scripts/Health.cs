@@ -20,13 +20,12 @@ public class Health : MonoBehaviour
 
     public AudioClip clip;
 
+    void Start()
+    {
+        curHealth = maxHealth;
+    }
     void Update()
     {
-        if (curHealth == int.MinValue)
-        {
-            curHealth = maxHealth;
-        }
-
         if (thisCharacter == "")
         {
             thisCharacter = transform.gameObject.name;
@@ -36,6 +35,7 @@ public class Health : MonoBehaviour
         {
             DamagePlayer(10);
         }
+
         healthBar.SetHealth(curHealth);
 
         if (curHealth <= 0)

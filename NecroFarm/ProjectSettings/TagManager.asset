@@ -13,6 +13,7 @@ TagManager:
   - GBS
   - GM
   - Crop
+  - Enemy
   layers:
   - Default
   - TransparentFX
