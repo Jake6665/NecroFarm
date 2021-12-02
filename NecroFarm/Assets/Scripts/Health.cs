@@ -61,9 +61,8 @@ public class Health : MonoBehaviour
     }
 
     public void DamagePlayer(int damage, GameObject name)
-    {
-        Health tartgetHealth = name.GetComponent<Health>();
-        curHealth -= damage;
-        healthBar.SetHealth(curHealth);
+    {        
+        name.GetComponent<Health>().curHealth -= damage;
+        name.GetComponent<Health>().healthBar.SetHealth(curHealth);
     }
 }

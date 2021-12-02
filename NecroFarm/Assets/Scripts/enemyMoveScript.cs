@@ -14,8 +14,14 @@ public class enemyMoveScript : MonoBehaviour
     public float attackRange, attackCooldown;
     public bool targetInAttackRange, hasAttacked;
 
+    private Animator anim;
+
+    public string attackAnim;
+
     [SerializeField]
-    int health;
+    private Health playerHealth;
+    [SerializeField]
+    private int attackDamage;
 
     private void Awake()
     {
@@ -37,21 +43,16 @@ public class enemyMoveScript : MonoBehaviour
             target = FindClosestTarget();
         }
         //Check if in attack range
-        targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsTarget);
-
-        if (targetInAttackRange)
+        if(Vector3.Distance(this.transform.position, FindClosestTarget().transform.position) < attackRange)
         {
             AttackTarget();
         }
         else
         {
             MoveToTarget();
-        }
+        }            
 
-        if(health <= 0)
-        {
-            Destroy(this.gameObject);
-        }
+
     }
 
     private void MoveToTarget()
@@ -63,19 +64,12 @@ public class enemyMoveScript : MonoBehaviour
         agent.SetDestination(transform.position);
         transform.LookAt(target.transform);
 
+        anim = gameObject.GetComponent<Animator>();
+
         if (!hasAttacked)
         {
-            /**
-             * 
-             * ADD ATTACK METHOD HERE
-             * 
-            **/
-            //Destroys target not needed after attack method is in
-            Destroy(target.gameObject);
-
-            //Sets new target
-            target = FindClosestTarget();
-
+            anim.Play(attackAnim);
+            playerHealth.DamagePlayer(attackDamage, target);
             hasAttacked = true;
             Invoke(nameof(ResetAttack), attackCooldown);
 
@@ -87,11 +81,6 @@ public class enemyMoveScript : MonoBehaviour
     private void ResetAttack()
     {
         hasAttacked = false;
-    }
-
-    private void takeDamage(int dmgTaken)
-    {
-        health -= dmgTaken;
     }
 
         public GameObject FindClosestTarget()

@@ -1298,12 +1298,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f185507c7502048ba953c501f47851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHealth: -2147483648
-  maxHealth: 400
-  waitTime: 3
-  deathAnim: Death_Boss
+  curHealth: 100
+  maxHealth: 100
+  waitTime: 0
+  deathAnim: 
   thisCharacter: 
-  healthBar: {fileID: 2874264223703855854}
+  healthBar: {fileID: 0}
   clip: {fileID: 0}
 --- !u!195 &230439834234595222
 NavMeshAgent:
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149480168142850061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8b01a6c3322da49ae59ef1f1f43966, type: 3}
   m_Name: 
@@ -1486,18 +1486,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 230439834234595222}
-  target: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 16384
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 1048576
-  attackRange: 2
-  attackCooldown: 0.3
+  attackRange: 4
+  attackCooldown: 2
   targetInAttackRange: 0
   hasAttacked: 0
-  health: 500
+  attackAnim: Attack_Boss
+  playerHealth: {fileID: 230439834234595211}
+  attackDamage: 20
 --- !u!1 &1224159090121106735
 GameObject:
   m_ObjectHideFlags: 0

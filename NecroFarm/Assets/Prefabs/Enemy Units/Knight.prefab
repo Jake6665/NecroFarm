@@ -8283,7 +8283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f185507c7502048ba953c501f47851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHealth: -2147483648
+  curHealth: 100
   maxHealth: 100
   waitTime: 3
   deathAnim: Death_Knight
@@ -8448,7 +8448,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7460514363688923257}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8b01a6c3322da49ae59ef1f1f43966, type: 3}
   m_Name: 
@@ -8471,18 +8471,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 7730564655977344408}
-  target: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 16384
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 1048576
-  attackRange: 2
-  attackCooldown: 0.5
+  attackRange: 3
+  attackCooldown: 4
   targetInAttackRange: 0
   hasAttacked: 0
-  health: 125
+  attackAnim: Attack_Knight
+  playerHealth: {fileID: 7730564655977344415}
+  attackDamage: 15
 --- !u!1 &7478630308705910438
 GameObject:
   m_ObjectHideFlags: 0
