@@ -56,8 +56,8 @@ List<GameObject> enemyList = new List<GameObject>();
     void Start()   {
         //Wave times
         gameStart = DateTime.Now;
-        firstWave = gameStart.AddMinutes(5);
-        secondWave = firstWave.AddMinutes(5);
+        firstWave = gameStart.AddMinutes(.15);
+        secondWave = firstWave.AddMinutes(.25);
         thirdWave = secondWave.AddMinutes(5);
         bossWave = thirdWave.AddMinutes(8);
         minorWave = bossWave.AddMinutes(5);
