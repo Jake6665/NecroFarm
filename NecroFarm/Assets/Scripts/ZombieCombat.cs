@@ -37,6 +37,7 @@ public class ZombieCombat : MonoBehaviour
 
     IEnumerator AttackWait()
     {
+        transform.LookAt(target.transform);
         yield return new WaitForSeconds(waitTime);
         anim.Play(attackAnim);
         playerHealth.DamagePlayer(damage, target);
