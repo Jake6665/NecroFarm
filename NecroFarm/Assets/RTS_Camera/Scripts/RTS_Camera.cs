@@ -124,7 +124,7 @@ namespace RTS_Cam
         public KeyCode rotateLeftKey = KeyCode.Z;
 
         public bool useMouseRotation = true;
-        public KeyCode mouseRotationKey = KeyCode.Mouse1;
+        public KeyCode mouseRotationKey = KeyCode.Mouse2;
 
         private Vector2 KeyboardInput
         {
