@@ -24,6 +24,7 @@ public class Health : MonoBehaviour
     {
         curHealth = maxHealth;
     }
+
     void Update()
     {
         if (thisCharacter == "")
@@ -33,7 +34,7 @@ public class Health : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            DamagePlayer(10);
+            DamagePlayer(10, GameObject.Find(thisCharacter));
         }
 
         healthBar.SetHealth(curHealth);
@@ -51,16 +52,17 @@ public class Health : MonoBehaviour
         anim.Play(deathAnim);
         sound.PlayOneShot(clip);
         yield return new WaitForSeconds(waitTime);
-        DestroyUnit();
+        DestroyUnit(thisCharacter);
     }
 
-    public void DestroyUnit()
+    public void DestroyUnit(string deadUnit)
     {
-        Destroy(GameObject.Find(thisCharacter));
+        Destroy(GameObject.Find(deadUnit));
     }
 
-    public void DamagePlayer(int damage)
+    public void DamagePlayer(int damage, GameObject name)
     {
+        Health tartgetHealth = name.GetComponent<Health>();
         curHealth -= damage;
         healthBar.SetHealth(curHealth);
     }

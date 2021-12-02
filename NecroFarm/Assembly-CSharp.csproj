@@ -53,8 +53,10 @@
      <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
      <Compile Include="Assets\Scripts\faceCamera.cs" />
      <Compile Include="Assets\Scripts\UtilsClass.cs" />
+     <Compile Include="Assets\Scripts\EnemyCombat.cs" />
      <Compile Include="Assets\Scripts\Block_Character_Collision.cs" />
      <Compile Include="Assets\Scripts\Grid\GridBuildingSystem.cs" />
+     <Compile Include="Assets\Scripts\ZombieCombat.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\CropsEcon\buyPlot.cs" />
      <Compile Include="Assets\Scripts\FunctionUpdater.cs" />

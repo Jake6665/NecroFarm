@@ -5,7 +5,8 @@ using UnityEngine;
 public class ZombieSFX : MonoBehaviour
 {
     private AudioSource sound;
-    public AudioClip clip;
+    public AudioClip footSteps;
+    public AudioClip attackSound;
 
     void Awake()
     {
@@ -14,6 +15,11 @@ public class ZombieSFX : MonoBehaviour
 
     void Step()
     {
-        sound.PlayOneShot(clip);
+        sound.PlayOneShot(footSteps);
+    }
+
+    void Attack()
+    {
+        sound.PlayOneShot(attackSound);
     }
 }

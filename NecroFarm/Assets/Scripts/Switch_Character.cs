@@ -12,15 +12,20 @@ public class Switch_Character : MonoBehaviour
     public List<string> deselectedCharacters = new List<string>();
     public string selectedCharacter = "";
 
-    public Behaviour selected;
+    public Behaviour selectedHalo;
+    public Behaviour selectedAudioSource;
 
     void Start()
     {
         //myCharacter = "ZombieSoldier2";
-        selectedCharacter = "NecroFarmer";
+        //selectedCharacter = "NecroFarmer";
         deselectedCharacters[0] = "Not Empty";
-        selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-        selected.enabled = true;
+
+        selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+        selectedHalo.enabled = true;
+
+        selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+        selectedAudioSource.enabled = true;
     }
 
     void Update()
@@ -45,25 +50,35 @@ public class Switch_Character : MonoBehaviour
                 selectedCharacter = myCharacter;
 
                 GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
-                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selected.enabled = true;
+
+                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selectedHalo.enabled = true;
+
+                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+                selectedAudioSource.enabled = true;
             }
 
             else
             {
                 GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
-                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selected.enabled = false;
+                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selectedHalo.enabled = false;
 
-                myCharacter = "NecroFarmer";
+                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+                selectedAudioSource.enabled = false;
+
+                myCharacter = "";
 
                 deselectedCharacters.Add(selectedCharacter);
 
                 deselectedCharacters = deselectedCharacters.Distinct().ToList();
 
                 GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
-                selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-                selected.enabled = false;
+                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selectedHalo.enabled = false;
+
+                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+                selectedAudioSource.enabled = false;
 
                 selectedCharacter = myCharacter;
             }
@@ -75,8 +90,11 @@ public class Switch_Character : MonoBehaviour
                     deselectedCharacters.RemoveAt(i);
                 }
                 GameObject.Find(deselectedCharacters[i]).GetComponent<Player_Movement>().isMoveable = false;
-                selected = (Behaviour)GameObject.Find(deselectedCharacters[i]).GetComponent("Halo");
-                selected.enabled = false;
+                selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+                selectedHalo.enabled = false;
+
+                selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+                selectedAudioSource.enabled = false;
             }
 
             deselectedCharacters.Add(selectedCharacter);
@@ -84,16 +102,22 @@ public class Switch_Character : MonoBehaviour
             deselectedCharacters = deselectedCharacters.Distinct().ToList();
 
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = true;
-            selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-            selected.enabled = true;
-            
+            selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+            selectedHalo.enabled = true;
+
+            selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+            selectedAudioSource.enabled = true;
+
         }
 
         if (Input.GetMouseButtonDown (2))
         {
             GameObject.Find(selectedCharacter).GetComponent<Player_Movement>().isMoveable = false;
-            selected = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
-            selected.enabled = false;
+            selectedHalo = (Behaviour)GameObject.Find(selectedCharacter).GetComponent("Halo");
+            selectedHalo.enabled = false;
+
+            selectedAudioSource = (Behaviour)GameObject.Find(selectedCharacter).GetComponent<AudioSource>();
+            selectedAudioSource.enabled = false;
         }
     }
 }
