@@ -14,6 +14,9 @@ public class SpawnUnit : MonoBehaviour
 
     public float waitTime;
 
+    [SerializeField]
+    private GameObject gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +33,24 @@ public class SpawnUnit : MonoBehaviour
 
     public void Spawn()
     {
-        if (timer)
+        if (gameManager.GetComponent<playerEconomy>().enoughBones())
         {
-            Debug.Log("Spawning...");
-            Instantiate(unitToSpawn, spawnPosition, unitToSpawn.transform.rotation);
-            unitToSpawn.name = (name + Time.deltaTime);
-            timer = false;
+            if (timer)
+            {
+                Debug.Log("Spawning...");
+                Instantiate(unitToSpawn, spawnPosition, unitToSpawn.transform.rotation);
+                unitToSpawn.name = (name + Time.deltaTime);
+                gameManager.GetComponent<playerEconomy>().subtractBones();
+                timer = false;
+            }
+
+            if (!timer)
+            {
+                Debug.Log("Waiting...");
+                StartCoroutine(waiting());
+            }
+
         }
 
-        if (!timer)
-        {
-            Debug.Log("Waiting...");
-            StartCoroutine(waiting());
-        }
     }
 }

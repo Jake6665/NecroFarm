@@ -10,11 +10,16 @@ public class playerEconomy : MonoBehaviour
     [SerializeField]
     private int playerMoney = 100;
     [SerializeField]
+    private int numBones = 4;
+    [SerializeField]
     private TextMeshProUGUI playerFundsText;
+    [SerializeField]
+    private TextMeshProUGUI playerBonesText;
     // Start is called before the first frame update
     void Start()
     {
         playerFundsText.SetText("$" + playerMoney);
+        playerFundsText.SetText("Bones: " + numBones);
     }
     public void addFunds(int cash)
     {
@@ -35,6 +40,11 @@ public class playerEconomy : MonoBehaviour
         playerFundsText.SetText("$" + playerMoney);
     }
 
+    public void updateBonesText()
+    {
+        playerBonesText.SetText("Bones: " + numBones);
+    }
+
     public bool canAfford(int price)
     {
         if(price <= playerMoney)
@@ -44,8 +54,26 @@ public class playerEconomy : MonoBehaviour
         return false;
     }
 
-    public void SaveProfile()
+    public bool enoughBones()
     {
+        if (numBones > 0)
+        {
+            return true;
+        }
+        return false;
+    }
 
+    public void addBones()
+    {
+        numBones ++;
+        //UtilsClass.CreateWorldTextAdd(" + 1 Bone", Mouse3D.GetMouseWorldPosition());
+        updateBonesText();
+    }
+
+    public void subtractBones()
+    {
+        numBones--;
+        //UtilsClass.CreateWorldTextDeduct(" - 1 Bone", Mouse3D.GetMouseWorldPosition());
+        updateBonesText();
     }
 }
