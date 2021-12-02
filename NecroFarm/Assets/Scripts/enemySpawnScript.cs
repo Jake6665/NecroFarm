@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class enemySpawnScript : MonoBehaviour
 {
@@ -17,8 +18,11 @@ public class enemySpawnScript : MonoBehaviour
     GameObject soldier;
     [SerializeField]
     GameObject boss;
+    [SerializeField]
+    Text timerText;
 
-    List<GameObject> enemyList = new List<GameObject>();
+
+List<GameObject> enemyList = new List<GameObject>();
 
     [SerializeField]
     List<GameObject> spawnPointList;
@@ -32,7 +36,16 @@ public class enemySpawnScript : MonoBehaviour
     DateTime majorWave;
 
     DateTime nextWaveTime;
+    String croppedTime;
     wave waveNum;
+
+    bool first;
+    bool second;
+    bool third;
+    bool fourth;
+    bool fifth;
+    bool sixth;
+
 
     enum wave
     {
@@ -41,19 +54,118 @@ public class enemySpawnScript : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()   {
+        //Wave times
+        gameStart = DateTime.Now;
+        firstWave = gameStart.AddMinutes(5);
+        secondWave = firstWave.AddMinutes(5);
+        thirdWave = secondWave.AddMinutes(5);
+        bossWave = thirdWave.AddMinutes(8);
+        minorWave = bossWave.AddMinutes(5);
+        majorWave = minorWave.AddMinutes(5);
+
+
         enemyList.Add(knight);
         enemyList.Add(ranger);
-        enemyList.Add(soldier);
-        
+        enemyList.Add(soldier);     
 
-        DateTime gameStart = DateTime.Now;
         waveNum = wave.NoWave;
+        first = true;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        nextWaveTime = DateTime.Now;
+        //Timed wave spawn
+        if(nextWaveTime < firstWave)        {
+
+            croppedTime = String.Format("{0:m mm}", firstWave.Subtract(nextWaveTime).ToString());                       
+            timerText.text = croppedTime.Remove(0, 3); 
+
+        }else if(nextWaveTime < secondWave)
+        {
+            croppedTime = String.Format("{0:m mm}", secondWave.Subtract(nextWaveTime).ToString());
+            timerText.text = croppedTime.Remove(0, 3);
+        }else if(nextWaveTime < thirdWave)
+        {
+            croppedTime = String.Format("{0:m mm}", thirdWave.Subtract(nextWaveTime).ToString());
+            timerText.text = croppedTime.Remove(0, 3);
+        }else if(nextWaveTime < bossWave)
+        {
+            croppedTime = String.Format("{0:m mm}", bossWave.Subtract(nextWaveTime).ToString());
+            timerText.text = croppedTime.Remove(0, 3);
+        }else if(nextWaveTime < minorWave)
+        {
+            croppedTime = String.Format("{0:m mm}", minorWave.Subtract(nextWaveTime).ToString());
+            timerText.text = croppedTime.Remove(0, 3);
+        }else if(nextWaveTime < majorWave)
+        {
+            croppedTime = String.Format("{0:m mm}", majorWave.Subtract(nextWaveTime).ToString());
+            timerText.text = croppedTime.Remove(0, 3);
+        }
+  
+
+        if (nextWaveTime >= firstWave && first)
+        {
+            Debug.Log("Spawn 1");
+            waveNum = wave.FirstWave;
+            spawnWave(waveNum);
+            first = false;
+            second = true;
+        }
+
+        if (nextWaveTime >= secondWave && second)
+        {
+            Debug.Log("Spawn 2");
+            waveNum = wave.SecondWave;
+            spawnWave(waveNum);
+            second = false;
+            third = true;
+        }
+
+        if (nextWaveTime >= thirdWave && third)
+        {
+            Debug.Log("Spawn 3");
+            waveNum = wave.ThirdWave;
+            spawnWave(waveNum);
+            third = false;
+            fourth = true;
+        }
+
+        if (nextWaveTime >= bossWave && fourth)
+        {
+            Debug.Log("Spawn 4");
+            waveNum = wave.BossWave;
+            spawnWave(waveNum);
+            fourth = false;
+            fifth = true;
+        }
+
+        if (nextWaveTime >= minorWave && fifth)
+        {
+            Debug.Log("Spawn 5");
+            waveNum = wave.FirstWave;
+            spawnWave(waveNum);
+            majorWave = minorWave.AddMinutes(.5);
+            fifth = false;
+            sixth = true;
+        }
+
+        if (nextWaveTime >= majorWave && sixth)
+        {
+            Debug.Log("Spawn 6");
+            waveNum = wave.MajorWave;
+            spawnWave(waveNum);
+            minorWave = majorWave.AddMinutes(.5);
+            sixth = false;
+            fifth = true;
+        }
+
+        //Manually Spawn Waves
+
+        /**
+
         if (Input.GetKeyDown(KeyCode.F1)){
             waveNum = wave.FirstWave;
             spawnWave(waveNum);
@@ -88,6 +200,8 @@ public class enemySpawnScript : MonoBehaviour
             waveNum = wave.MajorWave;
             spawnWave(waveNum);
         }
+
+        **/
     }
 
     //
