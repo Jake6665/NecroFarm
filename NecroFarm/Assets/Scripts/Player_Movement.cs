@@ -83,6 +83,10 @@ public class Player_Movement : MonoBehaviour
             {
                 Walk();
             }
+            else
+            {
+                Idle();
+            }
         }
         if ((mousePos.x, mousePos.z) == (unitPos.x, unitPos.z))
         {

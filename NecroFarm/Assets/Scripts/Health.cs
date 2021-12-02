@@ -54,12 +54,12 @@ public class Health : MonoBehaviour
         anim.Play(deathAnim);
         sound.PlayOneShot(clip);
         yield return new WaitForSeconds(waitTime);
-        DestroyUnit(thisCharacter);
+        DestroyUnit();
     }
 
-    public void DestroyUnit(string deadUnit)
+    public void DestroyUnit()
     {
-        Destroy(GameObject.Find(deadUnit));
+        Destroy(GameObject.Find(thisCharacter));
     }
 
     public void DamagePlayer(int damage, GameObject name)

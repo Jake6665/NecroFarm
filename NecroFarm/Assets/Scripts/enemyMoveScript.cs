@@ -23,6 +23,11 @@ public class enemyMoveScript : MonoBehaviour
     [SerializeField]
     private int attackDamage;
 
+    private void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+
     private void Awake()
     {
         targetInAttackRange = false;
@@ -58,13 +63,13 @@ public class enemyMoveScript : MonoBehaviour
     private void MoveToTarget()
     {
         agent.SetDestination(target.transform.position);
+        anim.SetBool("isWalking", true);
     }
     private void AttackTarget()
     {
         agent.SetDestination(transform.position);
         transform.LookAt(target.transform);
-
-        anim = gameObject.GetComponent<Animator>();
+        anim.SetBool("isWalking", false);
 
         if (!hasAttacked)
         {
